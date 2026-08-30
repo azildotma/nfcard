@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Custom-designed NFC business cards, sealed and delivered in Morocco. One tap shares your contact, socials, or catalog — azil.ma">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%230466c8%22/></svg>">
 <title>azil.ma — NFC Business Cards</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,6 +40,7 @@
   .wrap{max-width:1120px; margin:0 auto; padding:0 24px;}
   a{color:inherit; text-decoration:none;}
   button{font:inherit; cursor:pointer; border:none; background:none; color:inherit;}
+  :focus-visible{outline:2.5px solid var(--blue); outline-offset:3px; border-radius:4px;}
 
   /* ---------- NAV ---------- */
   .nav{
@@ -46,12 +49,12 @@
     backdrop-filter:blur(10px);
     border-bottom:1px solid rgba(4,102,200,0.12);
   }
-  .nav .wrap{display:flex; align-items:center; justify-content:space-between; padding-top:16px; padding-bottom:16px;}
-  .brand{font-family:var(--font-display); font-weight:700; font-size:20px; letter-spacing:0.02em; display:flex; align-items:center; gap:8px; color:var(--ink);}
+  .nav .wrap{display:flex; align-items:center; justify-content:space-between; padding-top:16px; padding-bottom:16px; gap:10px;}
+  .brand{font-family:var(--font-display); font-weight:700; font-size:20px; letter-spacing:0.02em; display:flex; align-items:center; gap:8px; color:var(--ink); flex-shrink:0;}
   .brand-chip{width:10px; height:10px; border-radius:3px; background:var(--blue);}
   .nav-right{display:flex; align-items:center; gap:14px;}
   .lang-toggle{
-    display:flex; border:1px solid rgba(10,10,10,0.15); border-radius:999px; padding:3px; gap:2px;
+    display:flex; border:1px solid rgba(10,10,10,0.15); border-radius:999px; padding:3px; gap:2px; flex-shrink:0;
   }
   .lang-toggle button{
     padding:6px 14px; border-radius:999px; font-size:13px; font-weight:600; color:var(--gray);
@@ -62,12 +65,14 @@
     display:inline-flex; align-items:center; gap:8px;
     padding:11px 20px; border-radius:999px; font-weight:600; font-size:14px;
     transition:transform .2s ease, box-shadow .2s ease;
+    white-space:nowrap;
   }
   .btn-primary{background:var(--blue); color:#fff; box-shadow:0 6px 20px rgba(4,102,200,0.3);}
   .btn-primary:hover{transform:translateY(-2px); box-shadow:0 10px 26px rgba(4,102,200,0.4); background:var(--blue-deep);}
   .btn-ghost{border:1.5px solid var(--ink); color:var(--ink);}
   .btn-ghost:hover{background:var(--ink); color:var(--white);}
   .nav .btn{padding:9px 16px; font-size:13px;}
+  .btn-icon-only{display:none;}
 
   section{padding:96px 0;}
   .eyebrow{
@@ -144,10 +149,29 @@
   .phone-idle{position:absolute; inset:0; display:flex; align-items:center; justify-content:center; color:#3a3d4d; font-size:11px; text-align:center; padding:20px; background:var(--white);}
   .phone-idle.hide{display:none;}
 
+  /* real-photo tile: "card in hand" badge near the hero demo */
+  .hero-photo-badge{
+    position:absolute; width:104px; height:104px; border-radius:16px; overflow:hidden;
+    top:-22px; z-index:4; background:var(--blue-tint);
+    border:4px solid #fff; box-shadow:0 14px 30px rgba(4,20,50,0.22);
+    inset-inline-end:6px;
+  }
+  .hero-photo-badge img{width:100%; height:100%; object-fit:cover; transition:transform .4s ease;}
+  .hero-photo-badge:hover img{transform:scale(1.08);}
+  .hero-photo-badge .badge-fallback{
+    width:100%; height:100%; display:flex; align-items:center; justify-content:center;
+    font-size:26px;
+  }
+  .hero-photo-badge img.missing{display:none;}
+  .hero-photo-badge:not(.has-photo) .badge-fallback{display:flex;}
+  .hero-photo-badge.has-photo .badge-fallback{display:none;}
+
   /* ---------- WHAT (tap share done) ---------- */
   .steps3{display:grid; grid-template-columns:repeat(3,1fr); gap:28px;}
   .step3{background:var(--blue-tint); border-radius:var(--radius); padding:30px 26px; border:1px solid rgba(4,102,200,0.1);}
-  .step3 .icon{width:42px; height:42px; border-radius:12px; background:rgba(4,102,200,0.14); display:flex; align-items:center; justify-content:center; margin-bottom:18px;}
+  .step3 .icon{width:42px; height:42px; border-radius:12px; background:rgba(4,102,200,0.14); display:flex; align-items:center; justify-content:center; margin-bottom:18px; font-size:19px; overflow:hidden;}
+  .step3 .icon img{width:100%; height:100%; object-fit:cover; border-radius:12px;}
+  .step3 .icon img.missing{display:none;}
   .step3 h3{font-family:var(--font-display); font-size:18px; margin-bottom:8px; font-weight:600; color:var(--ink);}
   .step3 p{color:var(--gray); font-size:14.5px;}
 
@@ -164,11 +188,14 @@
   .benefit h3{font-family:var(--font-display); font-size:16px; margin-bottom:8px; font-weight:700; color:var(--white);}
   .benefit p{font-size:13.5px; color:#a8adb8;}
 
-  /* ---------- STYLES / GALLERY ---------- */
+  /* ---------- STYLES / GALLERY (with real-photo slots + CSS fallback) ---------- */
   .styles-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:26px;}
   .style-card{border-radius:var(--radius); overflow:hidden; border:1px solid rgba(10,10,10,0.1); background:var(--blue-tint);}
-  .style-visual{height:150px; display:flex; align-items:center; justify-content:center; position:relative;}
-  .style-visual .mini-card{width:150px; height:94px; border-radius:10px; box-shadow:0 14px 30px rgba(4,20,50,0.18); display:flex; flex-direction:column; justify-content:space-between; padding:12px;}
+  .style-visual{height:150px; display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden;}
+  .style-visual img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition:transform .4s ease;}
+  .style-card:hover .style-visual img{transform:scale(1.05);}
+  .style-visual img.missing{display:none;}
+  .style-visual .mini-card{width:150px; height:94px; border-radius:10px; box-shadow:0 14px 30px rgba(4,20,50,0.18); display:flex; flex-direction:column; justify-content:space-between; padding:12px; position:relative; z-index:1;}
   .mini-card .chip-mini{width:20px; height:15px; border-radius:3px; background:var(--blue);}
   .style-white .mini-card{background:var(--white); border:1px solid rgba(10,10,10,0.12);}
   .style-black .mini-card{background:var(--ink);}
@@ -225,6 +252,11 @@
     section{padding:64px 0;}
     .demo{min-height:340px; transform:scale(0.85);}
   }
+  @media(max-width:420px){
+    .btn-text{display:none;}
+    .btn-icon-only{display:inline;}
+    .nav .btn{padding:9px 12px;}
+  }
 
   @media (prefers-reduced-motion: reduce){
     *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;}
@@ -233,19 +265,23 @@
 </head>
 <body>
 
-<nav class="nav">
+<header class="nav">
   <div class="wrap">
     <div class="brand"><span class="brand-chip"></span>azil.ma</div>
     <div class="nav-right">
-      <div class="lang-toggle">
-        <button id="btn-en" class="active" onclick="setLang('en')">EN</button>
-        <button id="btn-ar" onclick="setLang('ar')">عربي</button>
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button id="btn-en" class="active" aria-pressed="true" onclick="setLang('en')">EN</button>
+        <button id="btn-ar" aria-pressed="false" onclick="setLang('ar')">عربي</button>
       </div>
-      <a class="btn btn-primary" id="nav-cta" href="#" target="_blank" data-i18n="nav_cta">Order on WhatsApp</a>
+      <a class="btn btn-primary" id="nav-cta" href="#" target="_blank" rel="noopener">
+        <span class="btn-text" data-i18n="nav_cta">Order on WhatsApp</span>
+        <span class="btn-icon-only" aria-hidden="true">💬</span>
+      </a>
     </div>
   </div>
-</nav>
+</header>
 
+<main>
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
@@ -253,13 +289,21 @@
       <h1 data-i18n="hero_h1">Your business card that never runs out.</h1>
       <p class="sub" data-i18n="hero_sub">One tap shares your number, Instagram, website or menu — instantly, on any phone. Custom-designed for your brand.</p>
       <div class="hero-ctas">
-        <a class="btn btn-primary" id="hero-cta" href="#" target="_blank" data-i18n="hero_cta_primary">Order on WhatsApp</a>
+        <a class="btn btn-primary" id="hero-cta" href="#" target="_blank" rel="noopener" data-i18n="hero_cta_primary">Order on WhatsApp</a>
         <a class="btn btn-ghost" href="#how" data-i18n="hero_cta_secondary">See how it works</a>
       </div>
     </div>
     <div class="demo">
+      <!-- REAL PHOTO SLOT 1: a close-up of your actual sealed card in hand. Replace src below. -->
+      <div class="hero-photo-badge" id="hero-photo">
+        <img src="assets/card-in-hand.jpg" alt="A real azil.ma NFC card" loading="lazy"
+             onerror="this.classList.add('missing'); this.closest('.hero-photo-badge').classList.remove('has-photo');"
+             onload="this.closest('.hero-photo-badge').classList.add('has-photo');">
+        <div class="badge-fallback" aria-hidden="true">🪪</div>
+      </div>
       <div class="ring" id="ring"></div>
-      <div class="demo-card" id="tap-card" onclick="playTap()">
+      <div class="demo-card" id="tap-card" onclick="playTap()" role="button" tabindex="0"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();playTap();}">
         <div class="chip"></div>
         <div>
           <div class="cardname">Ilias — azil.ma</div>
@@ -288,7 +332,11 @@
     </div>
     <div class="steps3">
       <div class="step3">
-        <div class="icon">👆</div>
+        <div class="icon">
+          <!-- REAL PHOTO SLOT 2: a photo of someone tapping a phone to the card. Replace src below. -->
+          <img src="assets/tap-gesture.jpg" alt="" loading="lazy"
+               onerror="this.classList.add('missing'); this.parentElement.innerHTML+='👆';">
+        </div>
         <h3 data-i18n="what1_h">Tap</h3>
         <p data-i18n="what1_p">Client holds their phone near your card for one second.</p>
       </div>
@@ -346,15 +394,30 @@
     </div>
     <div class="styles-grid">
       <div class="style-card style-white">
-        <div class="style-visual"><div class="mini-card"><div class="chip-mini"></div><div style="font-size:10px;font-weight:700;color:#0a0a0a">Your Brand</div></div></div>
+        <div class="style-visual">
+          <div class="mini-card"><div class="chip-mini"></div><div style="font-size:10px;font-weight:700;color:#0a0a0a">Your Brand</div></div>
+          <!-- REAL PHOTO SLOT 3: photo of your white card. Replace src below. -->
+          <img src="assets/card-white.jpg" alt="White NFC business card" loading="lazy"
+               onerror="this.classList.add('missing');">
+        </div>
         <div class="style-info"><h4 data-i18n="style1_h">White card</h4><p data-i18n="style1_p">Clean and minimal</p></div>
       </div>
       <div class="style-card style-black">
-        <div class="style-visual"><div class="mini-card"><div class="chip-mini"></div><div style="font-size:10px;font-weight:700;color:#fff">Your Brand</div></div></div>
+        <div class="style-visual">
+          <div class="mini-card"><div class="chip-mini"></div><div style="font-size:10px;font-weight:700;color:#fff">Your Brand</div></div>
+          <!-- REAL PHOTO SLOT 4: photo of your black card. Replace src below. -->
+          <img src="assets/card-black.jpg" alt="Black NFC business card" loading="lazy"
+               onerror="this.classList.add('missing');">
+        </div>
         <div class="style-info"><h4 data-i18n="style2_h">Black card</h4><p data-i18n="style2_p">Bold and premium</p></div>
       </div>
       <div class="style-card style-custom">
-        <div class="style-visual"><div class="mini-card"><div class="chip-mini" style="background:#fff"></div><div style="font-size:10px;font-weight:700;color:#fff">Your Brand</div></div></div>
+        <div class="style-visual">
+          <div class="mini-card"><div class="chip-mini" style="background:#fff"></div><div style="font-size:10px;font-weight:700;color:#fff">Your Brand</div></div>
+          <!-- REAL PHOTO SLOT 5: photo of a custom-designed card. Replace src below. -->
+          <img src="assets/card-custom.jpg" alt="Custom-designed NFC business card" loading="lazy"
+               onerror="this.classList.add('missing');">
+        </div>
         <div class="style-info"><h4 data-i18n="style3_h">Fully custom</h4><p data-i18n="style3_p">Any color, any design</p></div>
       </div>
     </div>
@@ -369,7 +432,7 @@
         <h3 data-i18n="promo_h">Buy 2, get the 3rd at half price</h3>
         <p data-i18n="promo_p">Perfect for a team, a shop with several staff, or stocking up for later.</p>
       </div>
-      <a class="btn btn-ghost" id="promo-cta" href="#" target="_blank" data-i18n="promo_cta">Claim the offer</a>
+      <a class="btn btn-ghost" id="promo-cta" href="#" target="_blank" rel="noopener" data-i18n="promo_cta">Claim the offer</a>
     </div>
   </div>
 </section>
@@ -409,21 +472,22 @@
         <div class="price-range">89 <span data-i18n="price_to">— 200 DH</span></div>
         <p data-i18n="price_p">Final price depends on your design, quantity, and card finish. Message on WhatsApp for a quote made for your business.</p>
       </div>
-      <a class="btn btn-primary" id="pricing-cta" href="#" target="_blank" data-i18n="price_cta">Get my quote</a>
+      <a class="btn btn-primary" id="pricing-cta" href="#" target="_blank" rel="noopener" data-i18n="price_cta">Get my quote</a>
     </div>
   </div>
 </section>
+</main>
 
 <footer>
   <div class="wrap foot-grid">
     <div class="brand"><span class="brand-chip"></span>azil.ma</div>
     <div class="foot-note" data-i18n="foot_note">Custom NFC business cards — Agadir, Morocco</div>
-    <a class="btn btn-ghost" id="foot-cta" href="#" target="_blank" data-i18n="foot_cta">WhatsApp</a>
+    <a class="btn btn-ghost" id="foot-cta" href="#" target="_blank" rel="noopener" data-i18n="foot_cta">WhatsApp</a>
   </div>
 </footer>
 
 <script>
-// ---- EDIT THIS: your WhatsApp number in international format, no + or spaces ----
+// ---- your WhatsApp number, international format, no + or spaces ----
 const WHATSAPP_NUMBER = "212632674548";
 const WHATSAPP_MSG = encodeURIComponent("Hi! I'd like to order a custom NFC card from azil.ma");
 const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MSG}`;
@@ -528,7 +592,9 @@ function setLang(lang){
   document.documentElement.lang = lang;
   document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
   document.getElementById('btn-en').classList.toggle('active', lang==='en');
+  document.getElementById('btn-en').setAttribute('aria-pressed', lang==='en');
   document.getElementById('btn-ar').classList.toggle('active', lang==='ar');
+  document.getElementById('btn-ar').setAttribute('aria-pressed', lang==='ar');
   const dict = i18n[lang];
   document.querySelectorAll('[data-i18n]').forEach(el=>{
     const key = el.getAttribute('data-i18n');
