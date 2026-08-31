@@ -93,7 +93,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
     --blue:#0466c8;
@@ -116,8 +116,8 @@
     --ease:cubic-bezier(.2,.8,.2,1);
   }
   :root[lang="ar"]{
-    --font-display:'Cairo', sans-serif;
-    --font-body:'Cairo', sans-serif;
+    --font-display:'Tajawal', sans-serif;
+    --font-body:'Tajawal', sans-serif;
   }
   /* Dark theme — deep navy that keeps the brand blue readable */
   :root[data-theme="dark"]{
@@ -401,7 +401,8 @@
   .wa-float::after{animation-delay:1.1s;}
 
   @media(max-width:860px){
-    .hero-grid{grid-template-columns:1fr; gap:64px;}
+    .hero-grid{grid-template-columns:1fr; gap:40px;}
+    .demo{min-height:auto; margin-top:4px;}
     .steps3, .styles-grid, .tst-grid{grid-template-columns:1fr 1fr;}
     .benefits-grid{grid-template-columns:1fr 1fr;}
   }
@@ -410,12 +411,44 @@
     .pricing-box{flex-direction:column; align-items:flex-start;}
     .promo{flex-direction:column; align-items:flex-start;}
     section{padding:64px 0;}
-    .demo{min-height:340px; transform:scale(0.85);}
+    .section-head{margin-bottom:40px;}
+    .sub{font-size:clamp(15px,4.1vw,17px); max-width:100%;}
+    .price-range{font-size:clamp(34px,10vw,44px);}
+    /* Tap-demo: resize elements (not transform-scale) so it stays centered
+       and tap targets stay full size on phones */
+    .demo{min-height:360px; gap:0; padding:0 8px;}
+    .demo-card{width:230px; height:145px; padding:17px;}
+    .ring{width:230px; height:145px;}
+    .phone{width:132px; height:264px; margin-inline-start:-24px;}
+    [dir="rtl"] .phone{margin-inline-start:0; margin-inline-end:-24px;}
+    .hero-photo-badge{width:88px; height:88px; top:-16px;}
   }
   @media(max-width:420px){
     .btn-text{display:none;}
     .btn-icon-only{display:inline;}
     .nav .btn{padding:9px 12px;}
+    .nav .wrap{gap:6px; padding-top:11px; padding-bottom:11px;}
+    .nav-right{gap:7px;}
+    .lang-toggle{padding:2px; gap:1px;}
+    .lang-toggle button{padding:6px 9px; font-size:12px; min-height:32px;}
+    .brand{font-size:17px;}
+    .theme-toggle{width:34px; height:34px;}
+    .demo-card{width:200px; height:128px;}
+    .ring{width:200px; height:128px;}
+    .phone{width:118px; height:236px; margin-inline-start:-18px;}
+    [dir="rtl"] .phone{margin-inline-start:0; margin-inline-end:-18px;}
+  }
+  @media(max-width:360px){
+    .lang-toggle button{padding:5px 7px; font-size:11.5px;}
+    .brand{font-size:16px;}
+  }
+  /* Comfortable touch targets on phones/tablets */
+  @media (pointer:coarse){
+    .chip-pill{min-height:44px; padding-top:10px; padding-bottom:10px;}
+    .lang-toggle button{min-height:40px;}
+    .faq button{min-height:44px;}
+    .btn{min-height:44px;}
+    .theme-toggle{min-width:40px; min-height:40px;}
   }
 
   @media (prefers-reduced-motion: reduce){
@@ -440,8 +473,9 @@
   <div class="wrap">
     <div class="brand"><span class="brand-chip"></span>azil.ma</div>
     <div class="nav-right">
-      <div class="lang-toggle" role="group" aria-label="Language">
+      <div class="lang-toggle" role="group" aria-label="Language / Langue / اللغة">
         <button id="btn-en" class="active" aria-pressed="true" onclick="setLang('en')">EN</button>
+        <button id="btn-fr" aria-pressed="false" onclick="setLang('fr')">FR</button>
         <button id="btn-ar" aria-pressed="false" onclick="setLang('ar')">عربي</button>
       </div>
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"></button>
@@ -781,7 +815,16 @@ const WA_MSG = {
        chip_insta:"مرحبًا! أريد بطاقة NFC تفتح حسابي على إنستغرام.",
        chip_menu:"مرحبًا! أريد بطاقة NFC تعرض قائمتي / كتالوجي.",
        chip_maps:"مرحبًا! أريد بطاقة NFC تفتح موقعي على خرائط جوجل.",
-       chip_wa:"مرحبًا! أريد بطاقة NFC تفتح محادثة واتساب." }
+       chip_wa:"مرحبًا! أريد بطاقة NFC تفتح محادثة واتساب." },
+  fr:{ order:"Bonjour azil.ma 👋 Je souhaite une carte NFC personnalisée. Pouvez-vous me montrer des designs et les prix ?",
+       promo:"Bonjour ! Je souhaite profiter de l'offre carte NFC : 2 achetées, la 3ᵉ à moitié prix.",
+       quote:"Bonjour ! J'aimerais un devis pour des cartes NFC pour mon activité.",
+       after_demo:"Je viens d'essayer la démo au contact sur azil.ma — j'aimerais en commander une. Quelles sont les prochaines étapes ?",
+       chip_contact:"Bonjour ! Je veux une carte NFC qui partage mes coordonnées.",
+       chip_insta:"Bonjour ! Je veux une carte NFC qui ouvre mon Instagram.",
+       chip_menu:"Bonjour ! Je veux une carte NFC qui affiche mon menu / catalogue.",
+       chip_maps:"Bonjour ! Je veux une carte NFC qui ouvre ma localisation Google Maps.",
+       chip_wa:"Bonjour ! Je veux une carte NFC qui ouvre une conversation WhatsApp." }
 };
 function applyWaLinks(lang){
   const m = WA_MSG[lang] || WA_MSG.en;
@@ -927,24 +970,96 @@ const i18n = {
     price_cta:"اطلب عرض السعر",
     foot_note:"بطاقات NFC مخصصة للأعمال — أكادير، المغرب",
     foot_cta:"واتساب"
+  },
+  fr: {
+    nav_cta:"Commander sur WhatsApp",
+    hero_eyebrow:"Cartes de visite NFC, fabriquées au Maroc",
+    hero_h1:"Votre carte de visite qui ne s'épuise jamais.",
+    hero_sub:"D'un seul contact, partagez votre numéro, Instagram, site web ou menu — instantanément, sur n'importe quel téléphone. Conçue sur mesure pour votre marque.",
+    hero_cta_primary:"Commander sur WhatsApp",
+    hero_cta_secondary:"Voir comment ça marche",
+    trust1:"Un contact pour partager", trust2:"Applications requises", trust3:"Contacts illimités",
+    pre_reading:"Lecture de la carte…",
+    chip_label:"Un contact peut partager :",
+    chip_contact:"📇 Contact", chip_insta:"📸 Instagram", chip_menu:"📋 Menu / Catalogue", chip_maps:"📍 Localisation", chip_wa:"💬 WhatsApp",
+    guar_eyebrow:"En toute tranquillité", guar_h2:"Testée, scellée et garantie au contact.",
+    guar1_h:"Fonctionne sur iPhone et Android", guar1_p:"Chaque carte est testée sur les deux avant de quitter nos mains.",
+    guar2_h:"Jamais d'application", guar2_p:"Votre client approche son téléphone — la page s'ouvre dans son navigateur.",
+    guar3_h:"Sans abonnement", guar3_p:"Sans pile, sans frais mensuels — elle fonctionne pendant des années.",
+    guar4_h:"Re-scellage gratuit en cas de panne", guar4_p:"Si une carte cesse de fonctionner, nous la re-scellons gratuitement.",
+    demo_tapme:"approchez pour essayer",
+    demo_idle:"Approchez la carte pour voir ce que voit votre client",
+    demo_role:"Café Atlas — Menu et contact",
+    demo_save:"Enregistrer le contact",
+    what_eyebrow:"Le concept",
+    what_h2:"Un contact. Partagé. C'est fait.",
+    what_sub:"Une petite puce scellée à l'intérieur de la carte. Sans application, sans pile, sans recharge. Un simple contact du téléphone.",
+    what1_h:"Approchez", what1_p:"Le client approche son téléphone de votre carte pendant une seconde.",
+    what2_h:"Ça s'ouvre", what2_p:"Son téléphone ouvre votre page automatiquement — aucune application à installer.",
+    what3_h:"Il vous contacte", what3_p:"Il enregistre votre contact, suit votre page, ou vous écrit aussitôt.",
+    why_eyebrow:"Pourquoi les pros l'adoptent",
+    why_h2:"Pensée pour le quotidien des petites entreprises.",
+    tag1:"Pour tout commerce", tag2:"Pour les services", tag3:"Pour les indépendants", tag4:"Pour les artisans",
+    ben1_h:"Ne manquez jamais de cartes", ben1_p:"Une seule carte, des contacts illimités. Fini de réimprimer des boîtes de cartes papier tous les quelques mois.",
+    ben2_h:"Modifiable à tout moment", ben2_p:"Changez votre numéro, votre page ou le lien de votre catalogue quand vous voulez — la carte reste la même.",
+    ben3_h:"Un effet haut de gamme", ben3_p:"Au Maroc, peu de gens en ont déjà utilisé une. Vos clients s'en souviennent.",
+    ben4_h:"Adaptée à toute activité", ben4_p:"Partagez un menu, un catalogue, un lien de réservation ou une localisation — selon les besoins de votre activité.",
+    styles_eyebrow:"Design",
+    styles_h2:"Chaque carte est conçue de A à Z.",
+    styles_sub:"Couleurs, logo et mise en page assortis à votre marque — jamais un modèle générique.",
+    style1_h:"Carte blanche", style1_p:"Épurée et minimaliste",
+    style2_h:"Carte noire", style2_p:"Audacieuse et haut de gamme",
+    style3_h:"Entièrement personnalisée", style3_p:"Toute couleur, tout design",
+    styles_note:"Styles présentés à titre indicatif — votre carte est entièrement personnalisée à votre marque.",
+    promo_h:"2 achetées, la 3ᵉ à moitié prix",
+    promo_p:"Idéal pour une équipe, un commerce à plusieurs employés, ou pour faire des réserves.",
+    promo_cta:"Profiter de l'offre",
+    how_eyebrow:"Le déroulement",
+    how_h2:"De l'idée à la carte entre vos mains.",
+    how1_h:"Envoyez vos informations", how1_p:"Logo, réseaux sociaux et coordonnées — envoyés par WhatsApp.",
+    how2_h:"Recevez une maquette", how2_p:"Un design de carte sur mesure pour votre marque, envoyé pour votre validation.",
+    how3_h:"La carte est scellée", how3_p:"Une fois validé, votre design est imprimé, et la puce est programmée puis scellée.",
+    how4_h:"Retrait ou livraison", how4_p:"Récupérez-la à Agadir ou faites-la livrer partout au Maroc.",
+    tst_eyebrow:"Avis", tst_h2:"Adoptée par les commerces et les indépendants.",
+    tst_sub:"Quelques mots des premiers clients d'azil.ma.",
+    tst1_p:"« Les clients sont toujours impressionnés quand j'approche ma carte de leur téléphone. Ça fait bien plus professionnel que le papier. »",
+    tst1_n:"Yassine", tst1_r:"Gérant de café, Agadir",
+    tst2_p:"« J'ai changé mon lien Instagram une fois et je n'ai jamais eu à réimprimer quoi que ce soit. Ça vaut chaque dirham. »",
+    tst2_n:"Salma", tst2_r:"Graphiste indépendante",
+    tst3_p:"« Design rapide, carte soignée, livrée à ma boutique. Toute l'équipe les utilise maintenant. »",
+    tst3_n:"Mehdi", tst3_r:"Salon de coiffure, Inezgane",
+    faq_eyebrow:"Questions", faq_h2:"Questions fréquentes.",
+    faq1_q:"Mes clients ont-ils besoin d'une application ?", faq1_a:"Non. N'importe quel téléphone récent lit la carte au contact — la page s'ouvre simplement dans le navigateur.",
+    faq2_q:"Ça marche sur iPhone et Android ?", faq2_a:"Oui. Ça fonctionne sur la quasi-totalité des iPhone et téléphones Android récents équipés du NFC — c'est-à-dire presque tous.",
+    faq3_q:"Puis-je modifier mes informations plus tard ?", faq3_a:"Oui. Vous pouvez mettre à jour le numéro, les liens ou le catalogue vers lesquels pointe votre carte à tout moment — la carte elle-même ne change jamais.",
+    faq4_q:"Combien de temps pour en obtenir une ?", faq4_a:"En général quelques jours : vous envoyez vos informations, validez le design, puis nous la scellons et la livrons partout au Maroc.",
+    price_eyebrow:"Tarifs", price_to:"— 200 DH",
+    price_p:"Le prix final dépend de votre design, de la quantité et de la finition de la carte. Écrivez-nous sur WhatsApp pour un devis adapté à votre activité.",
+    price_cta:"Obtenir mon devis",
+    foot_note:"Cartes de visite NFC sur mesure — Agadir, Maroc",
+    foot_cta:"WhatsApp"
   }
 };
 
 function setLang(lang){
   if(!i18n[lang]) lang = 'en';               // guard bad localStorage / calls
   document.documentElement.lang = lang;
-  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
-  document.getElementById('btn-en').classList.toggle('active', lang==='en');
-  document.getElementById('btn-en').setAttribute('aria-pressed', lang==='en');
-  document.getElementById('btn-ar').classList.toggle('active', lang==='ar');
-  document.getElementById('btn-ar').setAttribute('aria-pressed', lang==='ar');
+  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';   // en + fr = ltr
+  ['en','fr','ar'].forEach(function(L){
+    const b = document.getElementById('btn-'+L);
+    if(!b) return;
+    b.classList.toggle('active', lang===L);
+    b.setAttribute('aria-pressed', lang===L);
+  });
   const dict = i18n[lang];
   document.querySelectorAll('[data-i18n]').forEach(el=>{
     const key = el.getAttribute('data-i18n');
     if(dict[key]) el.textContent = dict[key];
   });
   applyWaLinks(lang);                          // re-point every CTA to this language
-  document.title = lang === 'ar' ? 'azil.ma — بطاقات NFC للأعمال' : 'azil.ma — NFC Business Cards';
+  document.title = lang === 'ar' ? 'azil.ma — بطاقات NFC للأعمال'
+                 : lang === 'fr' ? 'azil.ma — Cartes de visite NFC'
+                 : 'azil.ma — NFC Business Cards';
   try{ localStorage.setItem('azil_lang', lang); }catch(e){}
 }
 
@@ -988,7 +1103,7 @@ function playTap(){
   tBtn.addEventListener("click", ()=>{ const d=!isDark(); root.setAttribute("data-theme", d?"dark":"light"); try{localStorage.setItem("azil_theme", d?"dark":"light");}catch(e){} paint(); });
 
   /* Restore saved language */
-  try{ const L=localStorage.getItem("azil_lang"); if(L==="ar") setLang("ar"); }catch(e){}
+  try{ const L=localStorage.getItem("azil_lang"); if(L==="ar"||L==="fr") setLang(L); }catch(e){}
 
   /* Custom cursor */
   if(fine && !reduce){
