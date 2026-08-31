@@ -6,10 +6,10 @@
     </linearGradient>
     <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0a0a0a"/>
-      <stop offset="1" stop-color="#1a2230"/>
+      <stop offset="1" stop-color="#12233a"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0.8" cy="0.2" r="0.6">
-      <stop offset="0" stop-color="#0466c8" stop-opacity="0.22"/>
+    <radialGradient id="glow" cx="0.78" cy="0.35" r="0.6">
+      <stop offset="0" stop-color="#0466c8" stop-opacity="0.20"/>
       <stop offset="1" stop-color="#0466c8" stop-opacity="0"/>
     </radialGradient>
   </defs>
@@ -21,27 +21,40 @@
   <text x="122" y="102" font-size="26" font-weight="700" fill="#0a0a0a">azil.ma</text>
 
   <!-- headline -->
-  <text x="92" y="250" font-size="72" font-weight="700" fill="#0a0a0a" letter-spacing="-1">Your business card</text>
-  <text x="92" y="330" font-size="72" font-weight="700" fill="#0466c8" letter-spacing="-1">that never runs out.</text>
-  <text x="94" y="392" font-size="28" fill="#5b6472">One tap shares your contact, socials or catalog — on any phone.</text>
+  <text x="90" y="250" font-size="70" font-weight="700" fill="#0a0a0a" letter-spacing="-1">Your business card</text>
+  <text x="90" y="326" font-size="70" font-weight="700" fill="#0466c8" letter-spacing="-1">that never runs out.</text>
+  <text x="94" y="386" font-size="27" fill="#5b6472">One tap shares your contact, socials or catalog — on any phone.</text>
 
-  <!-- pill row -->
+  <!-- pills -->
   <g font-size="22" font-weight="600">
-    <rect x="92"  y="440" width="180" height="50" rx="25" fill="#0466c8"/>
-    <text x="182" y="472" text-anchor="middle" fill="#fff">Tap. Share.</text>
-    <rect x="288" y="440" width="150" height="50" rx="25" fill="none" stroke="#0466c8" stroke-width="1.5"/>
-    <text x="363" y="472" text-anchor="middle" fill="#0466c8">No app</text>
-    <rect x="454" y="440" width="240" height="50" rx="25" fill="none" stroke="#0466c8" stroke-width="1.5"/>
-    <text x="574" y="472" text-anchor="middle" fill="#0466c8">Made in Morocco</text>
+    <rect x="92"  y="430" width="130" height="50" rx="25" fill="#0466c8"/>
+    <text x="157" y="462" text-anchor="middle" fill="#fff">One tap</text>
+    <rect x="238" y="430" width="130" height="50" rx="25" fill="none" stroke="#0466c8" stroke-width="1.5"/>
+    <text x="303" y="462" text-anchor="middle" fill="#0466c8">No app</text>
+    <rect x="384" y="430" width="250" height="50" rx="25" fill="none" stroke="#0466c8" stroke-width="1.5"/>
+    <text x="509" y="462" text-anchor="middle" fill="#0466c8">Made in Morocco</text>
   </g>
 
-  <!-- floating NFC card visual -->
-  <g transform="rotate(-8 960 300)">
-    <rect x="820" y="200" width="290" height="182" rx="18" fill="url(#card)"/>
-    <rect x="848" y="228" width="42" height="32" rx="6" fill="#0466c8"/>
-    <text x="848" y="352" font-size="20" font-weight="700" fill="#fff">Ilias — azil.ma</text>
-    <text x="848" y="376" font-size="12" fill="#8a93a4" letter-spacing="1">CUSTOM DESIGN</text>
-    <circle cx="1075" cy="240" r="26" fill="none" stroke="#0466c8" stroke-width="2" opacity="0.6"/>
-    <circle cx="1075" cy="240" r="16" fill="none" stroke="#0466c8" stroke-width="2" opacity="0.9"/>
+  <!-- NFC card + broadcast waves + phone -->
+  <g transform="rotate(-9 940 315)">
+    <rect x="800" y="215" width="290" height="182" rx="18" fill="url(#card)"/>
+    <rect x="828" y="243" width="42" height="32" rx="6" fill="#0466c8"/>
+    <text x="828" y="367" font-size="20" font-weight="700" fill="#fff">Ilias — azil.ma</text>
+    <!-- broadcast waves from the chip -->
+    <g fill="none" stroke="#0466c8" stroke-width="2.5" opacity="0.85">
+      <path d="M884 259 a26 26 0 0 1 0 0" />
+      <circle cx="849" cy="259" r="36" opacity="0.5"/>
+      <circle cx="849" cy="259" r="54" opacity="0.32"/>
+      <circle cx="849" cy="259" r="72" opacity="0.18"/>
+    </g>
+  </g>
+  <!-- mini phone showing saved contact -->
+  <g transform="rotate(6 1090 430)">
+    <rect x="1055" y="360" width="86" height="170" rx="16" fill="#0c0d13" stroke="#05060a" stroke-width="4"/>
+    <rect x="1063" y="368" width="70" height="154" rx="11" fill="#eaf3fd"/>
+    <circle cx="1098" cy="410" r="15" fill="#0466c8"/>
+    <rect x="1078" y="435" width="40" height="7" rx="3.5" fill="#0a0a0a"/>
+    <rect x="1082" y="448" width="32" height="6" rx="3" fill="#8a93a4"/>
+    <rect x="1078" y="470" width="40" height="18" rx="9" fill="#0a0a0a"/>
   </g>
 </svg>
