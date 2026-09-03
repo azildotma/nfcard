@@ -1,1214 +1,1424 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Custom-designed NFC business cards, sealed and delivered in Morocco. One tap shares your contact, socials, or catalog — azil.ma">
-<meta name="theme-color" content="#0466c8">
-<meta name="author" content="azil.ma">
-<meta name="keywords" content="NFC card, business card Morocco, carte NFC, بطاقة NFC, Agadir, azil.ma, smart card, digital business card">
-<link rel="canonical" href="https://azil.ma/">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#050608">
+<meta name="description" content="azil.ma — smart NFC business cards from Agadir, Morocco. One tap shares your contact, socials, menu or catalog. No app, no typing. Order on WhatsApp.">
+<meta name="keywords" content="NFC card, carte NFC, بطاقة NFC, business card Morocco, Agadir, azil.ma, smart card, tap to share">
 <title>azil.ma — NFC Business Cards</title>
 
-<!-- Favicon: azil.ma blue chip -->
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230466c8'/%3E%3Crect x='30' y='34' width='40' height='30' rx='6' fill='%23fff'/%3E%3C/svg%3E">
-<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230466c8'/%3E%3Crect x='30' y='34' width='40' height='30' rx='6' fill='%23fff'/%3E%3C/svg%3E">
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23050608'/%3E%3Crect x='30' y='36' width='40' height='30' rx='6' fill='none' stroke='%232a8cff' stroke-width='4'/%3E%3Cpath d='M74 30a30 30 0 0 1 0 40' fill='none' stroke='%232a8cff' stroke-width='4'/%3E%3C/svg%3E">
 
-<!-- Open Graph / social share -->
+<!-- Open Graph -->
 <meta property="og:type" content="product">
-<meta property="product:price:amount" content="89">
-<meta property="product:price:currency" content="MAD">
-<meta property="product:availability" content="in stock">
-<meta name="robots" content="index, follow, max-image-preview:large">
-<link rel="alternate" hreflang="en" href="https://azil.ma/">
-<link rel="alternate" hreflang="ar" href="https://azil.ma/">
-<link rel="alternate" hreflang="x-default" href="https://azil.ma/">
-<meta name="twitter:image:alt" content="azil.ma — one tap shares your contact">
-<meta property="og:title" content="azil.ma — NFC Business Cards, Made in Morocco">
-<meta property="og:description" content="One tap shares your number, Instagram, website or menu — instantly, on any phone. Custom-designed for your brand.">
+<meta property="og:title" content="azil.ma — Tap. And you're unforgettable.">
+<meta property="og:description" content="Smart NFC business cards from Agadir. One tap shares everything — no app, no typing.">
 <meta property="og:url" content="https://azil.ma/">
 <meta property="og:image" content="https://azil.ma/og-image.svg">
-<meta property="og:image:alt" content="azil.ma — Custom NFC business cards">
-<meta property="og:site_name" content="azil.ma">
 <meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="fr_FR">
 <meta property="og:locale:alternate" content="ar_MA">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="azil.ma — NFC Business Cards">
-<meta name="twitter:description" content="One tap shares your contact, socials or catalog. Custom-designed & delivered in Morocco.">
 <meta name="twitter:image" content="https://azil.ma/og-image.svg">
 
-<!-- Structured data: Store + NFC Product/Offer + FAQ -->
 <script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@graph":[
-    {
-      "@type":["Store","LocalBusiness"],
-      "@id":"https://azil.ma/#business",
-      "name":"azil.ma",
-      "description":"Custom-designed NFC business cards, sealed and delivered in Morocco.",
-      "image":"https://azil.ma/og-image.svg",
-      "url":"https://azil.ma/",
-      "telephone":"+212632674548",
-      "address":{"@type":"PostalAddress","addressLocality":"Agadir","addressRegion":"Souss-Massa","addressCountry":"MA"},
-      "areaServed":{"@type":"Country","name":"Morocco"},
-      "priceRange":"89–200 MAD",
-      "currenciesAccepted":"MAD",
-      "contactPoint":{"@type":"ContactPoint","telephone":"+212632674548","contactType":"sales","availableLanguage":["ar","en","fr"]},
-      "sameAs":["https://wa.me/212632674548"],
-      "makesOffer":{"@id":"https://azil.ma/#nfc-card-offer"}
-    },
-    {
-      "@type":"Product",
-      "@id":"https://azil.ma/#nfc-card",
-      "name":"Custom NFC Business Card",
-      "description":"A contactless NFC business card that shares your phone number, Instagram, website or catalog with one tap — saved as a contact on any modern phone, no app required.",
-      "image":"https://azil.ma/og-image.svg",
-      "brand":{"@type":"Brand","name":"azil.ma"},
-      "category":"NFC Business Card",
-      "url":"https://azil.ma/",
-      "offers":{
-        "@type":"Offer",
-        "@id":"https://azil.ma/#nfc-card-offer",
-        "priceCurrency":"MAD",
-        "priceSpecification":{"@type":"PriceSpecification","minPrice":"89","maxPrice":"200","priceCurrency":"MAD"},
-        "availability":"https://schema.org/InStock",
-        "areaServed":{"@type":"Country","name":"Morocco"},
-        "seller":{"@id":"https://azil.ma/#business"}
-      }
-    },
-    {
-      "@type":"FAQPage",
-      "@id":"https://azil.ma/#faq",
-      "mainEntity":[
-        {"@type":"Question","name":"Do my clients need an app?","acceptedAnswer":{"@type":"Answer","text":"No. Any modern phone reads the card by tapping it — the page just opens in the browser."}},
-        {"@type":"Question","name":"Does it work on iPhone and Android?","acceptedAnswer":{"@type":"Answer","text":"Yes. It works on virtually all recent iPhones and Android phones with NFC — which is almost all of them."}},
-        {"@type":"Question","name":"Can I change my info later?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can update the number, links or catalog your card points to at any time — the card itself never changes."}},
-        {"@type":"Question","name":"How long does it take to get one?","acceptedAnswer":{"@type":"Answer","text":"Usually a few days: you send your info, approve the design, and we seal and deliver it across Morocco."}}
-      ]
-    }
-  ]
-}
+{"@context":"https://schema.org","@graph":[
+{"@type":["Store","LocalBusiness"],"@id":"https://azil.ma/#business","name":"azil.ma","description":"Custom-designed NFC business cards, sealed and delivered in Morocco.","url":"https://azil.ma/","telephone":"+212632674548","address":{"@type":"PostalAddress","addressLocality":"Agadir","addressRegion":"Souss-Massa","addressCountry":"MA"},"areaServed":{"@type":"Country","name":"Morocco"},"priceRange":"89–200 MAD","sameAs":["https://wa.me/212632674548"]},
+{"@type":"Product","@id":"https://azil.ma/#nfc-card","name":"Custom NFC Business Card","description":"A contactless NFC business card that shares your contact, socials, website or catalog with one tap — no app required.","brand":{"@type":"Brand","name":"azil.ma"},"offers":{"@type":"Offer","priceCurrency":"MAD","priceSpecification":{"@type":"PriceSpecification","minPrice":"89","maxPrice":"200","priceCurrency":"MAD"},"availability":"https://schema.org/InStock","seller":{"@id":"https://azil.ma/#business"}}}
+]}
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">
+
 <style>
-  :root{
-    --blue:#0466c8;
-    --blue-deep:#034a94;
-    --blue-dark:#023e7d;
-    --blue-tint:#eaf3fd;
-    --blue-tint-2:#dcecfb;
-    --ink:#0a0a0a;
-    --gray:#5b6472;
-    --white:#ffffff;
-    --page:#ffffff;
-    --surface:#ffffff;
-    --line:rgba(4,102,200,0.12);
-    --line-strong:rgba(10,10,10,0.15);
-    --dark-sec-bg:#0a0a0a;      /* benefits section ground */
-    --dark-sec-card:#161616;
-    --font-display:'Space Grotesk', sans-serif;
-    --font-body:'Inter', sans-serif;
-    --radius:18px;
-    --ease:cubic-bezier(.2,.8,.2,1);
-  }
-  :root[lang="ar"]{
-    --font-display:'Tajawal', sans-serif;
-    --font-body:'Tajawal', sans-serif;
-  }
-  /* Dark theme — deep navy that keeps the brand blue readable */
-  :root[data-theme="dark"]{
-    --ink:#eef4fb;
-    --gray:#9aa7b8;
-    --white:#0f1620;
-    --page:#0a0f16;
-    --surface:#111a25;
-    --blue-tint:#111d2c;
-    --blue-tint-2:#152438;
-    --line:rgba(120,170,230,0.16);
-    --line-strong:rgba(160,190,230,0.24);
-    --dark-sec-bg:#0d1622;
-    --dark-sec-card:#131f2d;
-  }
-  *{box-sizing:border-box; margin:0; padding:0;}
-  html{scroll-behavior:smooth;}
-  body{
-    background:var(--page);
-    color:var(--ink);
-    font-family:var(--font-body);
-    line-height:1.5;
-    overflow-x:hidden;
-    transition:background .4s ease, color .4s ease;
-  }
-  img,svg{display:block; max-width:100%;}
-  .wrap{max-width:1120px; margin:0 auto; padding:0 24px;}
-  a{color:inherit; text-decoration:none;}
-  button{font:inherit; cursor:pointer; border:none; background:none; color:inherit;}
-  :focus-visible{outline:2.5px solid var(--blue); outline-offset:3px; border-radius:4px;}
+:root{
+  --bg:#050608; --bg-vig:#0A0E14;
+  --blue-core:#0466c8; --blue-glow:#2a8cff; --blue-spec:#7db8ff; --blue-deep:#023e7d;
+  --ink:#EAF2FF; --ink-mut:#8AA0C0; --wa:#25D366;
+  --glow-a:rgba(4,102,200,0.35);
+  --font-display:'Space Grotesk',sans-serif;
+  --font-body:'Inter',sans-serif;
+  --font-mono:'Space Mono',monospace;
+  --h-hero:clamp(2.2rem,6.6vw,5.6rem);
+  --h-1:clamp(2.2rem,7vw,5.5rem);
+  --h-2:clamp(1.5rem,4vw,3rem);
+  --body-lg:clamp(1.05rem,1.6vw,1.35rem);
+  --body:clamp(0.95rem,1.2vw,1.1rem);
+  --mono:clamp(0.7rem,0.9vw,0.85rem);
+  --ease:cubic-bezier(.22,1,.36,1);
+  --maxw:1200px;
+}
+html[dir="rtl"]{ --font-display:'IBM Plex Sans Arabic',sans-serif; --font-body:'IBM Plex Sans Arabic',sans-serif; }
+.tnum{ font-family:'Space Mono',monospace; font-variant-numeric:tabular-nums; }
 
-  /* ============ PRELOADER ============ */
-  #preloader{position:fixed; inset:0; z-index:9999; display:grid; place-items:center; background:var(--page); transition:opacity .5s ease, visibility .5s;}
-  #preloader.done{opacity:0; visibility:hidden;}
-  .pre-field{position:relative; display:grid; place-items:center;}
-  .pre-wave{position:absolute; top:50%; left:50%; width:76px; height:76px; border-radius:20px; border:2px solid var(--blue); animation:nfcRadiate 1.6s var(--ease) infinite;}
-  .pre-wave:nth-child(2){animation-delay:.4s;} .pre-wave:nth-child(3){animation-delay:.8s;}
-  .pre-chip{position:relative; z-index:1; width:76px; height:76px; border-radius:20px; background:var(--blue); display:grid; place-items:center; animation:prePulse 1s var(--ease) infinite alternate; box-shadow:0 18px 40px rgba(4,102,200,.4);}
-  .pre-chip span{width:34px; height:26px; border-radius:6px; background:#fff;}
-  .pre-word{font-family:var(--font-display); font-weight:700; margin-top:16px; color:var(--ink); letter-spacing:.02em;}
-  .pre-status{font-family:var(--font-body); font-size:12.5px; color:var(--gray); margin-top:6px;}
-  .pre-bar{width:150px; height:3px; border-radius:99px; background:var(--line); margin-top:14px; overflow:hidden;}
-  .pre-bar i{display:block; height:100%; width:40%; border-radius:99px; background:var(--blue); animation:preLoad 1s var(--ease) infinite;}
-  @keyframes prePulse{to{transform:scale(1.08);}}
-  @keyframes preLoad{0%{transform:translateX(-120%);}100%{transform:translateX(320%);}}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:hidden;}
+body{
+  background:var(--bg); color:var(--ink); font-family:var(--font-body);
+  line-height:1.55; overflow-x:hidden; position:relative; width:100%; max-width:100vw;
+  -webkit-font-smoothing:antialiased;
+}
+/* no section may exceed the viewport width — hard guard against horizontal overflow on mobile */
+main,section{max-width:100vw;}
+body.intro-lock{overflow:hidden;height:100vh;}
+a{color:inherit;text-decoration:none;}
+button{font:inherit;cursor:pointer;border:none;background:none;color:inherit;}
+img,svg,canvas{display:block;max-width:100%;}
+::selection{background:var(--blue-core);color:#fff;}
 
-  /* ============ SCROLL PROGRESS ============ */
-  #progress{position:fixed; top:0; inset-inline-start:0; height:3px; width:0; z-index:60; background:repeating-linear-gradient(90deg,var(--blue),var(--blue) 8px,#3f8fdc 8px,#3f8fdc 16px); box-shadow:0 0 10px rgba(4,102,200,.5);}
-  #progress::after{content:''; position:absolute; inset-inline-end:-4px; top:50%; transform:translateY(-50%); width:9px; height:9px; border-radius:50%; background:var(--blue); box-shadow:0 0 8px rgba(4,102,200,.8); animation:chipPulse 2s var(--ease) infinite;}
+/* vignette */
+body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:radial-gradient(120% 90% at 50% 20%, transparent 40%, rgba(0,0,0,.55) 100%);}
+/* ambient additive glow layer (above field, below content) */
+body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;mix-blend-mode:screen;
+  background:
+    radial-gradient(60% 50% at 18% 12%, rgba(4,102,200,.28), transparent 60%),
+    radial-gradient(55% 45% at 85% 78%, rgba(42,140,255,.20), transparent 62%);}
 
-  /* ============ CUSTOM CURSOR ============ */
-  .cur-dot,.cur-ring{position:fixed; top:0; left:0; z-index:9998; pointer-events:none; border-radius:50%; transform:translate(-50%,-50%);}
-  .cur-dot{width:7px; height:7px; border-radius:2px; background:var(--blue);}  /* chip square = the thing you tap */
-  .cur-ring{width:34px; height:34px; border:1.6px solid var(--blue); opacity:.5; transition:width .22s var(--ease), height .22s var(--ease), opacity .3s, background .3s;}
-  .cur-ring.hover{width:52px; height:52px; opacity:1; background:rgba(4,102,200,.08);}
-  @media (hover:none),(pointer:coarse){.cur-dot,.cur-ring{display:none;}}
-  /* Click = tap: a broadcast ring emitted at the pointer */
-  .tap-ripple{position:fixed; z-index:9997; width:26px; height:26px; border-radius:50%; border:2px solid var(--blue); pointer-events:none; animation:nfcRadiate .6s ease-out forwards;}
+/* field canvas */
+#field{position:fixed;inset:0;z-index:-1;pointer-events:none;background:
+  radial-gradient(120% 80% at 50% -10%, #0a1220 0%, var(--bg) 55%);}
 
-  /* ============ PARTICLE CANVAS (hero only) ============ */
-  #particles{position:absolute; inset:0; z-index:0; pointer-events:none;}
+/* faint grid texture */
+main::before{content:'';position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.5;
+  background-image:
+    linear-gradient(rgba(125,184,255,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(125,184,255,.035) 1px, transparent 1px);
+  background-size:64px 64px;
+  -webkit-mask-image:radial-gradient(80% 60% at 50% 30%, #000, transparent 85%);
+          mask-image:radial-gradient(80% 60% at 50% 30%, #000, transparent 85%);}
 
-  /* ---------- NAV ---------- */
-  .nav{
-    position:sticky; top:0; z-index:50;
-    background:color-mix(in srgb, var(--page) 88%, transparent);
-    backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);
-    border-bottom:1px solid var(--line);
-    transition:background .4s ease;
-  }
-  .nav .wrap{display:flex; align-items:center; justify-content:space-between; padding-top:15px; padding-bottom:15px; gap:10px;}
-  .brand{font-family:var(--font-display); font-weight:700; font-size:20px; letter-spacing:0.02em; display:flex; align-items:center; gap:8px; color:var(--ink); flex-shrink:0;}
-  .brand-chip{width:10px; height:10px; border-radius:3px; background:var(--blue); box-shadow:0 0 0 0 rgba(4,102,200,.5); animation:chipPulse 2.4s var(--ease) infinite;}
-  @keyframes chipPulse{0%{box-shadow:0 0 0 0 rgba(4,102,200,.45);}70%{box-shadow:0 0 0 7px rgba(4,102,200,0);}100%{box-shadow:0 0 0 0 rgba(4,102,200,0);}}
-  .nav-right{display:flex; align-items:center; gap:12px;}
-  .lang-toggle{display:flex; border:1px solid var(--line-strong); border-radius:999px; padding:3px; gap:2px; flex-shrink:0;}
-  .lang-toggle button{padding:6px 13px; border-radius:999px; font-size:13px; font-weight:600; color:var(--gray); transition:all .25s ease;}
-  .lang-toggle button.active{background:var(--ink); color:var(--page);}
-  .theme-toggle{width:36px; height:36px; border-radius:999px; border:1px solid var(--line-strong); display:grid; place-items:center; color:var(--gray); transition:color .25s, border-color .25s; flex-shrink:0;}
-  .theme-toggle:hover{color:var(--blue); border-color:var(--blue);}
-  .theme-toggle svg{width:17px; height:17px;}
-  .btn{display:inline-flex; align-items:center; gap:8px; padding:11px 20px; border-radius:999px; font-weight:600; font-size:14px; transition:transform .2s ease, box-shadow .2s ease, background .2s ease; white-space:nowrap; will-change:transform;}
-  .btn-primary{background:var(--blue); color:#fff; box-shadow:0 6px 20px rgba(4,102,200,0.3);}
-  .btn-primary:hover{box-shadow:0 12px 30px rgba(4,102,200,0.42); background:var(--blue-deep);}
-  .btn-ghost{border:1.5px solid var(--ink); color:var(--ink);}
-  .btn-ghost:hover{background:var(--ink); color:var(--page);}
-  .nav .btn{padding:9px 16px; font-size:13px;}
-  .btn-icon-only{display:none;}
+/* per-section ambient bloom behind hero + pricing — sections clip it so it never causes horizontal overflow */
+#hero,#pricing{overflow:hidden;}
+#hero::before,#pricing::before{content:'';position:absolute;z-index:0;pointer-events:none;mix-blend-mode:screen;
+  left:50%;top:40%;width:min(1100px,100%);height:min(1100px,140vw);transform:translate(-50%,-50%);
+  background:radial-gradient(closest-side, rgba(4,102,200,.32), rgba(4,102,200,.10) 45%, transparent 72%);
+  filter:blur(12px);}
+#pricing::before{top:34%;background:radial-gradient(closest-side, rgba(42,140,255,.30), rgba(42,140,255,.08) 48%, transparent 74%);}
+#hero>.wrap,#pricing>.wrap{position:relative;z-index:1;}
 
-  section{padding:96px 0; position:relative;}
-  .eyebrow{display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--blue); margin-bottom:18px;}
-  [lang="ar"] .eyebrow{letter-spacing:0; text-transform:none;}
-  .eyebrow::before{content:''; width:7px; height:7px; border-radius:50%; background:var(--blue);}
+/* skip link */
+.skip{position:fixed;left:12px;top:-60px;z-index:200;background:var(--blue-core);color:#fff;
+  padding:10px 16px;border-radius:8px;transition:top .2s;}
+.skip:focus{top:12px;}
 
-  h1{font-family:var(--font-display); font-size:clamp(34px,5vw,58px); line-height:1.08; font-weight:700; letter-spacing:-0.01em; color:var(--ink); text-wrap:balance;}
-  [lang="ar"] h1{letter-spacing:0; line-height:1.3;}
-  h2{font-family:var(--font-display); font-size:clamp(26px,3.6vw,38px); font-weight:700; letter-spacing:-0.01em; color:var(--ink); text-wrap:balance;}
-  [lang="ar"] h2{letter-spacing:0;}
-  .sub{color:var(--gray); font-size:17px; max-width:480px; margin-top:20px;}
-  .section-head{max-width:640px; margin-bottom:56px;}
-  .section-head .sub{max-width:600px;}
+/* HUD */
+/* HUD — a technical readout, ALWAYS top-left & LTR in every language (dir="ltr" on the element).
+   Physical left/right so it never collides with the lang switch, which is always top-right. */
+#hud{position:fixed;top:18px;left:20px;right:auto;z-index:60;font-family:var(--font-mono);
+  font-size:var(--mono);color:var(--ink-mut);letter-spacing:.08em;pointer-events:none;
+  display:flex;flex-direction:column;gap:4px;text-align:left;}
+#hud .meter{color:var(--blue-glow);}
+#hud .taps{opacity:.8;}
+@media(max-width:640px){#hud{font-size:10px;top:12px;left:12px;}}
 
-  /* ---- Scroll reveal (hidden state ONLY when motion is allowed, so reduced-motion
-         users are never left with invisible content) ---- */
-  @media (prefers-reduced-motion: no-preference){
-    .reveal{opacity:0; transform:translateY(26px); transition:opacity .7s var(--ease), transform .7s var(--ease);}
-    .reveal.d1{transition-delay:.08s;} .reveal.d2{transition-delay:.16s;} .reveal.d3{transition-delay:.24s;}
-    .reveal.in{opacity:1; transform:none;}
-  }
+/* signal progress bar */
+#signal-bar{position:fixed;top:0;inset-inline-start:0;height:3px;width:0;z-index:70;
+  background:linear-gradient(90deg,var(--blue-deep),var(--blue-glow),var(--blue-spec),var(--blue-glow),var(--blue-deep));
+  background-size:200% 100%;animation:sigflow 3s linear infinite;
+  box-shadow:0 0 10px var(--blue-glow),0 0 22px rgba(42,140,255,.55);}
+@keyframes sigflow{to{background-position:200% 0;}}
 
-  /* ---------- HERO ---------- */
-  .hero{padding-top:88px; padding-bottom:60px; overflow:hidden;}
-  .hero-grid{display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; position:relative; z-index:1;}
-  .hero-ctas{display:flex; gap:14px; margin-top:34px; flex-wrap:wrap;}
-  .hero-trust{display:flex; gap:22px; margin-top:30px; flex-wrap:wrap;}
-  .hero-trust .t{display:flex; flex-direction:column;}
-  .hero-trust .n{font-family:var(--font-display); font-weight:700; font-size:22px; color:var(--ink); font-variant-numeric:tabular-nums;}
-  .hero-trust .l{font-size:12.5px; color:var(--gray);}
+/* lang switch — ALWAYS top-right in every language (physical), so HUD (left) + switch (right) never overlap */
+#lang-switch{position:fixed;top:16px;right:20px;left:auto;z-index:80;display:flex;gap:2px;
+  background:rgba(10,16,24,.6);backdrop-filter:blur(10px);border:1px solid rgba(125,184,255,.18);
+  border-radius:999px;padding:4px;}
+#lang-switch button{font-family:var(--font-mono);font-size:12px;font-weight:700;
+  color:var(--ink-mut);padding:6px 12px;border-radius:999px;transition:.25s;min-height:34px;}
+#lang-switch button.active{background:var(--blue-core);color:#fff;box-shadow:0 0 16px var(--glow-a);}
+@media(max-width:640px){#lang-switch{right:12px;} #lang-switch button{padding:6px 9px;font-size:11px;}}
 
-  /* Use-case chips — what one tap can share */
-  .usecase{margin-top:26px;}
-  .usecase-label{font-size:12.5px; font-weight:600; color:var(--gray); margin-bottom:10px;}
-  .chips-row{display:flex; flex-wrap:wrap; gap:9px;}
-  .chip-pill{display:inline-flex; align-items:center; gap:6px; padding:8px 13px; border-radius:999px; border:1px solid var(--line-strong); background:var(--blue-tint); color:var(--ink); font-size:13px; font-weight:600; transition:transform .2s var(--ease), border-color .2s, background .2s;}
-  .chip-pill:hover{transform:translateY(-2px); border-color:var(--blue); background:var(--blue-tint-2);}
+/* custom cursor */
+#cursor,#cursor-dot{position:fixed;top:0;left:0;z-index:90;pointer-events:none;
+  border-radius:50%;transform:translate(-50%,-50%);mix-blend-mode:screen;}
+#cursor{width:30px;height:30px;border:1.5px solid var(--blue-glow);box-shadow:0 0 14px var(--glow-a);
+  transition:width .25s var(--ease),height .25s var(--ease),background .25s;}
+#cursor.big{width:56px;height:56px;background:rgba(42,140,255,.08);}
+#cursor-dot{width:5px;height:5px;background:var(--blue-spec);}
+@media(hover:none),(pointer:coarse){#cursor,#cursor-dot{display:none!important;}}
 
-  /* NFC authenticity / guarantee band */
-  .guarantee-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:20px; margin-top:8px;}
-  .guarantee{background:var(--surface); border:1px solid var(--line-strong); border-radius:var(--radius); padding:24px 22px; transition:transform .3s var(--ease), border-color .3s;}
-  .guarantee:hover{transform:translateY(-5px); border-color:rgba(4,102,200,.45);}
-  .guarantee .g-ico{width:40px; height:40px; border-radius:11px; background:rgba(4,102,200,.12); display:grid; place-items:center; font-size:19px; margin-bottom:14px;}
-  .guarantee h3{font-family:var(--font-display); font-size:15.5px; font-weight:700; color:var(--ink); margin-bottom:6px;}
-  .guarantee p{font-size:13px; color:var(--gray);}
-  @media(max-width:860px){ .guarantee-grid{grid-template-columns:1fr 1fr;} }
-  @media(max-width:560px){ .guarantee-grid{grid-template-columns:1fr;} }
+/* layout */
+main{position:relative;z-index:1;}
+.wrap{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:clamp(20px,5vw,48px);}
+section{position:relative;padding-block:clamp(80px,14vh,160px);}
+section + section::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);
+  width:min(var(--maxw),90vw);height:1px;pointer-events:none;z-index:1;
+  background:linear-gradient(90deg,transparent,rgba(125,184,255,.35),transparent);
+  box-shadow:0 0 14px rgba(42,140,255,.25);}
+.eyebrow{font-family:var(--font-mono);font-size:var(--mono);letter-spacing:.28em;text-transform:uppercase;
+  color:var(--blue-glow);display:inline-flex;align-items:center;gap:.6rem;margin-bottom:1.4rem;}
+html[dir="rtl"] .eyebrow{letter-spacing:.05em;}
+.eyebrow::before{content:'';width:24px;height:1px;background:var(--blue-glow);opacity:.6;}
+h1,h2,h3{font-family:var(--font-display);font-weight:700;line-height:1.02;letter-spacing:-.02em;text-wrap:balance;}
+html[dir="rtl"] h1, html[dir="rtl"] h2, html[dir="rtl"] h3{letter-spacing:0;line-height:1.25;}
+.h-hero{font-size:var(--h-hero);line-height:.92;text-transform:uppercase;}
+html[dir="rtl"] .h-hero{text-transform:none;line-height:1.3;font-size:clamp(2rem,7.5vw,5rem);word-break:normal;overflow-wrap:break-word;padding-inline-start:2px;}
+.h-1{font-size:var(--h-1);}
+.lead{color:var(--ink-mut);font-size:var(--body-lg);max-width:52ch;margin-top:1.4rem;}
 
-  .demo{position:relative; display:flex; align-items:center; justify-content:center; min-height:420px;}
-  .demo-card{
-    position:relative; width:260px; height:164px; border-radius:16px; background:var(--ink);
-    box-shadow:0 24px 60px rgba(4,20,50,0.25), inset 0 0 0 1px rgba(255,255,255,0.08);
-    cursor:pointer; user-select:none; z-index:3; transition:transform .35s var(--ease);
-    padding:20px; display:flex; flex-direction:column; justify-content:space-between; color:#fff;
-    animation:cardFloat 5s ease-in-out infinite;
-  }
-  @keyframes cardFloat{0%,100%{transform:translateY(0) rotate(-1deg);}50%{transform:translateY(-10px) rotate(1deg);}}
-  .demo-card:active{transform:scale(0.97);}
-  .demo-card .chip{width:34px; height:26px; border-radius:5px; background:var(--blue);}
-  .demo-card .cardname{font-family:var(--font-display); font-weight:700; font-size:15px;}
-  .demo-card .cardsub{font-size:11px; color:rgba(255,255,255,0.6); letter-spacing:0.06em; text-transform:uppercase;}
-  [lang="ar"] .demo-card .cardsub{letter-spacing:0; text-transform:none;}
+/* kinetic letters — words stay intact (nowrap), break only BETWEEN words. Font is sized so the longest word fits the column, so nothing clips. */
+.kin{hyphens:none;max-width:100%;}
+.kin .word{display:inline-block;white-space:nowrap;max-width:100%;}
+.kin .ltr{display:inline-block;will-change:transform,filter,opacity;}
+.kin .unit{display:inline-block;will-change:transform,filter,opacity;}  /* Arabic word-units stay connected inside */
+.kin .spc{display:inline;white-space:normal;}
+.hero-text{min-width:0;max-width:100%;}
 
-  .ring{position:absolute; border-radius:16px; border:1.5px solid rgba(4,102,200,0.55); width:260px; height:164px; opacity:0; pointer-events:none;}
-  .ring.animate{animation:ripple 1.1s ease-out forwards;}
-  @keyframes ripple{0%{opacity:0.8; transform:scale(1);}100%{opacity:0; transform:scale(1.35);}}
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--font-mono);font-weight:700;
+  font-size:.9rem;padding:1rem 1.7rem;border-radius:999px;transition:transform .25s var(--ease),box-shadow .3s,background .3s;
+  will-change:transform;letter-spacing:.02em;}
+.btn-wa{background:var(--wa);color:#04240f;box-shadow:0 10px 40px rgba(37,211,102,.28);}
+.btn-wa:hover{box-shadow:0 16px 50px rgba(37,211,102,.42);}
+.btn-ghost{border:1.5px solid rgba(125,184,255,.4);color:var(--ink);}
+.btn-ghost:hover{border-color:var(--blue-glow);background:rgba(42,140,255,.08);}
+.btn svg{width:18px;height:18px;}
 
-  /* Shared NFC "broadcast wave" — reused by preloader, cursor tap, WA button, cards */
-  @keyframes nfcRadiate{from{transform:translate(-50%,-50%) scale(.4); opacity:.85;} to{transform:translate(-50%,-50%) scale(1.8); opacity:0;}}
+/* HERO */
+#hero{min-height:100vh;display:flex;align-items:center;padding-top:80px;}
+.hero-grid{display:grid;grid-template-columns:1.35fr .75fr;gap:clamp(2rem,5vw,4rem);align-items:center;width:100%;}
+.hero-tag{font-family:var(--font-mono);color:var(--blue-spec);font-size:var(--mono);letter-spacing:.2em;
+  text-transform:uppercase;margin-bottom:1.2rem;}
+html[dir="rtl"] .hero-tag{letter-spacing:.03em;text-transform:none;}
+.hero-actions{display:flex;gap:1rem;margin-top:2.4rem;flex-wrap:wrap;}
+.hero-visual{position:relative;display:grid;place-items:center;min-height:360px;}
+.scroll-hint{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);font-family:var(--font-mono);
+  font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-mut);opacity:0;display:flex;
+  flex-direction:column;align-items:center;gap:8px;}
+html[dir="rtl"] .scroll-hint{letter-spacing:.05em;text-transform:none;}
+.scroll-hint .line{width:1px;height:34px;background:linear-gradient(var(--blue-glow),transparent);animation:sweep 1.8s var(--ease) infinite;}
+@keyframes sweep{0%{transform:scaleY(.2);transform-origin:top;opacity:0;}50%{opacity:1;}100%{transform:scaleY(1);transform-origin:top;opacity:0;}}
 
-  /* Demo card chip = tap hotspot (draws the eye to where to tap) */
-  .demo-card .chip{position:relative;}
-  .demo-card .chip::after{content:''; position:absolute; inset:-6px; border-radius:9px; border:1.5px solid rgba(4,102,200,.6); animation:chipPulse 2.4s var(--ease) infinite;}
+/* 3D flip container: outer holds tilt, inner holds the flip, faces are front/back */
+.card-3d{position:relative;width:min(360px,84vw);aspect-ratio:1.586/1;cursor:pointer;
+  perspective:1400px;will-change:transform;}
+.card-inner{position:relative;width:100%;height:100%;transform-style:preserve-3d;}
+/* fallback flip when JS/GSAP is off: CSS transition drives it */
+html:not(.gsap-on) .card-inner{transition:transform .9s var(--ease);}
+html:not(.gsap-on) .card-3d.flipped .card-inner{transform:rotateY(180deg);}
+.card-face{position:absolute;inset:0;width:100%;height:100%;-webkit-backface-visibility:hidden;backface-visibility:hidden;}
+.card-back{transform:rotateY(180deg);}
+.flip-hint{position:absolute;bottom:14px;inset-inline-end:18px;font-family:var(--font-mono);font-size:.6rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--blue-spec);opacity:.55;z-index:3;}
+html[dir="rtl"] .flip-hint{letter-spacing:0;text-transform:none;}
+/* back face — antenna coil */
+.card-back{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:var(--blue-spec);}
+.card-back .antenna{width:64%;height:auto;filter:drop-shadow(0 0 16px var(--glow-a));}
+.card-back-text{text-align:center;}
 
-  .phone{position:relative; width:150px; height:300px; border-radius:26px; background:#0c0d13; border:6px solid #05060a; box-shadow:0 20px 50px rgba(4,20,50,0.25); margin-inline-start:-30px; z-index:2; overflow:hidden;}
-  [dir="rtl"] .phone{margin-inline-start:0; margin-inline-end:-30px;}
-  .phone-screen{position:absolute; inset:0; background:var(--blue-tint); border-radius:20px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:16px; gap:8px; opacity:0; transform:translateY(14px); transition:all .45s var(--ease);}
-  .phone-screen.show{opacity:1; transform:translateY(0);}
-  .phone-avatar{width:44px; height:44px; border-radius:50%; background:var(--blue); margin-bottom:2px;}
-  .phone-name{font-family:var(--font-display); font-weight:700; font-size:13px; color:var(--ink);}
-  .phone-role{font-size:10px; color:var(--gray);}
-  .phone-btn{margin-top:6px; font-size:10px; font-weight:600; padding:6px 12px; border-radius:999px; background:var(--ink); color:var(--page); width:80%;}
-  .phone-idle{position:absolute; inset:0; display:flex; align-items:center; justify-content:center; color:#3a3d4d; font-size:11px; text-align:center; padding:20px; background:var(--surface);}
-  [data-theme="dark"] .phone-idle{color:#7f8ba0;}
-  .phone-idle.hide{display:none;}
+/* the NFC card face */
+.nfc-card{position:relative;width:100%;height:100%;border-radius:18px;
+  background:
+    radial-gradient(140% 120% at 85% -10%, rgba(42,140,255,.16), transparent 55%),
+    linear-gradient(155deg,#111a28 0%,#0b1119 45%,#070b12 100%);
+  border:1px solid rgba(125,184,255,.18);
+  box-shadow:0 44px 100px -34px rgba(0,0,0,.85), inset 0 1px 0 rgba(255,255,255,.06), inset 0 0 0 1px rgba(255,255,255,.02);
+  padding:24px;display:flex;flex-direction:column;justify-content:space-between;
+  transform-style:preserve-3d;will-change:transform;overflow:hidden;}
+/* subtle guilloché texture lines for a real-card feel */
+.nfc-card::after{content:'';position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background:repeating-linear-gradient(115deg, rgba(125,184,255,.04) 0 1px, transparent 1px 9px);
+  -webkit-mask-image:radial-gradient(120% 100% at 30% 20%, #000, transparent 80%);mask-image:radial-gradient(120% 100% at 30% 20%, #000, transparent 80%);}
+.nfc-card>*{position:relative;z-index:1;}
+.nfc-card::before{content:'';position:absolute;inset:0;z-index:2;background:linear-gradient(115deg,transparent 34%,rgba(180,215,255,.22) 48%,transparent 58%);
+  transform:translateX(-120%);pointer-events:none;}
+.nfc-card.sheen::before{animation:sheen 1.4s var(--ease) forwards;}
+@keyframes sheen{to{transform:translateX(120%);}}
+/* real EMV-style chip: gold-blue plate with contact pads */
+.nfc-card .chip{width:52px;height:40px;border-radius:8px;position:relative;
+  background:linear-gradient(135deg,#8fb8e8,#4c7fc0 45%,#2a8cff 100%);
+  box-shadow:0 4px 12px rgba(0,0,0,.4), inset 0 0 0 1px rgba(255,255,255,.25), 0 0 22px var(--glow-a);}
+.nfc-card .chip::before{content:'';position:absolute;inset:5px;border-radius:4px;
+  background:
+    linear-gradient(#0b1119,#0b1119) center/100% 1.5px no-repeat,
+    linear-gradient(#0b1119,#0b1119) 33% 0/1.5px 100% no-repeat,
+    linear-gradient(#0b1119,#0b1119) 66% 0/1.5px 100% no-repeat;
+  opacity:.55;}
+.nfc-card .chip::after{content:'';position:absolute;inset:-8px;border-radius:12px;border:1.5px solid rgba(42,140,255,.55);animation:chippulse 2.4s var(--ease) infinite;}
+@keyframes chippulse{0%{transform:scale(.85);opacity:.85;}100%{transform:scale(1.6);opacity:0;}}
+/* NFC broadcast waves */
+.nfc-card .wave{position:absolute;top:24px;right:24px;width:38px;height:38px;opacity:.85;color:var(--blue-spec);}
+html[dir="rtl"] .nfc-card .wave{right:auto;left:24px;}
+.nfc-card .card-head{display:flex;align-items:flex-start;justify-content:space-between;}
+.nfc-card .cardname{font-family:var(--font-display);font-weight:700;font-size:1.25rem;letter-spacing:.01em;}
+.nfc-card .cardsub{font-family:var(--font-mono);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--blue-spec);margin-top:5px;opacity:.85;}
+html[dir="rtl"] .nfc-card .cardsub{letter-spacing:0;text-transform:none;}
 
-  .hero-photo-badge{position:absolute; width:104px; height:104px; border-radius:16px; overflow:hidden; top:-22px; z-index:4; background:var(--blue-tint); border:4px solid var(--surface); box-shadow:0 14px 30px rgba(4,20,50,0.22); inset-inline-end:6px;}
-  .hero-photo-badge img{width:100%; height:100%; object-fit:cover; transition:transform .4s ease;}
-  .hero-photo-badge:hover img{transform:scale(1.08);}
-  .hero-photo-badge .badge-fallback{width:100%; height:100%; display:flex; align-items:center; justify-content:center; font-size:26px;}
-  .hero-photo-badge img.missing{display:none;}
-  .hero-photo-badge:not(.has-photo) .badge-fallback{display:flex;}
-  .hero-photo-badge.has-photo .badge-fallback{display:none;}
+/* generic section title block */
+.sec-head{max-width:720px;margin-bottom:clamp(2.5rem,6vh,4.5rem);}
 
-  /* ---------- WHAT ---------- */
-  .steps3{display:grid; grid-template-columns:repeat(3,1fr); gap:28px;}
-  .step3{background:var(--blue-tint); border-radius:var(--radius); padding:30px 26px; border:1px solid var(--line); transition:transform .3s var(--ease), box-shadow .3s;}
-  .step3:hover{transform:translateY(-6px); box-shadow:0 18px 40px rgba(4,20,50,0.1);}
-  .step3 .icon{width:42px; height:42px; border-radius:12px; background:rgba(4,102,200,0.14); display:flex; align-items:center; justify-content:center; margin-bottom:18px; font-size:19px; overflow:hidden;}
-  .step3 .icon img{width:100%; height:100%; object-fit:cover; border-radius:12px;}
-  .step3 .icon img.missing{display:none;}
-  .step3 h3{font-family:var(--font-display); font-size:18px; margin-bottom:8px; font-weight:600; color:var(--ink);}
-  .step3 p{color:var(--gray); font-size:14.5px;}
+/* HOW IT WORKS pinned */
+#how{overflow:hidden;padding-block:0;}
+.how-stage{height:100vh;min-height:640px;display:grid;place-items:center;padding-block:clamp(60px,10vh,120px);}
+.how-inner{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,5rem);align-items:center;width:100%;}
+.beats{display:flex;flex-direction:column;gap:1.5rem;}
+/* default (no-JS / reduced-motion): all beats simply stack once, fully legible */
+.beat{opacity:1;transition:opacity .4s,transform .4s;transform:none;}
+.beat .n{font-family:var(--font-mono);font-size:.8rem;color:var(--blue-glow);letter-spacing:.2em;}
+.beat h3{font-size:clamp(2rem,5vw,3.4rem);margin-top:.3rem;}
+.beat p{color:var(--ink-mut);margin-top:.6rem;max-width:34ch;}
+.how-demo{position:relative;display:grid;place-items:center;min-height:420px;}
+/* when JS drives the pin, layer the beats so exactly one shows at a time (true cross-fade) */
+body.js-on .beats{position:relative;min-height:clamp(240px,42vh,360px);display:block;}
+body.js-on .beats .eyebrow{position:static;}
+body.js-on .beat{position:absolute;inset:0 auto auto 0;width:100%;opacity:0;transform:translateX(-14px);pointer-events:none;}
+html[dir="rtl"] body.js-on .beat{inset:0 0 auto auto;transform:translateX(14px);}
+body.js-on .beat.on{opacity:1;transform:none;pointer-events:auto;}
 
-  /* ---------- BENEFITS ---------- */
-  .benefits-section{background:var(--dark-sec-bg); color:#fff;}
-  .benefits-section .eyebrow{color:#7fb8ec;}
-  .benefits-section .eyebrow::before{background:#7fb8ec;}
-  .benefits-section h2{color:#fff;}
-  .benefits-section .sub{color:#a8adb8;}
-  .benefits-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:20px;}
-  .benefit{background:var(--dark-sec-card); border-radius:var(--radius); padding:26px 22px; border:1px solid rgba(255,255,255,0.08); transition:transform .3s var(--ease), border-color .3s;}
-  .benefit:hover{transform:translateY(-6px); border-color:rgba(4,102,200,.5);}
-  .benefit .tag{display:inline-block; font-size:11px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; color:#5fa8f0; background:rgba(4,102,200,0.16); padding:4px 10px; border-radius:999px; margin-bottom:14px;}
-  [lang="ar"] .benefit .tag{letter-spacing:0; text-transform:none;}
-  .benefit h3{font-family:var(--font-display); font-size:16px; margin-bottom:8px; font-weight:700; color:#fff;}
-  .benefit p{font-size:13.5px; color:#a8adb8;}
+/* phone */
+.phone{position:relative;width:230px;height:460px;border-radius:36px;background:#0a0d14;
+  border:7px solid #04060b;box-shadow:0 30px 70px -20px rgba(0,0,0,.8);overflow:hidden;}
+.phone-screen{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;
+  text-align:center;padding:22px 16px;gap:10px;background:radial-gradient(130% 90% at 50% -10%,#12203a,#070b12 70%);
+  opacity:0;transform:translateY(18px) scale(.96);}
+.phone-screen.show{opacity:1;transform:none;}
+/* saved-notification banner at top of the screen */
+.phone-saved-bar{width:100%;display:flex;align-items:center;gap:7px;justify-content:center;
+  background:rgba(37,211,102,.14);border:1px solid rgba(37,211,102,.4);border-radius:10px;
+  padding:7px 8px;font-size:.62rem;font-weight:600;color:#7ef0a8;line-height:1.25;}
+.phone-saved-bar svg{flex:none;}
+.phone-avatar{width:60px;height:60px;border-radius:50%;margin-top:18px;display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--blue-core),var(--blue-glow));box-shadow:0 6px 20px var(--glow-a),inset 0 0 0 2px rgba(255,255,255,.15);
+  font-family:var(--font-display);font-weight:700;font-size:1.5rem;color:#fff;}
+.phone-name{font-family:var(--font-display);font-weight:700;font-size:1.05rem;margin-top:4px;}
+.phone-role{font-size:.72rem;color:var(--ink-mut);}
+/* clean full-width action buttons (never wrap) */
+.phone-actions{width:100%;display:grid;gap:7px;margin-top:12px;}
+.phone-btn{display:flex;align-items:center;justify-content:center;gap:7px;font-size:.7rem;font-weight:700;
+  padding:9px;border-radius:10px;white-space:nowrap;}
+.phone-btn.wa{background:var(--wa);color:#04240f;}
+.phone-btn.save{background:rgba(125,184,255,.12);border:1px solid rgba(125,184,255,.3);color:var(--ink);}
+.phone-btn svg{flex:none;}
+.phone-idle{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;
+  padding:24px;color:#5a7292;font-family:var(--font-mono);font-size:.72rem;letter-spacing:.04em;line-height:1.5;}
+.phone-idle .tap-ring{width:54px;height:54px;border-radius:50%;border:2px solid rgba(42,140,255,.5);position:relative;}
+.phone-idle .tap-ring::before{content:'';position:absolute;inset:-2px;border-radius:50%;border:2px solid rgba(42,140,255,.5);animation:chippulse 2s var(--ease) infinite;}
+.phone-idle.hide{display:none;}
+.radar{position:absolute;width:230px;height:460px;border-radius:36px;border:1.5px solid rgba(42,140,255,.6);opacity:0;pointer-events:none;}
+.tap-again{margin-top:1.4rem;font-family:var(--font-mono);font-size:.78rem;color:var(--blue-glow);
+  border:1px solid rgba(42,140,255,.4);padding:8px 16px;border-radius:999px;opacity:0;transition:opacity .3s;}
+.tap-again.show{opacity:1;}
+.connected{position:absolute;top:-40px;left:50%;transform:translateX(-50%) scale(.6);font-family:var(--font-mono);
+  font-weight:700;font-size:.8rem;letter-spacing:.24em;color:var(--blue-spec);opacity:0;white-space:nowrap;}
 
-  /* ---------- STYLES / GALLERY ---------- */
-  .styles-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:26px;}
-  .style-card{border-radius:var(--radius); overflow:hidden; border:1px solid var(--line-strong); background:var(--blue-tint); transition:transform .3s var(--ease), box-shadow .3s;}
-  .style-card:hover{box-shadow:0 20px 44px rgba(4,20,50,0.14);}
-  .style-visual{height:150px; display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden;}
-  .style-visual img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition:transform .4s ease;}
-  .style-card:hover .style-visual img{transform:scale(1.05);}
-  .style-visual img.missing{display:none;}
-  .style-visual .mini-card{width:150px; height:94px; border-radius:10px; box-shadow:0 14px 30px rgba(4,20,50,0.18); display:flex; flex-direction:column; justify-content:space-between; padding:12px; position:relative; z-index:1;}
-  .mini-card .chip-mini{width:20px; height:15px; border-radius:3px; background:var(--blue);}
-  .style-white .mini-card{background:#fff; border:1px solid rgba(10,10,10,0.12);}
-  .style-black .mini-card{background:#0a0a0a;}
-  .style-custom .mini-card{background:linear-gradient(135deg,var(--blue),var(--blue-dark));}
-  .style-info{padding:16px 18px 20px;}
-  .style-info h4{font-family:var(--font-display); font-size:14.5px; font-weight:600; margin-bottom:4px; color:var(--ink);}
-  .style-info p{font-size:12.5px; color:var(--gray);}
-  .styles-note{margin-top:22px; font-size:13px; color:var(--gray);}
+/* BENEFITS — pinned "field lines" showpiece */
+#why{overflow:hidden;}
+.why-stage{min-height:100vh;display:flex;align-items:center;}
+.why-track{position:relative;min-height:min(56vh,420px);margin-top:clamp(2rem,6vh,4rem);}
+.why-item{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;gap:1.2rem;
+  opacity:0;transform:translateY(40px);pointer-events:none;}
+.why-item.on{opacity:1;transform:none;pointer-events:auto;}
+.why-ico{width:clamp(56px,7vw,80px);height:clamp(56px,7vw,80px);border-radius:20px;display:grid;place-items:center;
+  color:var(--blue-glow);background:rgba(42,140,255,.08);border:1px solid rgba(42,140,255,.28);
+  box-shadow:0 0 44px -6px var(--glow-a);}
+.why-ico svg{width:55%;height:55%;}
+.why-num{position:absolute;top:0;inset-inline-end:0;font-family:var(--font-display);font-weight:700;
+  font-size:clamp(5rem,18vw,13rem);line-height:1;color:transparent;
+  -webkit-text-stroke:2px rgba(255,255,255,.5);text-stroke:2px rgba(255,255,255,.5);
+  pointer-events:none;user-select:none;}
+.why-item.on .why-num{-webkit-text-stroke-color:rgba(255,255,255,.75);text-stroke:2px rgba(255,255,255,.75);}
+.why-line{font-size:clamp(2rem,6.5vw,4.6rem);font-family:var(--font-display);font-weight:700;line-height:1.05;
+  color:var(--ink);letter-spacing:-.02em;max-width:22ch;text-wrap:balance;position:relative;z-index:1;}
+html[dir="rtl"] .why-line{letter-spacing:0;line-height:1.35;}
+.why-line span{background:linear-gradient(120deg,var(--blue-glow),var(--blue-spec));-webkit-background-clip:text;background-clip:text;color:transparent;}
+.why-progress{margin-top:2.4rem;height:3px;border-radius:99px;background:rgba(125,184,255,.12);overflow:hidden;max-width:280px;}
+.why-progress i{display:block;height:100%;width:25%;border-radius:99px;background:linear-gradient(90deg,var(--blue-core),var(--blue-spec));box-shadow:0 0 12px var(--glow-a);transition:transform .4s var(--ease);transform-origin:left;}
+html[dir="rtl"] .why-progress i{transform-origin:right;}
+/* static / no-JS / reduced-motion: show all lines stacked normally */
+html:not(.gsap-on) .why-track,body[data-motion="reduced"] .why-track{min-height:0;}
+html:not(.gsap-on) .why-item,body[data-motion="reduced"] .why-item{position:relative;opacity:1;transform:none;pointer-events:auto;margin-bottom:2.5rem;}
+html:not(.gsap-on) .why-num,body[data-motion="reduced"] .why-num{position:static;font-size:2rem;-webkit-text-stroke:0;color:var(--blue-glow);opacity:.5;}
+/* MOBILE (≤760): the WHY pin is disabled in JS, so items must stack — never overlap */
+@media(max-width:760px){
+  .why-stage{min-height:0;}
+  .why-track{min-height:0;margin-top:2rem;}
+  .why-item{position:relative;inset:auto;opacity:1;transform:none;pointer-events:auto;margin-bottom:2.6rem;}
+  .why-num{position:static;font-size:clamp(3rem,14vw,5rem);-webkit-text-stroke:1.5px rgba(255,255,255,.35);text-stroke:1.5px rgba(255,255,255,.35);margin-bottom:-.6rem;}
+  .why-line{font-size:clamp(1.6rem,7vw,2.4rem);}
+  .why-progress{display:none;}
+}
 
-  /* ---------- PROMO ---------- */
-  .promo{background:var(--blue); color:#fff; border-radius:20px; padding:30px 34px; display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap; position:relative; overflow:hidden;}
-  .promo::after{content:''; position:absolute; top:-60%; inset-inline-end:-10%; width:300px; height:300px; border-radius:50%; background:radial-gradient(circle,rgba(255,255,255,.18),transparent 70%);}
-  .promo > *{position:relative; z-index:1;}
-  .promo h3{font-family:var(--font-display); font-size:20px; font-weight:700;}
-  .promo p{font-size:14px; color:rgba(255,255,255,0.85); margin-top:4px;}
-  .promo .btn-ghost{border-color:#fff; color:#fff;}
-  .promo .btn-ghost:hover{background:#fff; color:var(--blue);}
+/* STYLES rail */
+/* Default (first paint / no-JS / pre-refresh): native horizontal scroll so ALL cards are reachable. */
+#styles{overflow-x:auto;overflow-y:visible;-webkit-overflow-scrolling:touch;scroll-snap-type:x proximity;scrollbar-width:none;padding-block:clamp(60px,9vh,110px);}
+#styles::-webkit-scrollbar{display:none;}
+#styles.rail-live{overflow:hidden;scroll-snap-type:none;}
+.rail-track{display:flex;gap:clamp(1.5rem,3vw,2.5rem);width:max-content;padding-inline:clamp(20px,5vw,48px);align-items:center;}
+@media (max-width:760px){
+  #styles{overflow-x:visible;}
+  .rail-track{flex-wrap:wrap;width:auto;justify-content:center;}
+}
+.style-card{position:relative;width:min(78vw,360px);flex:none;border-radius:20px;overflow:hidden;scroll-snap-align:center;
+  border:1px solid rgba(125,184,255,.16);background:linear-gradient(155deg,#0c1420,#070b12);will-change:transform;
+  transition:border-color .3s,box-shadow .3s,transform .3s var(--ease);}
+.style-card::after{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;
+  transition:opacity .35s;box-shadow:inset 0 0 0 1px rgba(125,184,255,.5),inset 0 30px 60px -30px rgba(42,140,255,.4);}
+.style-card:hover{border-color:var(--blue-glow);box-shadow:0 26px 70px -24px rgba(4,102,200,.55);transform:translateY(-4px);}
+.style-card:hover::after{opacity:1;}
+.style-visual{height:230px;display:grid;place-items:center;position:relative;overflow:hidden;
+  background:radial-gradient(90% 90% at 50% 0%, rgba(42,140,255,.08), transparent 70%);}
+/* the swatch is now a proper mini-card, tilted, with a chip + NFC wave */
+.style-chip{width:170px;height:107px;border-radius:13px;position:relative;
+  box-shadow:0 26px 55px -14px rgba(0,0,0,.7), inset 0 1px 0 rgba(255,255,255,.08);
+  transform:rotate(-7deg) translateY(6px);transition:transform .4s var(--ease);}
+.style-card:hover .style-chip{transform:rotate(-3deg) translateY(0) scale(1.04);}
+.style-chip::before{content:'';position:absolute;top:14px;inset-inline-start:14px;width:28px;height:22px;border-radius:5px;
+  background:linear-gradient(135deg,#c9a94e,#8a6f2e);box-shadow:inset 0 0 0 1px rgba(0,0,0,.2);}
+.style-chip::after{content:'';position:absolute;top:16px;inset-inline-end:14px;width:20px;height:20px;border-radius:50%;
+  background:radial-gradient(circle at 30% 30%, transparent 30%, currentColor 31%, currentColor 34%, transparent 35%,
+    transparent 46%, currentColor 47%, currentColor 50%, transparent 51%);opacity:.5;}
+.style-matte{background:linear-gradient(140deg,#1c1c1e,#0a0a0b);color:#7db8ff;}
+.style-metal{background:linear-gradient(120deg,#42505f 0%,#9db0c6 42%,#5a6b7d 55%,#c3d2e2 68%,#3a4658 100%);color:#1a2230;}
+.style-frost{background:linear-gradient(135deg,rgba(200,222,255,.85),rgba(150,180,220,.55));backdrop-filter:blur(4px);color:#2a5a9c;}
+.style-frost::before{background:linear-gradient(135deg,#e8f0ff,#a9c4e8);}
+.style-wood{background:linear-gradient(120deg,#7a5433 0%,#5c3d22 40%,#8a6038 55%,#4a3018 100%);color:#e8c89a;}
+.style-custom{background:linear-gradient(135deg,var(--blue-glow),var(--blue-core) 50%,var(--blue-dark,#023e7d));color:#fff;}
+.style-custom::before{background:linear-gradient(135deg,#fff,#b9d6ff);}
+.style-info{padding:20px 22px 26px;}
+.style-info h4{font-family:var(--font-display);font-size:1.25rem;font-weight:700;}
+.style-info p{color:var(--ink-mut);font-size:.9rem;margin-top:.3rem;}
+.style-info .note{font-family:var(--font-mono);font-size:.68rem;color:var(--blue-glow);margin-top:.8rem;letter-spacing:.06em;}
 
-  /* ---------- HOW ---------- */
-  .how-list{display:flex; flex-direction:column; gap:0;}
-  .how-item{display:flex; gap:24px; padding:26px 0; border-bottom:1px solid var(--line-strong);}
-  .how-item:last-child{border-bottom:none;}
-  .how-num{font-family:var(--font-display); font-size:22px; font-weight:700; color:var(--blue); min-width:46px;}
-  .how-item h3{font-family:var(--font-display); font-size:17px; font-weight:600; margin-bottom:6px; color:var(--ink);}
-  .how-item p{color:var(--gray); font-size:14.5px; max-width:520px;}
+/* PROMO */
+#promo{text-align:center;overflow:hidden;}
+.marquee{overflow:hidden;padding-block:1.4rem;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);}
+.marquee-track{display:flex;gap:2.5rem;width:max-content;will-change:transform;}
+.marquee-track span{font-family:var(--font-display);font-weight:700;font-size:clamp(2rem,7vw,5rem);
+  color:transparent;-webkit-text-stroke:1.5px var(--blue-glow);text-stroke:1.5px var(--blue-glow);white-space:nowrap;text-transform:uppercase;}
+html[dir="rtl"] .marquee-track span{text-transform:none;}
+.promo-cards{display:flex;gap:1.4rem;justify-content:center;align-items:flex-end;margin-top:3rem;margin-bottom:1rem;flex-wrap:wrap;}
+.promo-card{width:170px;aspect-ratio:1.586/1;border-radius:16px;position:relative;overflow:hidden;
+  background:radial-gradient(130% 130% at 82% -12%, rgba(42,140,255,.16), transparent 55%),linear-gradient(152deg,#131d2c,#080c14);
+  border:1px solid rgba(125,184,255,.18);
+  box-shadow:0 24px 50px -24px rgba(0,0,0,.75), inset 0 1px 0 rgba(255,255,255,.05);}
+/* subtle texture like the hero card */
+.promo-card::after{content:'';position:absolute;inset:0;pointer-events:none;opacity:.4;
+  background:repeating-linear-gradient(115deg, rgba(125,184,255,.04) 0 1px, transparent 1px 8px);
+  -webkit-mask-image:radial-gradient(120% 100% at 25% 20%, #000, transparent 78%);mask-image:radial-gradient(120% 100% at 25% 20%, #000, transparent 78%);}
+/* mini EMV chip on each card */
+.promo-card .p-chip{position:absolute;top:14px;inset-inline-start:14px;width:30px;height:23px;border-radius:5px;
+  background:linear-gradient(135deg,#8fb8e8,#4c7fc0 50%,#2a8cff);box-shadow:inset 0 0 0 1px rgba(255,255,255,.25);}
+.promo-card .p-chip::before{content:'';position:absolute;inset:4px;border-radius:3px;
+  background:linear-gradient(#0b1119,#0b1119) center/100% 1.2px no-repeat,linear-gradient(#0b1119,#0b1119) 50% 0/1.2px 100% no-repeat;opacity:.5;}
+.promo-num{position:absolute;bottom:12px;inset-inline-end:16px;font-family:var(--font-display);font-weight:700;font-size:1.9rem;line-height:1;color:transparent;-webkit-text-stroke:1.5px rgba(125,184,255,.4);text-stroke:1.5px rgba(125,184,255,.4);}
+.promo-card .p-name{position:absolute;bottom:14px;inset-inline-start:14px;font-family:var(--font-mono);font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-mut);opacity:.7;}
+html[dir="rtl"] .promo-card .p-name{letter-spacing:0;text-transform:none;}
+/* the free/half-price card */
+.promo-card.hot{border-color:var(--blue-glow);box-shadow:0 0 0 1px rgba(125,184,255,.3),0 0 60px -8px var(--glow-a),0 26px 54px -20px rgba(4,102,200,.6);transform:translateY(-14px);}
+.promo-card.hot .p-chip{background:linear-gradient(135deg,#c9e0ff,#2a8cff);box-shadow:0 0 14px var(--glow-a),inset 0 0 0 1px rgba(255,255,255,.35);}
+.promo-card.hot .promo-num{-webkit-text-stroke-color:var(--blue-spec);text-stroke:1.5px var(--blue-spec);color:var(--blue-spec);text-shadow:0 0 22px var(--glow-a);}
+/* clean corner ribbon for -50%, doesn't overlap the chip */
+.promo-card .off{position:absolute;top:12px;inset-inline-end:12px;font-family:var(--font-mono);font-size:.62rem;font-weight:700;letter-spacing:.04em;
+  color:#04240f;background:var(--wa);padding:4px 8px;border-radius:7px;box-shadow:0 4px 14px rgba(37,211,102,.4);}
 
-  /* ---------- TESTIMONIALS ---------- */
-  .tst-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
-  .tst{background:var(--surface); border:1px solid var(--line-strong); border-radius:var(--radius); padding:26px; transition:transform .3s var(--ease), box-shadow .3s;}
-  .tst:hover{transform:translateY(-5px); box-shadow:0 18px 40px rgba(4,20,50,0.1);}
-  .tst .stars{color:#f5a623; font-size:15px; letter-spacing:2px; margin-bottom:12px;}
-  .tst p{color:var(--gray); font-size:14.5px;}
-  .tst .by{display:flex; align-items:center; gap:12px; margin-top:18px;}
-  .tst .av{width:40px; height:40px; border-radius:50%; flex:none; display:grid; place-items:center; font-family:var(--font-display); font-weight:700; color:#fff; background:linear-gradient(135deg,var(--blue),var(--blue-dark)); font-size:15px;}
-  .tst .n2{font-family:var(--font-display); font-weight:600; font-size:14px; color:var(--ink);}
-  .tst .r2{font-size:12px; color:var(--gray);}
+/* PROCESS */
+.path-wrap{position:relative;max-width:900px;margin-inline:auto;}
+.path-steps{position:relative;display:grid;gap:2.4rem;}
+/* glowing signal line down the dot column, drawn on scroll */
+.path-steps::before{content:'';position:absolute;top:10px;bottom:10px;inset-inline-start:7px;width:2px;
+  background:rgba(125,184,255,.12);}
+.path-line{position:absolute;top:10px;inset-inline-start:7px;width:2px;height:0;
+  background:linear-gradient(var(--blue-core),var(--blue-spec));box-shadow:0 0 12px var(--glow-a);z-index:0;}
+.path-step{position:relative;z-index:1;display:flex;gap:1.4rem;align-items:flex-start;opacity:.35;transition:opacity .5s,transform .5s;transform:translateY(8px);}
+.path-step.on{opacity:1;transform:none;}
+.path-step .dot{width:16px;height:16px;border-radius:50%;background:#0a0f16;border:2px solid var(--blue-core);box-shadow:0 0 0 4px var(--bg);flex:none;margin-top:6px;transition:background .4s,box-shadow .4s;}
+.path-step.on .dot{background:var(--blue-core);box-shadow:0 0 20px var(--glow-a),0 0 0 4px var(--bg);}
+.path-step h3{font-size:clamp(1.3rem,3vw,2rem);}
+.path-step p{color:var(--ink-mut);margin-top:.3rem;}
 
-  /* ---------- FAQ ---------- */
-  .faq-list{max-width:760px; margin:0 auto;}
-  .faq{border-bottom:1px solid var(--line-strong);}
-  .faq button{width:100%; display:flex; align-items:center; justify-content:space-between; gap:16px; padding:22px 4px; text-align:start; font-family:var(--font-display); font-weight:600; font-size:16px; color:var(--ink);}
-  .faq .q-ico{flex:none; width:24px; height:24px; border-radius:50%; border:1.5px solid var(--blue); color:var(--blue); display:grid; place-items:center; font-size:16px; transition:transform .3s var(--ease); line-height:1;}
-  .faq.open .q-ico{transform:rotate(45deg);}
-  .faq .a{max-height:0; overflow:hidden; transition:max-height .35s var(--ease);}
-  .faq .a p{color:var(--gray); font-size:14.5px; padding:0 4px 22px;}
+/* TESTIMONIALS */
+.tst-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;}
+.tst{border:1px solid rgba(125,184,255,.14);border-radius:18px;padding:26px;background:linear-gradient(160deg,rgba(12,20,32,.6),rgba(7,11,18,.6));}
+.tst .stars{color:var(--blue-spec);letter-spacing:3px;margin-bottom:12px;}
+.tst p{color:var(--ink);font-size:.98rem;}
+.tst .by{display:flex;align-items:center;gap:12px;margin-top:18px;}
+.tst .av{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--blue-core),var(--blue-glow));display:grid;place-items:center;font-family:var(--font-display);font-weight:700;color:#fff;}
+.tst .n{font-family:var(--font-display);font-weight:600;font-size:.92rem;}
+.tst .r{font-size:.78rem;color:var(--ink-mut);}
+@media(max-width:820px){.tst-grid{grid-template-columns:1fr;}}
 
-  /* ---------- PRICING ---------- */
-  .pricing-section{background:var(--blue-tint);}
-  .pricing-box{border:1px solid rgba(4,102,200,0.25); border-radius:24px; padding:44px; background:var(--surface); display:flex; align-items:center; justify-content:space-between; gap:40px; flex-wrap:wrap;}
-  .price-range{font-family:var(--font-display); font-size:44px; font-weight:700; color:var(--ink); font-variant-numeric:tabular-nums;}
-  .price-range span{font-size:16px; color:var(--gray); font-weight:500;}
-  .pricing-box p{color:var(--gray); max-width:360px; font-size:14.5px; margin-top:8px;}
-  .pricing-box > div:first-child{flex:1; min-width:260px;}
+/* FAQ */
+.faq-list{max-width:760px;margin-inline:auto;}
+.faq{border-bottom:1px solid rgba(125,184,255,.14);}
+.faq summary{list-style:none;cursor:pointer;padding:22px 4px;display:flex;align-items:center;justify-content:space-between;gap:16px;
+  font-family:var(--font-display);font-weight:600;font-size:1.1rem;}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary .ico{flex:none;width:26px;height:26px;border-radius:50%;border:1.5px solid var(--blue-glow);color:var(--blue-glow);
+  display:grid;place-items:center;transition:transform .3s;line-height:1;}
+.faq[open] summary .ico{transform:rotate(45deg);}
+.faq .a{color:var(--ink-mut);font-size:.98rem;padding:0 4px 22px;max-width:64ch;}
 
-  /* ---------- FOOTER ---------- */
-  footer{padding:56px 0 40px; border-top:1px solid var(--line-strong);}
-  .foot-grid{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px;}
-  .foot-note{font-size:12.5px; color:var(--gray);}
+/* PRICING */
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;align-items:stretch;}
+.tier{border:1px solid rgba(125,184,255,.16);border-radius:22px;padding:32px 28px;background:linear-gradient(160deg,rgba(12,20,32,.7),rgba(7,11,18,.7));
+  display:flex;flex-direction:column;gap:1rem;position:relative;transition:transform .3s var(--ease),box-shadow .3s;}
+.tier:hover{transform:translateY(-6px);}
+.tier.hot{border-color:var(--blue-glow);
+  box-shadow:0 0 0 1px rgba(125,184,255,.35),0 0 40px -6px var(--glow-a),0 30px 90px -30px rgba(4,102,200,.7);}
+.tier.hot::after{content:'';position:absolute;inset:-2px;border-radius:24px;z-index:-1;pointer-events:none;
+  background:radial-gradient(120% 90% at 50% 0%, rgba(42,140,255,.45), transparent 62%);
+  filter:blur(20px);animation:bloom 3.4s var(--ease) infinite;}
+@keyframes bloom{0%,100%{opacity:.55;}50%{opacity:1;}}
+.tst,.promo-card{transition:border-color .3s,box-shadow .3s,transform .3s var(--ease);}
+.tst:hover{border-color:rgba(125,184,255,.4);box-shadow:0 22px 60px -26px rgba(4,102,200,.5);transform:translateY(-4px);}
+.promo-card:hover{border-color:var(--blue-glow);box-shadow:0 0 34px var(--glow-a);}
+.tier .ribbon{position:absolute;top:-12px;inset-inline-start:28px;font-family:var(--font-mono);font-size:.66rem;font-weight:700;
+  letter-spacing:.14em;text-transform:uppercase;background:var(--blue-core);color:#fff;padding:5px 12px;border-radius:999px;box-shadow:0 0 20px var(--glow-a);}
+html[dir="rtl"] .tier .ribbon{letter-spacing:0;text-transform:none;}
+.tier .tname{font-family:var(--font-display);font-weight:700;font-size:1.3rem;}
+.tier .tprice{font-family:var(--font-display);font-weight:700;font-size:2.6rem;}
+.tier .tprice .cur{font-size:1rem;color:var(--ink-mut);}
+.tier ul{list-style:none;display:grid;gap:.6rem;color:var(--ink-mut);font-size:.92rem;}
+.tier li{display:flex;gap:.6rem;}
+.tier li::before{content:'▹';color:var(--blue-glow);}
+.tier .btn{margin-top:auto;justify-content:center;}
+@media(max-width:820px){.price-grid{grid-template-columns:1fr;}}
 
-  /* ---------- FLOATING WHATSAPP ---------- */
-  .wa-float{position:fixed; inset-block-end:22px; inset-inline-end:22px; z-index:55; width:56px; height:56px; border-radius:50%; background:#25d366; display:grid; place-items:center; box-shadow:0 10px 30px rgba(37,211,102,.45); transition:transform .25s var(--ease);}
-  .wa-float:hover{transform:scale(1.1);}
-  .wa-float svg{width:30px; height:30px; fill:#fff; position:relative; z-index:1;}
-  /* tap-to-connect broadcast rings */
-  .wa-float::before,.wa-float::after{content:''; position:absolute; top:50%; left:50%; width:56px; height:56px; border-radius:50%; border:2px solid rgba(37,211,102,.5); animation:nfcRadiate 2.2s var(--ease) infinite;}
-  .wa-float::after{animation-delay:1.1s;}
+/* FOOTER */
+footer{border-top:1px solid rgba(125,184,255,.12);padding-block:3rem;}
+.foot-grid{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.4rem;}
+.foot-brand{font-family:var(--font-display);font-weight:700;font-size:1.3rem;}
+.foot-note{font-family:var(--font-mono);font-size:.76rem;color:var(--ink-mut);letter-spacing:.04em;}
+.foot-links{display:flex;gap:1rem;font-family:var(--font-mono);font-size:.78rem;color:var(--ink-mut);}
 
-  @media(max-width:860px){
-    .hero-grid{grid-template-columns:1fr; gap:40px;}
-    .demo{min-height:auto; margin-top:4px;}
-    .steps3, .styles-grid, .tst-grid{grid-template-columns:1fr 1fr;}
-    .benefits-grid{grid-template-columns:1fr 1fr;}
-  }
-  @media(max-width:560px){
-    .steps3, .benefits-grid, .styles-grid, .tst-grid{grid-template-columns:1fr;}
-    .pricing-box{flex-direction:column; align-items:flex-start;}
-    .promo{flex-direction:column; align-items:flex-start;}
-    section{padding:64px 0;}
-    .section-head{margin-bottom:40px;}
-    .sub{font-size:clamp(15px,4.1vw,17px); max-width:100%;}
-    .price-range{font-size:clamp(34px,10vw,44px);}
-    /* Tap-demo: resize elements (not transform-scale) so it stays centered
-       and tap targets stay full size on phones */
-    .demo{min-height:360px; gap:0; padding:0 8px;}
-    .demo-card{width:230px; height:145px; padding:17px;}
-    .ring{width:230px; height:145px;}
-    .phone{width:132px; height:264px; margin-inline-start:-24px;}
-    [dir="rtl"] .phone{margin-inline-start:0; margin-inline-end:-24px;}
-    .hero-photo-badge{width:88px; height:88px; top:-16px;}
-  }
-  @media(max-width:420px){
-    .btn-text{display:none;}
-    .btn-icon-only{display:inline;}
-    .nav .btn{padding:9px 12px;}
-    .nav .wrap{gap:6px; padding-top:11px; padding-bottom:11px;}
-    .nav-right{gap:7px;}
-    .lang-toggle{padding:2px; gap:1px;}
-    .lang-toggle button{padding:6px 9px; font-size:12px; min-height:32px;}
-    .brand{font-size:17px;}
-    .theme-toggle{width:34px; height:34px;}
-    .demo-card{width:200px; height:128px;}
-    .ring{width:200px; height:128px;}
-    .phone{width:118px; height:236px; margin-inline-start:-18px;}
-    [dir="rtl"] .phone{margin-inline-start:0; margin-inline-end:-18px;}
-  }
-  @media(max-width:360px){
-    .lang-toggle button{padding:5px 7px; font-size:11.5px;}
-    .brand{font-size:16px;}
-  }
-  /* Comfortable touch targets on phones/tablets */
-  @media (pointer:coarse){
-    .chip-pill{min-height:44px; padding-top:10px; padding-bottom:10px;}
-    .lang-toggle button{min-height:40px;}
-    .faq button{min-height:44px;}
-    .btn{min-height:44px;}
-    .theme-toggle{min-width:40px; min-height:40px;}
-  }
+/* floating WA */
+.wa-float{position:fixed;inset-block-end:22px;inset-inline-end:22px;z-index:75;width:58px;height:58px;border-radius:50%;
+  background:var(--wa);display:grid;place-items:center;box-shadow:0 10px 30px rgba(37,211,102,.45);transition:transform .25s var(--ease);}
+.wa-float:hover{transform:scale(1.1);}
+.wa-float svg{width:30px;height:30px;fill:#fff;}
+.wa-float::before,.wa-float::after{content:'';position:absolute;inset:0;border-radius:50%;border:2px solid rgba(37,211,102,.5);animation:waring 2.4s var(--ease) infinite;}
+.wa-float::after{animation-delay:1.2s;}
+@keyframes waring{from{transform:scale(1);opacity:.7;}to{transform:scale(1.8);opacity:0;}}
 
-  @media (prefers-reduced-motion: reduce){
-    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
-    .reveal{opacity:1; transform:none;}
-  }
+/* live region */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+
+:focus-visible{outline:2px solid var(--blue-spec);outline-offset:3px;border-radius:6px;}
+
+/* responsive */
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:3rem;text-align:center;justify-items:center;}
+  .hero-visual{order:-1;width:100%;display:flex;justify-content:center;align-items:center;}
+  .card-3d{margin-inline:auto;}
+  .hero-tag,.eyebrow{justify-content:center;}
+  .hero-actions{justify-content:center;}
+  .how-inner{grid-template-columns:1fr;gap:3rem;}
+  .lead{margin-inline:auto;}
+}
+@media(pointer:coarse){.btn{min-height:48px;}.faq summary{min-height:48px;}}
+
+/* reduced motion */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;}
+  .kin .ltr,.kin .unit{opacity:1!important;filter:none!important;transform:none!important;}
+  body.js-on .beats{position:static;min-height:0;display:flex;}
+  body.js-on .beat{position:static;opacity:1!important;transform:none!important;pointer-events:auto;}
+  .how-stage{height:auto;min-height:0;padding-block:clamp(40px,8vh,80px);}
+  #styles .rail-track{flex-wrap:wrap;width:auto;justify-content:center;}
+}
+/* pin-fallback: collapse forced full-viewport stages when a pin cannot run (mobile / no-JS) */
+@media(max-width:760px){
+  .how-stage{height:auto;min-height:0;}
+  #styles .rail-track{flex-wrap:wrap;width:auto;justify-content:center;padding-inline:clamp(20px,5vw,48px);}
+  #styles .style-card{width:min(90vw,360px);}
+}
+/* Static / no-JS state: HOW collapses to a tidy single stack, natural height, demo shown once — never a tall reserved viewport */
+html:not(.gsap-on) #how{padding-block:clamp(80px,14vh,160px);}
+html:not(.gsap-on) #how .how-stage{height:auto;min-height:0;padding-block:0;}
+html:not(.gsap-on) #how .beats{gap:2.2rem;}
+html:not(.gsap-on) #how .how-demo{min-height:0;}
+
+/* ============ MOBILE REFINEMENTS ============ */
+@media(max-width:760px){
+  section{padding-block:clamp(56px,9vh,90px);}
+  /* Hero: natural height, top-aligned — no 100vh dead space on phones */
+  #hero{min-height:auto;align-items:flex-start;padding-top:70px;padding-bottom:20px;}
+  #hero .hero-grid{gap:2rem;}
+  #hero .hero-visual{min-height:0;}
+  .card-3d{width:min(320px,82vw);margin-inline:auto;}
+  .scroll-hint{display:none;}   /* not useful on touch; frees space */
+  /* HUD + lang switch smaller so they don't crowd the hero top */
+  #hud{font-size:9px;gap:2px;top:10px;left:12px;right:auto;}
+  #lang-switch{top:10px;padding:3px;}
+  #lang-switch button{padding:5px 8px;font-size:10px;min-height:30px;}
+  /* HOW: beats stack, demo below, all readable */
+  #how .how-inner{grid-template-columns:1fr;gap:2.4rem;text-align:center;}
+  #how .beats{gap:1.6rem;align-items:center;}
+  #how .beat p{margin-inline:auto;}
+  #how .how-demo{min-height:0;}
+  .phone{width:min(220px,72vw);height:auto;aspect-ratio:1/2;}
+  .radar{width:min(220px,72vw);height:auto;aspect-ratio:1/2;}
+  /* WHY lines fit */
+  .why-line{font-size:clamp(1.6rem,8vw,2.4rem);}
+  /* PROMO cards + marquee */
+  .marquee-track span{font-size:clamp(1.6rem,9vw,2.6rem);}
+  .promo-cards{gap:1rem;}
+  /* PRICING single column already; tighten */
+  .tier{padding:26px 22px;}
+  /* footer wraps */
+  .foot-grid{flex-direction:column;text-align:center;gap:1rem;}
+  /* eyebrow centering in stacked sections */
+  #why-h,#styles-h,#promo-h,#process-h,#tst-h,#faq-h,#pricing-h{text-align:start;}
+}
+@media(max-width:480px){
+  .h-hero{font-size:clamp(1.85rem,9.2vw,2.7rem);}   /* fit UNFORGETTABLE. with edge breathing room */
+  html[dir="rtl"] .h-hero{font-size:clamp(1.75rem,8.2vw,2.6rem);}  /* Arabic fits without clipping */
+  .lead{font-size:1rem;}
+}
+@media(max-width:420px){
+  .hero-actions{flex-direction:column;align-items:stretch;}
+  .hero-actions .btn{justify-content:center;}
+  .card-3d{width:min(300px,84vw);margin-inline:auto;}
+  .wa-float{width:52px;height:52px;}
+}
 </style>
 </head>
-<body>
+<body data-lang="en" data-motion="full">
 
-<!-- Preloader -->
-<div id="preloader"><div style="display:grid;place-items:center;"><div class="pre-field"><span class="pre-wave"></span><span class="pre-wave"></span><span class="pre-wave"></span><div class="pre-chip"><span></span></div></div><div class="pre-word">azil.ma</div><div class="pre-status" data-i18n="pre_reading">Reading card…</div><div class="pre-bar"><i></i></div></div></div>
+<a class="skip" href="#hero" data-i18n="skip">Skip to content</a>
 
-<!-- Scroll progress -->
-<div id="progress" aria-hidden="true"></div>
+<canvas id="field" aria-hidden="true"></canvas>
+<div id="signal-bar" aria-hidden="true"></div>
+<div id="cursor" aria-hidden="true"></div>
+<div id="cursor-dot" aria-hidden="true"></div>
 
-<!-- Custom cursor -->
-<div class="cur-ring" id="curRing" aria-hidden="true"></div>
-<div class="cur-dot" id="curDot" aria-hidden="true"></div>
+<div id="hud" dir="ltr" aria-hidden="true">
+  <div>NFC · 13.56<span class="tnum">MHz</span></div>
+  <div class="meter">FIELD <span class="tnum" id="meter">15</span>%</div>
+  <div class="taps">TAPS <span class="tnum" id="tapcount">0</span></div>
+</div>
 
-<header class="nav">
-  <div class="wrap">
-    <div class="brand"><span class="brand-chip"></span>azil.ma</div>
-    <div class="nav-right">
-      <div class="lang-toggle" role="group" aria-label="Language / Langue / اللغة">
-        <button id="btn-en" class="active" aria-pressed="true" onclick="setLang('en')">EN</button>
-        <button id="btn-fr" aria-pressed="false" onclick="setLang('fr')">FR</button>
-        <button id="btn-ar" aria-pressed="false" onclick="setLang('ar')">عربي</button>
-      </div>
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"></button>
-      <a class="btn btn-primary" id="nav-cta" data-wa="order" href="#" target="_blank" rel="noopener">
-        <span class="btn-text" data-i18n="nav_cta">Order on WhatsApp</span>
-        <span class="btn-icon-only" aria-hidden="true">💬</span>
-      </a>
-    </div>
-  </div>
-</header>
+<nav id="lang-switch" aria-label="Language">
+  <button data-setlang="en" class="active">EN</button>
+  <button data-setlang="fr">FR</button>
+  <button data-setlang="ar">عربي</button>
+</nav>
+
+<div class="sr-only" aria-live="polite" id="live"></div>
 
 <main>
-<section class="hero">
-  <canvas id="particles" aria-hidden="true"></canvas>
-  <div class="wrap hero-grid">
-    <div>
-      <div class="eyebrow reveal" data-i18n="hero_eyebrow">NFC Business Cards, Made in Morocco</div>
-      <h1 class="reveal d1" data-i18n="hero_h1">Your business card that never runs out.</h1>
-      <p class="sub reveal d2" data-i18n="hero_sub">One tap shares your number, Instagram, website or menu — instantly, on any phone. Custom-designed for your brand.</p>
-      <div class="hero-ctas reveal d3">
-        <a class="btn btn-primary magnetic" id="hero-cta" data-wa="order" href="#" target="_blank" rel="noopener" data-i18n="hero_cta_primary">Order on WhatsApp</a>
-        <a class="btn btn-ghost" href="#how" data-i18n="hero_cta_secondary">See how it works</a>
+  <!-- HERO -->
+  <section id="hero" aria-labelledby="hero-h">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <div class="hero-tag" data-i18n="hero.tag">Your signal, made visible.</div>
+        <h1 id="hero-h" class="h-hero kin" data-i18n="hero.h">Tap. And you're unforgettable.</h1>
+        <p class="lead" data-i18n="hero.sub">Smart NFC business cards from Agadir. One tap shares everything — no app, no typing.</p>
+        <div class="hero-actions">
+          <a class="btn btn-wa magnetic" data-wa="hero" href="#" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.2.2 2.1 3.2 5 4.5.7.3 1.3.5 1.7.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.5-.3zM12 2a10 10 0 00-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1012 2z"/></svg>
+            <span data-i18n="cta.order">Order on WhatsApp</span>
+          </a>
+          <a class="btn btn-ghost" href="#how" data-i18n="cta.how">See how it works</a>
+        </div>
       </div>
-      <div class="hero-trust reveal d3">
-        <div class="t"><span class="n" data-count="1">1</span><span class="l" data-i18n="trust1">Tap to share</span></div>
-        <div class="t"><span class="n" data-count="0" data-suffix="" data-text="0">0</span><span class="l" data-i18n="trust2">Apps needed</span></div>
-        <div class="t"><span class="n">∞</span><span class="l" data-i18n="trust3">Unlimited taps</span></div>
-      </div>
-      <div class="usecase reveal d3">
-        <div class="usecase-label" data-i18n="chip_label">One tap can share:</div>
-        <div class="chips-row">
-          <a class="chip-pill" data-wa="chip_contact" href="#" target="_blank" rel="noopener" data-i18n="chip_contact">📇 Contact</a>
-          <a class="chip-pill" data-wa="chip_insta" href="#" target="_blank" rel="noopener" data-i18n="chip_insta">📸 Instagram</a>
-          <a class="chip-pill" data-wa="chip_menu" href="#" target="_blank" rel="noopener" data-i18n="chip_menu">📋 Menu / Catalog</a>
-          <a class="chip-pill" data-wa="chip_maps" href="#" target="_blank" rel="noopener" data-i18n="chip_maps">📍 Location</a>
-          <a class="chip-pill" data-wa="chip_wa" href="#" target="_blank" rel="noopener" data-i18n="chip_wa">💬 WhatsApp</a>
+      <div class="hero-visual">
+        <div class="card-3d magnetic" id="hero-card" role="button" tabindex="0" aria-pressed="false" aria-label="Flip the NFC card">
+          <div class="card-inner" id="card-inner">
+            <!-- FRONT -->
+            <div class="nfc-card card-face card-front">
+              <div class="card-head">
+                <div class="chip"></div>
+                <svg class="wave" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M5 12a10 10 0 0 1 14 0M8 15a6 6 0 0 1 8 0M11 18a2 2 0 0 1 2 0"/></svg>
+              </div>
+              <div>
+                <div class="cardname">azil.ma</div>
+                <div class="cardsub" data-i18n="card.face">Smart NFC card</div>
+              </div>
+              <div class="flip-hint" data-i18n="card.flip">↻ tap to flip</div>
+            </div>
+            <!-- BACK: NFC antenna coil -->
+            <div class="nfc-card card-face card-back">
+              <svg class="antenna" viewBox="0 0 200 126" fill="none" stroke="currentColor" aria-hidden="true">
+                <rect x="10" y="10" width="180" height="106" rx="10" stroke-width="2" opacity=".6"/>
+                <rect x="22" y="22" width="156" height="82" rx="7" stroke-width="1.5" opacity=".45"/>
+                <rect x="34" y="34" width="132" height="58" rx="5" stroke-width="1.5" opacity=".3"/>
+                <rect x="46" y="46" width="108" height="34" rx="4" stroke-width="1.5" opacity=".2"/>
+                <circle cx="100" cy="63" r="7" fill="currentColor" opacity=".9"/>
+              </svg>
+              <div class="card-back-text">
+                <div class="cardname">NFC · 13.56 MHz</div>
+                <div class="cardsub" data-i18n="card.back">Contactless antenna</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="demo">
-      <div class="hero-photo-badge" id="hero-photo">
-        <img src="assets/card-in-hand.jpg" alt="A real azil.ma NFC card" loading="lazy"
-             onerror="this.classList.add('missing'); this.closest('.hero-photo-badge').classList.remove('has-photo');"
-             onload="this.closest('.hero-photo-badge').classList.add('has-photo');">
-        <div class="badge-fallback" aria-hidden="true">🪪</div>
-      </div>
-      <div class="ring" id="ring"></div>
-      <div class="demo-card" id="tap-card" onclick="playTap()" role="button" tabindex="0"
-           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();playTap();}">
-        <div class="chip"></div>
-        <div>
-          <div class="cardname">Ilias — azil.ma</div>
-          <div class="cardsub" data-i18n="demo_tapme">tap to try</div>
+    <div class="scroll-hint" id="scroll-hint"><span data-i18n="hero.scroll">Scroll to power the signal</span><span class="line"></span></div>
+  </section>
+
+  <!-- HOW IT WORKS (pinned) -->
+  <section id="how" aria-labelledby="how-h">
+    <div class="how-stage">
+      <div class="wrap how-inner">
+        <div class="beats">
+          <h2 id="how-h" class="eyebrow" data-i18n="how.eyebrow">The three beats</h2>
+          <div class="beat" data-beat="0"><div class="n">01</div><h3 data-i18n="beat.tap.h">Tap</h3><p data-i18n="beat.tap.p">Your client holds their phone to the card.</p></div>
+          <div class="beat" data-beat="1"><div class="n">02</div><h3 data-i18n="beat.open.h">Opens instantly</h3><p data-i18n="beat.open.p">Their phone opens your page — no app to install.</p></div>
+          <div class="beat" data-beat="2"><div class="n">03</div><h3 data-i18n="beat.connect.h">Connected</h3><p data-i18n="beat.connect.p">They save your contact, follow, or message you.</p></div>
+        </div>
+        <div class="how-demo">
+          <div class="phone" id="tap-card" role="button" tabindex="0" aria-label="Demo: tap the NFC card to save the contact">
+            <div class="connected" id="connected" data-i18n="demo.connected">CONNECTED</div>
+            <div class="radar" id="radar"></div>
+            <div class="phone-idle" id="phone-idle"><span class="tap-ring" aria-hidden="true"></span><span data-i18n="demo.idle">Tap the card to see what your client sees</span></div>
+            <div class="phone-screen" id="phone-screen">
+              <div class="phone-saved-bar"><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="demo.saved">Saved ✓ no app</span></div>
+              <div class="phone-avatar">C</div>
+              <div class="phone-name">Café Atlas</div>
+              <div class="phone-role" data-i18n="demo.role">Menu &amp; Contact</div>
+              <div class="phone-actions">
+                <div class="phone-btn wa"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1012 2z"/></svg><span data-i18n="demo.wa">WhatsApp</span></div>
+                <div class="phone-btn save"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg><span data-i18n="demo.savebtn">Save contact</span></div>
+              </div>
+            </div>
+          </div>
+          <button class="tap-again" id="tap-again" data-i18n="demo.again">↺ Tap again</button>
         </div>
       </div>
-      <div class="phone">
-        <div class="phone-idle" id="phone-idle" data-i18n="demo_idle">Tap the card to see what your client sees</div>
-        <div class="phone-screen" id="phone-screen">
-          <div class="phone-avatar"></div>
-          <div class="phone-name">Café Atlas</div>
-          <div class="phone-role" data-i18n="demo_role">Café Atlas — Menu & Contact</div>
-          <div class="phone-btn" data-i18n="demo_save">Save Contact</div>
+    </div>
+  </section>
+
+  <!-- WHY — pinned scroll-driven "field lines" showpiece -->
+  <section id="why" aria-labelledby="why-h">
+    <div class="why-stage">
+      <div class="wrap">
+        <h2 id="why-h" class="eyebrow" data-i18n="why.eyebrow">Why it wins</h2>
+        <div class="why-track">
+          <div class="why-item" data-why="0">
+            <div class="why-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20M2 12h20" opacity=".3"/><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg></div>
+            <div class="why-num">01</div>
+            <div class="why-line" data-i18n="why.1">One card, <span>infinite shares.</span></div>
+          </div>
+          <div class="why-item" data-why="1">
+            <div class="why-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M9 6h6" stroke-width="2"/><path d="M4 4l16 16" stroke="var(--blue-spec)" stroke-width="2"/></svg></div>
+            <div class="why-num">02</div>
+            <div class="why-line" data-i18n="why.2">No app <span>to download.</span></div>
+          </div>
+          <div class="why-item" data-why="2">
+            <div class="why-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg></div>
+            <div class="why-num">03</div>
+            <div class="why-line" data-i18n="why.3">Update your info <span>anytime.</span></div>
+          </div>
+          <div class="why-item" data-why="3">
+            <div class="why-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22c5-3 8-7 8-12a8 8 0 0 0-16 0c0 5 3 9 8 12z"/><path d="M12 8v6M9 11h6"/></svg></div>
+            <div class="why-num">04</div>
+            <div class="why-line" data-i18n="why.4">Eco — one card, <span>forever.</span></div>
+          </div>
         </div>
+        <div class="why-progress" aria-hidden="true"><i></i></div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="what">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow reveal" data-i18n="what_eyebrow">The Idea</div>
-      <h2 class="reveal d1" data-i18n="what_h2">Tap. Share. Done.</h2>
-      <p class="sub reveal d2" data-i18n="what_sub">A tiny chip sealed inside the card. No app, no battery, no charging. Just a phone tap.</p>
+  <!-- STYLES rail -->
+  <section id="styles" aria-labelledby="styles-h">
+    <div class="wrap"><h2 id="styles-h" class="eyebrow" data-i18n="styles.eyebrow">The finishes</h2></div>
+    <div class="rail-track" id="rail">
+      <div class="style-card"><div class="style-visual"><div class="style-chip style-matte"></div></div><div class="style-info"><h4 data-i18n="card.matte">Matte Black</h4><p data-i18n="card.matte.d">Stealth and premium.</p></div></div>
+      <div class="style-card"><div class="style-visual"><div class="style-chip style-metal"></div></div><div class="style-info"><h4 data-i18n="card.metal">Metal</h4><p data-i18n="card.metal.d">Weight that impresses.</p></div></div>
+      <div class="style-card"><div class="style-visual"><div class="style-chip style-frost"></div></div><div class="style-info"><h4 data-i18n="card.frosted">Frosted</h4><p data-i18n="card.frosted.d">Soft, modern, tactile.</p></div></div>
+      <div class="style-card"><div class="style-visual"><div class="style-chip style-wood"></div></div><div class="style-info"><h4 data-i18n="card.wood">Wood</h4><p data-i18n="card.wood.d">Warm and natural.</p></div></div>
+      <div class="style-card"><div class="style-visual"><div class="style-chip style-custom"></div></div><div class="style-info"><h4 data-i18n="card.custom">Fully Custom</h4><p data-i18n="card.custom.d">Any color, any design.</p><div class="note" data-i18n="card.custom.note">Printed by print.it</div></div></div>
     </div>
-    <div class="steps3">
-      <div class="step3 reveal">
-        <div class="icon">
-          <img src="assets/tap-gesture.jpg" alt="" loading="lazy"
-               onerror="this.classList.add('missing'); this.parentElement.innerHTML+='👆';">
-        </div>
-        <h3 data-i18n="what1_h">Tap</h3>
-        <p data-i18n="what1_p">Client holds their phone near your card for one second.</p>
-      </div>
-      <div class="step3 reveal d1">
-        <div class="icon">🔗</div>
-        <h3 data-i18n="what2_h">Open</h3>
-        <p data-i18n="what2_p">Their phone opens your page automatically — no app to install.</p>
-      </div>
-      <div class="step3 reveal d2">
-        <div class="icon">✅</div>
-        <h3 data-i18n="what3_h">Connect</h3>
-        <p data-i18n="what3_p">They save your contact, follow your page, or message you right away.</p>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="benefits-section" id="why">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow reveal" data-i18n="why_eyebrow">Why Businesses Use It</div>
-      <h2 class="reveal d1" data-i18n="why_h2">Built for how small businesses actually work.</h2>
+  <!-- PROMO -->
+  <section id="promo" aria-labelledby="promo-h">
+    <div class="marquee"><div class="marquee-track" id="promo-marquee"></div></div>
+    <div class="wrap">
+      <h2 id="promo-h" class="h-1" style="margin-top:2rem" data-i18n="promo.h">Buy 2, get the 3rd half price</h2>
+      <div class="promo-cards">
+        <div class="promo-card"><span class="p-chip"></span><span class="p-name">azil.ma</span><span class="promo-num">1</span></div>
+        <div class="promo-card"><span class="p-chip"></span><span class="p-name">azil.ma</span><span class="promo-num">2</span></div>
+        <div class="promo-card hot"><span class="off">-50%</span><span class="p-chip"></span><span class="p-name">azil.ma</span><span class="promo-num">3</span></div>
+      </div>
+      <div style="margin-top:4rem"><a class="btn btn-wa magnetic" data-wa="promo" href="#" target="_blank" rel="noopener"><span data-i18n="promo.cta">Claim the offer</span></a></div>
     </div>
-    <div class="benefits-grid">
-      <div class="benefit reveal">
-        <span class="tag" data-i18n="tag1">For any shop</span>
-        <h3 data-i18n="ben1_h">Never run out of cards</h3>
-        <p data-i18n="ben1_p">One card, unlimited taps. No reprinting boxes of paper cards every few months.</p>
-      </div>
-      <div class="benefit reveal d1">
-        <span class="tag" data-i18n="tag2">For services</span>
-        <h3 data-i18n="ben2_h">Update anytime</h3>
-        <p data-i18n="ben2_p">Change your number, page, or catalog link whenever you want — the card stays the same.</p>
-      </div>
-      <div class="benefit reveal d2">
-        <span class="tag" data-i18n="tag3">For freelancers</span>
-        <h3 data-i18n="ben3_h">Feels premium</h3>
-        <p data-i18n="ben3_p">Most people in Morocco have never tapped one before. Clients remember it.</p>
-      </div>
-      <div class="benefit reveal d3">
-        <span class="tag" data-i18n="tag4">For makers</span>
-        <h3 data-i18n="ben4_h">Works for any business</h3>
-        <p data-i18n="ben4_p">Share a menu, a catalog, a booking link or a location — whatever your business needs.</p>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section id="styles">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow reveal" data-i18n="styles_eyebrow">Design</div>
-      <h2 class="reveal d1" data-i18n="styles_h2">Every card is designed from scratch.</h2>
-      <p class="sub reveal d2" data-i18n="styles_sub">Colors, logo, and layout matched to your brand — not a template.</p>
-    </div>
-    <div class="styles-grid">
-      <div class="style-card style-white tilt reveal">
-        <div class="style-visual">
-          <div class="mini-card"><div class="chip-mini"></div><div style="font-size:10px;font-weight:700;color:#0a0a0a">Your Brand</div></div>
-          <img src="assets/card-white.jpg" alt="White NFC business card" loading="lazy" onerror="this.classList.add('missing');">
-        </div>
-        <div class="style-info"><h4 data-i18n="style1_h">White card</h4><p data-i18n="style1_p">Clean and minimal</p></div>
-      </div>
-      <div class="style-card style-black tilt reveal d1">
-        <div class="style-visual">
-          <div class="mini-card"><div class="chip-mini"></div><div style="font-size:10px;font-weight:700;color:#fff">Your Brand</div></div>
-          <img src="assets/card-black.jpg" alt="Black NFC business card" loading="lazy" onerror="this.classList.add('missing');">
-        </div>
-        <div class="style-info"><h4 data-i18n="style2_h">Black card</h4><p data-i18n="style2_p">Bold and premium</p></div>
-      </div>
-      <div class="style-card style-custom tilt reveal d2">
-        <div class="style-visual">
-          <div class="mini-card"><div class="chip-mini" style="background:#fff"></div><div style="font-size:10px;font-weight:700;color:#fff">Your Brand</div></div>
-          <img src="assets/card-custom.jpg" alt="Custom-designed NFC business card" loading="lazy" onerror="this.classList.add('missing');">
-        </div>
-        <div class="style-info"><h4 data-i18n="style3_h">Fully custom</h4><p data-i18n="style3_p">Any color, any design</p></div>
+  <!-- PROCESS -->
+  <section id="process" aria-labelledby="process-h">
+    <div class="wrap path-wrap">
+      <h2 id="process-h" class="eyebrow" data-i18n="process.eyebrow">The signal path</h2>
+      <div class="path-steps">
+        <div class="path-line" id="path-line" aria-hidden="true"></div>
+        <div class="path-step"><div class="dot"></div><div><h3 data-i18n="step.1.h">Design</h3><p data-i18n="step.1.p">We design your card around your brand.</p></div></div>
+        <div class="path-step"><div class="dot"></div><div><h3 data-i18n="step.2.h">Confirm on WhatsApp</h3><p data-i18n="step.2.p">You approve the proof, no obligation.</p></div></div>
+        <div class="path-step"><div class="dot"></div><div><h3 data-i18n="step.3.h">We produce</h3><p data-i18n="step.3.p">The chip is programmed and the card sealed.</p></div></div>
+        <div class="path-step"><div class="dot"></div><div><h3 data-i18n="step.4.h">Tap &amp; go</h3><p data-i18n="step.4.p">Pickup in Agadir or delivered across Morocco.</p></div></div>
       </div>
     </div>
-    <p class="styles-note reveal" data-i18n="styles_note">Illustrative styles shown — your card is fully custom to your brand.</p>
-  </div>
-</section>
+  </section>
 
-<section id="promo-section">
-  <div class="wrap">
-    <div class="promo reveal">
-      <div>
-        <h3 data-i18n="promo_h">Buy 2, get the 3rd at half price</h3>
-        <p data-i18n="promo_p">Perfect for a team, a shop with several staff, or stocking up for later.</p>
+  <!-- TESTIMONIALS -->
+  <section id="tst" aria-labelledby="tst-h">
+    <div class="wrap">
+      <h2 id="tst-h" class="eyebrow" data-i18n="tst.eyebrow">Voices in the field</h2>
+      <div class="tst-grid">
+        <div class="tst reveal"><div class="stars">★★★★★</div><p data-i18n="tst.1.p">"I stopped printing paper cards. One tap and I'm done."</p><div class="by"><span class="av">Y</span><span><span class="n" data-i18n="tst.1.n">Yassine</span><br><span class="r" data-i18n="tst.1.r">Café owner, Agadir</span></span></div></div>
+        <div class="tst reveal"><div class="stars">★★★★★</div><p data-i18n="tst.2.p">"Changed my Instagram link once — never reprinted anything."</p><div class="by"><span class="av">S</span><span><span class="n" data-i18n="tst.2.n">Salma</span><br><span class="r" data-i18n="tst.2.r">Freelance designer</span></span></div></div>
+        <div class="tst reveal"><div class="stars">★★★★★</div><p data-i18n="tst.3.p">"Clients remember it. The whole team uses one now."</p><div class="by"><span class="av">M</span><span><span class="n" data-i18n="tst.3.n">Mehdi</span><br><span class="r" data-i18n="tst.3.r">Barbershop, Inezgane</span></span></div></div>
       </div>
-      <a class="btn btn-ghost" id="promo-cta" data-wa="promo" href="#" target="_blank" rel="noopener" data-i18n="promo_cta">Claim the offer</a>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="how">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow reveal" data-i18n="how_eyebrow">Process</div>
-      <h2 class="reveal d1" data-i18n="how_h2">From idea to card in your hand.</h2>
-    </div>
-    <div class="how-list">
-      <div class="how-item reveal">
-        <div class="how-num">01</div>
-        <div><h3 data-i18n="how1_h">Send your info</h3><p data-i18n="how1_p">Logo, socials, and contact details — sent over WhatsApp.</p></div>
-      </div>
-      <div class="how-item reveal">
-        <div class="how-num">02</div>
-        <div><h3 data-i18n="how2_h">Get a design proof</h3><p data-i18n="how2_p">A custom card design made for your brand, sent for your approval.</p></div>
-      </div>
-      <div class="how-item reveal">
-        <div class="how-num">03</div>
-        <div><h3 data-i18n="how3_h">Card gets sealed</h3><p data-i18n="how3_p">Once approved, your design is printed and the chip is programmed and sealed.</p></div>
-      </div>
-      <div class="how-item reveal">
-        <div class="how-num">04</div>
-        <div><h3 data-i18n="how4_h">Pickup or delivery</h3><p data-i18n="how4_p">Collect it in Agadir or get it delivered anywhere in Morocco.</p></div>
+  <!-- FAQ -->
+  <section id="faq" aria-labelledby="faq-h">
+    <div class="wrap">
+      <h2 id="faq-h" class="eyebrow" data-i18n="faq.eyebrow">Frequencies</h2>
+      <div class="faq-list">
+        <details class="faq"><summary><span data-i18n="faq.1.q">Do my clients need an app?</span><span class="ico">+</span></summary><div class="a" data-i18n="faq.1.a">No. Any modern phone reads the card by tapping it — the page opens in the browser.</div></details>
+        <details class="faq"><summary><span data-i18n="faq.2.q">Does it work on iPhone and Android?</span><span class="ico">+</span></summary><div class="a" data-i18n="faq.2.a">Yes — on virtually all recent iPhones and Android phones with NFC, which is almost all of them.</div></details>
+        <details class="faq"><summary><span data-i18n="faq.3.q">Can I change my info later?</span><span class="ico">+</span></summary><div class="a" data-i18n="faq.3.a">Yes. You can update the number, links or catalog anytime — the card itself never changes.</div></details>
+        <details class="faq"><summary><span data-i18n="faq.4.q">How long does it take?</span><span class="ico">+</span></summary><div class="a" data-i18n="faq.4.a">Usually a few days: send your info, approve the design, and we seal and deliver across Morocco.</div></details>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- TESTIMONIALS (placeholder EN/AR — edit later) -->
-<section id="testimonials">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow reveal" data-i18n="tst_eyebrow">Reviews</div>
-      <h2 class="reveal d1" data-i18n="tst_h2">Loved by shops and freelancers.</h2>
-      <p class="sub reveal d2" data-i18n="tst_sub">A few words from early azil.ma customers.</p>
-    </div>
-    <div class="tst-grid">
-      <figure class="tst reveal">
-        <div class="stars">★★★★★</div>
-        <p data-i18n="tst1_p">"Clients are always impressed when I tap my card to their phone. Looks way more professional than paper."</p>
-        <figcaption class="by"><span class="av">Y</span><span><span class="n2" data-i18n="tst1_n">Yassine</span><span class="r2" data-i18n="tst1_r">Café owner, Agadir</span></span></figcaption>
-      </figure>
-      <figure class="tst reveal d1">
-        <div class="stars">★★★★★</div>
-        <p data-i18n="tst2_p">"I changed my Instagram link once and never had to reprint anything. Worth every dirham."</p>
-        <figcaption class="by"><span class="av">S</span><span><span class="n2" data-i18n="tst2_n">Salma</span><span class="r2" data-i18n="tst2_r">Freelance designer</span></span></figcaption>
-      </figure>
-      <figure class="tst reveal d2">
-        <div class="stars">★★★★★</div>
-        <p data-i18n="tst3_p">"Fast design, clean card, delivered to my shop. The team all use them now."</p>
-        <figcaption class="by"><span class="av">M</span><span><span class="n2" data-i18n="tst3_n">Mehdi</span><span class="r2" data-i18n="tst3_r">Barbershop, Inezgane</span></span></figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ (placeholder EN/AR) -->
-<section id="faq">
-  <div class="wrap">
-    <div class="section-head" style="text-align:center; margin-inline:auto;">
-      <div class="eyebrow reveal" style="justify-content:center;" data-i18n="faq_eyebrow">Questions</div>
-      <h2 class="reveal d1" data-i18n="faq_h2">Frequently asked.</h2>
-    </div>
-    <div class="faq-list">
-      <div class="faq reveal">
-        <button aria-expanded="false"><span data-i18n="faq1_q">Do my clients need an app?</span><span class="q-ico">+</span></button>
-        <div class="a"><p data-i18n="faq1_a">No. Any modern phone reads the card by tapping it — the page just opens in the browser.</p></div>
-      </div>
-      <div class="faq reveal">
-        <button aria-expanded="false"><span data-i18n="faq2_q">Does it work on iPhone and Android?</span><span class="q-ico">+</span></button>
-        <div class="a"><p data-i18n="faq2_a">Yes. It works on virtually all recent iPhones and Android phones with NFC — which is almost all of them.</p></div>
-      </div>
-      <div class="faq reveal">
-        <button aria-expanded="false"><span data-i18n="faq3_q">Can I change my info later?</span><span class="q-ico">+</span></button>
-        <div class="a"><p data-i18n="faq3_a">Yes. You can update the number, links or catalog your card points to at any time — the card itself never changes.</p></div>
-      </div>
-      <div class="faq reveal">
-        <button aria-expanded="false"><span data-i18n="faq4_q">How long does it take to get one?</span><span class="q-ico">+</span></button>
-        <div class="a"><p data-i18n="faq4_a">Usually a few days: you send your info, approve the design, and we seal and deliver it across Morocco.</p></div>
+  <!-- PRICING -->
+  <section id="pricing" aria-labelledby="pricing-h">
+    <div class="wrap">
+      <h2 id="pricing-h" class="h-1" data-i18n="pricing.h">Full strength.</h2>
+      <p class="lead" data-i18n="pricing.sub">One-time price. No subscription, ever.</p>
+      <div class="price-grid" style="margin-top:3rem">
+        <div class="tier"><div class="tname" data-i18n="price.ess.n">Essential</div><div class="tprice"><span class="tnum" data-count="89">0</span> <span class="cur">MAD</span></div><ul><li data-i18n="price.ess.1">Custom design</li><li data-i18n="price.ess.2">Contact + 1 link</li><li data-i18n="price.ess.3">Delivered in Morocco</li></ul><a class="btn btn-ghost magnetic" data-wa="priceEssential" href="#" target="_blank" rel="noopener"><span data-i18n="cta.order">Order on WhatsApp</span></a></div>
+        <div class="tier hot"><div class="ribbon" data-i18n="price.popular">Most popular</div><div class="tname" data-i18n="price.pro.n">Pro</div><div class="tprice"><span class="tnum" data-count="140">0</span> <span class="cur">MAD</span></div><ul><li data-i18n="price.pro.1">Everything in Essential</li><li data-i18n="price.pro.2">All your socials + catalog</li><li data-i18n="price.pro.3">Premium finish</li></ul><a class="btn btn-wa magnetic" data-wa="pricePro" href="#" target="_blank" rel="noopener"><span data-i18n="cta.order">Order on WhatsApp</span></a></div>
+        <div class="tier"><div class="tname" data-i18n="price.sig.n">Signature</div><div class="tprice"><span class="tnum" data-count="200">0</span> <span class="cur">MAD</span></div><ul><li data-i18n="price.sig.1">Everything in Pro</li><li data-i18n="price.sig.2">Metal / frosted finish</li><li data-i18n="price.sig.3">Priority production</li></ul><a class="btn btn-ghost magnetic" data-wa="priceSignature" href="#" target="_blank" rel="noopener"><span data-i18n="cta.order">Order on WhatsApp</span></a></div>
       </div>
     </div>
-  </div>
-</section>
-
-<section id="guarantee">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow reveal" data-i18n="guar_eyebrow">Peace of mind</div>
-      <h2 class="reveal d1" data-i18n="guar_h2">Tested, sealed, and guaranteed to tap.</h2>
-    </div>
-    <div class="guarantee-grid">
-      <div class="guarantee reveal">
-        <div class="g-ico" aria-hidden="true">📱</div>
-        <h3 data-i18n="guar1_h">Works on iPhone &amp; Android</h3>
-        <p data-i18n="guar1_p">Every card is tested on both before it leaves us.</p>
-      </div>
-      <div class="guarantee reveal d1">
-        <div class="g-ico" aria-hidden="true">🚫</div>
-        <h3 data-i18n="guar2_h">No app, ever</h3>
-        <p data-i18n="guar2_p">Your client just taps — the page opens in their browser.</p>
-      </div>
-      <div class="guarantee reveal d2">
-        <div class="g-ico" aria-hidden="true">♾️</div>
-        <h3 data-i18n="guar3_h">No subscription</h3>
-        <p data-i18n="guar3_p">No battery, no monthly fee — it works for years.</p>
-      </div>
-      <div class="guarantee reveal d3">
-        <div class="g-ico" aria-hidden="true">🛠️</div>
-        <h3 data-i18n="guar4_h">Free re-seal if it ever fails</h3>
-        <p data-i18n="guar4_p">If a card ever stops reading, we re-seal it free.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="pricing-section" id="pricing">
-  <div class="wrap">
-    <div class="pricing-box reveal">
-      <div>
-        <div class="eyebrow" data-i18n="price_eyebrow">Pricing</div>
-        <div class="price-range"><span class="count-price" data-count="89">89</span> <span data-i18n="price_to">— 200 DH</span></div>
-        <p data-i18n="price_p">Final price depends on your design, quantity, and card finish. Message on WhatsApp for a quote made for your business.</p>
-      </div>
-      <a class="btn btn-primary magnetic" id="pricing-cta" data-wa="quote" href="#" target="_blank" rel="noopener" data-i18n="price_cta">Get my quote</a>
-    </div>
-  </div>
-</section>
+  </section>
 </main>
 
 <footer>
   <div class="wrap foot-grid">
-    <div class="brand"><span class="brand-chip"></span>azil.ma</div>
-    <div class="foot-note" data-i18n="foot_note">Custom NFC business cards — Agadir, Morocco</div>
-    <a class="btn btn-ghost" id="foot-cta" data-wa="order" href="#" target="_blank" rel="noopener" data-i18n="foot_cta">WhatsApp</a>
+    <div class="foot-brand">azil.ma</div>
+    <div class="foot-note" data-i18n="footer.note">Smart NFC cards · Agadir, Morocco · WhatsApp 212632674548</div>
+    <div class="foot-links"><a href="#hero" data-i18n="footer.top">Back to top</a></div>
   </div>
 </footer>
 
-<!-- Floating WhatsApp -->
-<a class="wa-float" id="wa-float" data-wa="order" href="#" target="_blank" rel="noopener" aria-label="Order on WhatsApp">
+<a class="wa-float" data-wa="hero" href="#" target="_blank" rel="noopener" aria-label="Order on WhatsApp">
   <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.2.2 2.1 3.2 5 4.5.7.3 1.3.5 1.7.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.5-.3zM12 2a10 10 0 00-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1012 2z"/></svg>
 </a>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lenis/1.1.14/lenis.min.js"></script>
 <script>
-// ---- your WhatsApp number, international format, no + or spaces ----
-const WHATSAPP_NUMBER = "212632674548";
-// Per-language prefilled messages, keyed by each CTA's data-wa attribute.
-// Rebuilt inside setLang() so an Arabic visitor sends an Arabic message.
-const WA_MSG = {
-  en:{ order:"Hi azil.ma 👋 I want a custom NFC card. Can you show me designs and prices?",
-       promo:"Hi! I want the buy-2-get-3rd-half-price NFC card offer.",
-       quote:"Hi! I'd like a price quote for NFC cards for my business.",
-       after_demo:"I just tried the tap demo on azil.ma — I'd like to order one. What are the next steps?",
-       chip_contact:"Hi! I want an NFC card that shares my contact details.",
-       chip_insta:"Hi! I want an NFC card that opens my Instagram.",
-       chip_menu:"Hi! I want an NFC card that shows my menu / catalog.",
-       chip_maps:"Hi! I want an NFC card that opens my Google Maps location.",
-       chip_wa:"Hi! I want an NFC card that opens a WhatsApp chat." },
-  ar:{ order:"سلام azil.ma 👋 بغيت بطاقة NFC مخصصة. ممكن توريوني التصاميم والأثمنة؟",
-       promo:"مرحبًا! أريد عرض: اشترِ 2 واحصل على الثالثة بنصف الثمن.",
-       quote:"مرحبًا! أريد عرض سعر لبطاقات NFC لنشاطي التجاري.",
-       after_demo:"جرّبت الديمو ديال اللمس فـ azil.ma — بغيت نطلب وحدة. شنو الخطوات؟",
-       chip_contact:"مرحبًا! أريد بطاقة NFC تشارك معلومات الاتصال بي.",
-       chip_insta:"مرحبًا! أريد بطاقة NFC تفتح حسابي على إنستغرام.",
-       chip_menu:"مرحبًا! أريد بطاقة NFC تعرض قائمتي / كتالوجي.",
-       chip_maps:"مرحبًا! أريد بطاقة NFC تفتح موقعي على خرائط جوجل.",
-       chip_wa:"مرحبًا! أريد بطاقة NFC تفتح محادثة واتساب." },
-  fr:{ order:"Bonjour azil.ma 👋 Je souhaite une carte NFC personnalisée. Pouvez-vous me montrer des designs et les prix ?",
-       promo:"Bonjour ! Je souhaite profiter de l'offre carte NFC : 2 achetées, la 3ᵉ à moitié prix.",
-       quote:"Bonjour ! J'aimerais un devis pour des cartes NFC pour mon activité.",
-       after_demo:"Je viens d'essayer la démo au contact sur azil.ma — j'aimerais en commander une. Quelles sont les prochaines étapes ?",
-       chip_contact:"Bonjour ! Je veux une carte NFC qui partage mes coordonnées.",
-       chip_insta:"Bonjour ! Je veux une carte NFC qui ouvre mon Instagram.",
-       chip_menu:"Bonjour ! Je veux une carte NFC qui affiche mon menu / catalogue.",
-       chip_maps:"Bonjour ! Je veux une carte NFC qui ouvre ma localisation Google Maps.",
-       chip_wa:"Bonjour ! Je veux une carte NFC qui ouvre une conversation WhatsApp." }
-};
-function applyWaLinks(lang){
-  const m = WA_MSG[lang] || WA_MSG.en;
-  document.querySelectorAll('[data-wa]').forEach(el=>{
-    const k = el.getAttribute('data-wa');
-    el.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(m[k] || m.order)}`;
-  });
-}
-
-const i18n = {
-  en: {
-    nav_cta:"Order on WhatsApp",
-    hero_eyebrow:"NFC Business Cards, Made in Morocco",
-    hero_h1:"Your business card that never runs out.",
-    hero_sub:"One tap shares your number, Instagram, website or menu — instantly, on any phone. Custom-designed for your brand.",
-    hero_cta_primary:"Order on WhatsApp",
-    hero_cta_secondary:"See how it works",
-    trust1:"Tap to share", trust2:"Apps needed", trust3:"Unlimited taps",
-    pre_reading:"Reading card…",
-    chip_label:"One tap can share:",
-    chip_contact:"📇 Contact", chip_insta:"📸 Instagram", chip_menu:"📋 Menu / Catalog", chip_maps:"📍 Location", chip_wa:"💬 WhatsApp",
-    guar_eyebrow:"Peace of mind", guar_h2:"Tested, sealed, and guaranteed to tap.",
-    guar1_h:"Works on iPhone & Android", guar1_p:"Every card is tested on both before it leaves us.",
-    guar2_h:"No app, ever", guar2_p:"Your client just taps — the page opens in their browser.",
-    guar3_h:"No subscription", guar3_p:"No battery, no monthly fee — it works for years.",
-    guar4_h:"Free re-seal if it ever fails", guar4_p:"If a card ever stops reading, we re-seal it free.",
-    demo_tapme:"tap to try",
-    demo_idle:"Tap the card to see what your client sees",
-    demo_role:"Café Atlas — Menu & Contact",
-    demo_save:"Save Contact",
-    what_eyebrow:"The Idea",
-    what_h2:"Tap. Share. Done.",
-    what_sub:"A tiny chip sealed inside the card. No app, no battery, no charging. Just a phone tap.",
-    what1_h:"Tap", what1_p:"Client holds their phone near your card for one second.",
-    what2_h:"Open", what2_p:"Their phone opens your page automatically — no app to install.",
-    what3_h:"Connect", what3_p:"They save your contact, follow your page, or message you right away.",
-    why_eyebrow:"Why Businesses Use It",
-    why_h2:"Built for how small businesses actually work.",
-    tag1:"For any shop", tag2:"For services", tag3:"For freelancers", tag4:"For makers",
-    ben1_h:"Never run out of cards", ben1_p:"One card, unlimited taps. No reprinting boxes of paper cards every few months.",
-    ben2_h:"Update anytime", ben2_p:"Change your number, page, or catalog link whenever you want — the card stays the same.",
-    ben3_h:"Feels premium", ben3_p:"Most people in Morocco have never tapped one before. Clients remember it.",
-    ben4_h:"Works for any business", ben4_p:"Share a menu, a catalog, a booking link or a location — whatever your business needs.",
-    styles_eyebrow:"Design",
-    styles_h2:"Every card is designed from scratch.",
-    styles_sub:"Colors, logo, and layout matched to your brand — not a template.",
-    style1_h:"White card", style1_p:"Clean and minimal",
-    style2_h:"Black card", style2_p:"Bold and premium",
-    style3_h:"Fully custom", style3_p:"Any color, any design",
-    styles_note:"Illustrative styles shown — your card is fully custom to your brand.",
-    promo_h:"Buy 2, get the 3rd at half price",
-    promo_p:"Perfect for a team, a shop with several staff, or stocking up for later.",
-    promo_cta:"Claim the offer",
-    how_eyebrow:"Process",
-    how_h2:"From idea to card in your hand.",
-    how1_h:"Send your info", how1_p:"Logo, socials, and contact details — sent over WhatsApp.",
-    how2_h:"Get a design proof", how2_p:"A custom card design made for your brand, sent for your approval.",
-    how3_h:"Card gets sealed", how3_p:"Once approved, your design is printed and the chip is programmed and sealed.",
-    how4_h:"Pickup or delivery", how4_p:"Collect it in Agadir or get it delivered anywhere in Morocco.",
-    tst_eyebrow:"Reviews", tst_h2:"Loved by shops and freelancers.",
-    tst_sub:"A few words from early azil.ma customers.",
-    tst1_p:"\"Clients are always impressed when I tap my card to their phone. Looks way more professional than paper.\"",
-    tst1_n:"Yassine", tst1_r:"Café owner, Agadir",
-    tst2_p:"\"I changed my Instagram link once and never had to reprint anything. Worth every dirham.\"",
-    tst2_n:"Salma", tst2_r:"Freelance designer",
-    tst3_p:"\"Fast design, clean card, delivered to my shop. The team all use them now.\"",
-    tst3_n:"Mehdi", tst3_r:"Barbershop, Inezgane",
-    faq_eyebrow:"Questions", faq_h2:"Frequently asked.",
-    faq1_q:"Do my clients need an app?", faq1_a:"No. Any modern phone reads the card by tapping it — the page just opens in the browser.",
-    faq2_q:"Does it work on iPhone and Android?", faq2_a:"Yes. It works on virtually all recent iPhones and Android phones with NFC — which is almost all of them.",
-    faq3_q:"Can I change my info later?", faq3_a:"Yes. You can update the number, links or catalog your card points to at any time — the card itself never changes.",
-    faq4_q:"How long does it take to get one?", faq4_a:"Usually a few days: you send your info, approve the design, and we seal and deliver it across Morocco.",
-    price_eyebrow:"Pricing", price_to:"— 200 DH",
-    price_p:"Final price depends on your design, quantity, and card finish. Message on WhatsApp for a quote made for your business.",
-    price_cta:"Get my quote",
-    foot_note:"Custom NFC business cards — Agadir, Morocco",
-    foot_cta:"WhatsApp"
-  },
-  ar: {
-    nav_cta:"اطلب عبر واتساب",
-    hero_eyebrow:"بطاقات NFC للأعمال، صنعت في المغرب",
-    hero_h1:"بطاقة عملك التي لا تنفد أبدًا.",
-    hero_sub:"بلمسة واحدة، يصل عميلك إلى رقمك، حسابك على إنستغرام، موقعك، أو قائمة أسعارك — فورًا وعلى أي هاتف. مصممة خصيصًا لعلامتك التجارية.",
-    hero_cta_primary:"اطلب عبر واتساب",
-    hero_cta_secondary:"شاهد كيف تعمل",
-    trust1:"لمسة للمشاركة", trust2:"تطبيقات مطلوبة", trust3:"لمسات غير محدودة",
-    pre_reading:"جارٍ قراءة البطاقة…",
-    chip_label:"لمسة واحدة تشارك:",
-    chip_contact:"📇 جهة الاتصال", chip_insta:"📸 إنستغرام", chip_menu:"📋 قائمة / كتالوج", chip_maps:"📍 الموقع", chip_wa:"💬 واتساب",
-    guar_eyebrow:"راحة البال", guar_h2:"مختبرة، مغلّفة، ومضمونة اللمس.",
-    guar1_h:"تعمل على آيفون وأندرويد", guar1_p:"كل بطاقة تُختبر على الاثنين قبل تسليمها.",
-    guar2_h:"بدون تطبيق، أبدًا", guar2_p:"عميلك يقرّب هاتفه فقط — تفتح الصفحة في متصفحه.",
-    guar3_h:"بدون اشتراك", guar3_p:"بدون بطارية، بدون رسوم شهرية — تعمل لسنوات.",
-    guar4_h:"إعادة تجهيز مجانية إن تعطلت", guar4_p:"إن توقفت بطاقة عن القراءة، نعيد تجهيزها مجانًا.",
-    demo_tapme:"اضغط للتجربة",
-    demo_idle:"اضغط على البطاقة لترى ما يراه عميلك",
-    demo_role:"قهوة أطلس — القائمة والاتصال",
-    demo_save:"احفظ جهة الاتصال",
-    what_eyebrow:"الفكرة",
-    what_h2:"قرّب. شارك. خلاص.",
-    what_sub:"شريحة صغيرة مثبتة داخل البطاقة. بدون تطبيق، بدون بطارية، بدون شحن. فقط قرّب الهاتف.",
-    what1_h:"قرّب", what1_p:"يقرّب العميل هاتفه من بطاقتك لثانية واحدة.",
-    what2_h:"يفتح", what2_p:"يفتح هاتفه صفحتك تلقائيًا — بدون تثبيت أي تطبيق.",
-    what3_h:"يتواصل", what3_p:"يحفظ جهة اتصالك، يتابع صفحتك، أو يراسلك في الحال.",
-    why_eyebrow:"لماذا تستخدمها الأعمال",
-    why_h2:"مصممة لتناسب طريقة عمل الأعمال الصغيرة.",
-    tag1:"لأي متجر", tag2:"للخدمات", tag3:"للمستقلين", tag4:"للحرفيين",
-    ben1_h:"لا تنفد أبدًا", ben1_p:"بطاقة واحدة، لمسات غير محدودة. لا حاجة لطباعة صناديق من البطاقات الورقية كل بضعة أشهر.",
-    ben2_h:"حدّثها في أي وقت", ben2_p:"غيّر رقمك أو صفحتك أو رابط الكتالوج متى شئت — البطاقة تبقى كما هي.",
-    ben3_h:"إحساس مميز", ben3_p:"معظم الناس في المغرب لم يجربوا هذا من قبل. عملاؤك سيتذكرونها.",
-    ben4_h:"تناسب أي نشاط", ben4_p:"شارك قائمة أسعار، كتالوجًا، رابط حجز، أو موقعك — حسب ما يحتاجه عملك.",
-    styles_eyebrow:"التصميم",
-    styles_h2:"كل بطاقة تُصمم من الصفر.",
-    styles_sub:"الألوان، الشعار، والتصميم مطابقة لعلامتك التجارية — وليست قالبًا جاهزًا.",
-    style1_h:"بطاقة بيضاء", style1_p:"نظيفة وبسيطة",
-    style2_h:"بطاقة سوداء", style2_p:"جريئة وفاخرة",
-    style3_h:"تصميم مخصص بالكامل", style3_p:"أي لون، أي تصميم",
-    styles_note:"الأنماط المعروضة توضيحية فقط — بطاقتك مصممة بالكامل حسب علامتك.",
-    promo_h:"اشترِ 2 واحصل على الثالثة بنصف الثمن",
-    promo_p:"مثالية لفريق العمل، لمحل فيه عدة موظفين، أو للتزود لوقت لاحق.",
-    promo_cta:"استفد من العرض",
-    how_eyebrow:"خطوات العمل",
-    how_h2:"من الفكرة إلى البطاقة بين يديك.",
-    how1_h:"أرسل معلوماتك", how1_p:"الشعار، حسابات التواصل، ومعلومات الاتصال — عبر واتساب.",
-    how2_h:"احصل على نموذج التصميم", how2_p:"تصميم بطاقة مخصص لعلامتك، يُرسل إليك للموافقة عليه.",
-    how3_h:"يتم تجهيز البطاقة", how3_p:"بعد الموافقة، تتم طباعة التصميم وبرمجة الشريحة وتثبيتها.",
-    how4_h:"الاستلام أو التوصيل", how4_p:"استلمها في أكادير أو اطلب توصيلها إلى أي مكان في المغرب.",
-    tst_eyebrow:"آراء العملاء", tst_h2:"محبوبة من المحلات والمستقلين.",
-    tst_sub:"بعض كلمات من أوائل عملاء azil.ma.",
-    tst1_p:"«ينبهر العملاء دائمًا عندما ألمس بطاقتي بهاتفهم. تبدو أكثر احترافية من الورق بكثير.»",
-    tst1_n:"ياسين", tst1_r:"صاحب مقهى، أكادير",
-    tst2_p:"«غيّرت رابط إنستغرام مرة واحدة ولم أضطر لإعادة الطباعة أبدًا. تستحق كل درهم.»",
-    tst2_n:"سلمى", tst2_r:"مصمّمة مستقلة",
-    tst3_p:"«تصميم سريع، بطاقة أنيقة، وصلت إلى محلي. كل الفريق يستخدمها الآن.»",
-    tst3_n:"مهدي", tst3_r:"حلاق، إنزكان",
-    faq_eyebrow:"أسئلة", faq_h2:"الأسئلة الشائعة.",
-    faq1_q:"هل يحتاج عملائي إلى تطبيق؟", faq1_a:"لا. أي هاتف حديث يقرأ البطاقة بمجرد لمسها — تفتح الصفحة في المتصفح مباشرة.",
-    faq2_q:"هل تعمل على آيفون وأندرويد؟", faq2_a:"نعم. تعمل على جميع هواتف آيفون وأندرويد الحديثة تقريبًا التي تدعم NFC — وهي معظمها.",
-    faq3_q:"هل يمكنني تغيير معلوماتي لاحقًا؟", faq3_a:"نعم. يمكنك تحديث الرقم أو الروابط أو الكتالوج الذي تشير إليه البطاقة في أي وقت — البطاقة نفسها لا تتغير.",
-    faq4_q:"كم يستغرق الحصول عليها؟", faq4_a:"عادة بضعة أيام: ترسل معلوماتك، توافق على التصميم، ثم نجهزها ونوصلها إلى أي مكان في المغرب.",
-    price_eyebrow:"الأسعار", price_to:"— 200 درهم",
-    price_p:"السعر النهائي يعتمد على التصميم، الكمية، ونوع البطاقة. راسلنا عبر واتساب للحصول على عرض خاص بعملك.",
-    price_cta:"اطلب عرض السعر",
-    foot_note:"بطاقات NFC مخصصة للأعمال — أكادير، المغرب",
-    foot_cta:"واتساب"
-  },
-  fr: {
-    nav_cta:"Commander sur WhatsApp",
-    hero_eyebrow:"Cartes de visite NFC, fabriquées au Maroc",
-    hero_h1:"Votre carte de visite qui ne s'épuise jamais.",
-    hero_sub:"D'un seul contact, partagez votre numéro, Instagram, site web ou menu — instantanément, sur n'importe quel téléphone. Conçue sur mesure pour votre marque.",
-    hero_cta_primary:"Commander sur WhatsApp",
-    hero_cta_secondary:"Voir comment ça marche",
-    trust1:"Un contact pour partager", trust2:"Applications requises", trust3:"Contacts illimités",
-    pre_reading:"Lecture de la carte…",
-    chip_label:"Un contact peut partager :",
-    chip_contact:"📇 Contact", chip_insta:"📸 Instagram", chip_menu:"📋 Menu / Catalogue", chip_maps:"📍 Localisation", chip_wa:"💬 WhatsApp",
-    guar_eyebrow:"En toute tranquillité", guar_h2:"Testée, scellée et garantie au contact.",
-    guar1_h:"Fonctionne sur iPhone et Android", guar1_p:"Chaque carte est testée sur les deux avant de quitter nos mains.",
-    guar2_h:"Jamais d'application", guar2_p:"Votre client approche son téléphone — la page s'ouvre dans son navigateur.",
-    guar3_h:"Sans abonnement", guar3_p:"Sans pile, sans frais mensuels — elle fonctionne pendant des années.",
-    guar4_h:"Re-scellage gratuit en cas de panne", guar4_p:"Si une carte cesse de fonctionner, nous la re-scellons gratuitement.",
-    demo_tapme:"approchez pour essayer",
-    demo_idle:"Approchez la carte pour voir ce que voit votre client",
-    demo_role:"Café Atlas — Menu et contact",
-    demo_save:"Enregistrer le contact",
-    what_eyebrow:"Le concept",
-    what_h2:"Un contact. Partagé. C'est fait.",
-    what_sub:"Une petite puce scellée à l'intérieur de la carte. Sans application, sans pile, sans recharge. Un simple contact du téléphone.",
-    what1_h:"Approchez", what1_p:"Le client approche son téléphone de votre carte pendant une seconde.",
-    what2_h:"Ça s'ouvre", what2_p:"Son téléphone ouvre votre page automatiquement — aucune application à installer.",
-    what3_h:"Il vous contacte", what3_p:"Il enregistre votre contact, suit votre page, ou vous écrit aussitôt.",
-    why_eyebrow:"Pourquoi les pros l'adoptent",
-    why_h2:"Pensée pour le quotidien des petites entreprises.",
-    tag1:"Pour tout commerce", tag2:"Pour les services", tag3:"Pour les indépendants", tag4:"Pour les artisans",
-    ben1_h:"Ne manquez jamais de cartes", ben1_p:"Une seule carte, des contacts illimités. Fini de réimprimer des boîtes de cartes papier tous les quelques mois.",
-    ben2_h:"Modifiable à tout moment", ben2_p:"Changez votre numéro, votre page ou le lien de votre catalogue quand vous voulez — la carte reste la même.",
-    ben3_h:"Un effet haut de gamme", ben3_p:"Au Maroc, peu de gens en ont déjà utilisé une. Vos clients s'en souviennent.",
-    ben4_h:"Adaptée à toute activité", ben4_p:"Partagez un menu, un catalogue, un lien de réservation ou une localisation — selon les besoins de votre activité.",
-    styles_eyebrow:"Design",
-    styles_h2:"Chaque carte est conçue de A à Z.",
-    styles_sub:"Couleurs, logo et mise en page assortis à votre marque — jamais un modèle générique.",
-    style1_h:"Carte blanche", style1_p:"Épurée et minimaliste",
-    style2_h:"Carte noire", style2_p:"Audacieuse et haut de gamme",
-    style3_h:"Entièrement personnalisée", style3_p:"Toute couleur, tout design",
-    styles_note:"Styles présentés à titre indicatif — votre carte est entièrement personnalisée à votre marque.",
-    promo_h:"2 achetées, la 3ᵉ à moitié prix",
-    promo_p:"Idéal pour une équipe, un commerce à plusieurs employés, ou pour faire des réserves.",
-    promo_cta:"Profiter de l'offre",
-    how_eyebrow:"Le déroulement",
-    how_h2:"De l'idée à la carte entre vos mains.",
-    how1_h:"Envoyez vos informations", how1_p:"Logo, réseaux sociaux et coordonnées — envoyés par WhatsApp.",
-    how2_h:"Recevez une maquette", how2_p:"Un design de carte sur mesure pour votre marque, envoyé pour votre validation.",
-    how3_h:"La carte est scellée", how3_p:"Une fois validé, votre design est imprimé, et la puce est programmée puis scellée.",
-    how4_h:"Retrait ou livraison", how4_p:"Récupérez-la à Agadir ou faites-la livrer partout au Maroc.",
-    tst_eyebrow:"Avis", tst_h2:"Adoptée par les commerces et les indépendants.",
-    tst_sub:"Quelques mots des premiers clients d'azil.ma.",
-    tst1_p:"« Les clients sont toujours impressionnés quand j'approche ma carte de leur téléphone. Ça fait bien plus professionnel que le papier. »",
-    tst1_n:"Yassine", tst1_r:"Gérant de café, Agadir",
-    tst2_p:"« J'ai changé mon lien Instagram une fois et je n'ai jamais eu à réimprimer quoi que ce soit. Ça vaut chaque dirham. »",
-    tst2_n:"Salma", tst2_r:"Graphiste indépendante",
-    tst3_p:"« Design rapide, carte soignée, livrée à ma boutique. Toute l'équipe les utilise maintenant. »",
-    tst3_n:"Mehdi", tst3_r:"Salon de coiffure, Inezgane",
-    faq_eyebrow:"Questions", faq_h2:"Questions fréquentes.",
-    faq1_q:"Mes clients ont-ils besoin d'une application ?", faq1_a:"Non. N'importe quel téléphone récent lit la carte au contact — la page s'ouvre simplement dans le navigateur.",
-    faq2_q:"Ça marche sur iPhone et Android ?", faq2_a:"Oui. Ça fonctionne sur la quasi-totalité des iPhone et téléphones Android récents équipés du NFC — c'est-à-dire presque tous.",
-    faq3_q:"Puis-je modifier mes informations plus tard ?", faq3_a:"Oui. Vous pouvez mettre à jour le numéro, les liens ou le catalogue vers lesquels pointe votre carte à tout moment — la carte elle-même ne change jamais.",
-    faq4_q:"Combien de temps pour en obtenir une ?", faq4_a:"En général quelques jours : vous envoyez vos informations, validez le design, puis nous la scellons et la livrons partout au Maroc.",
-    price_eyebrow:"Tarifs", price_to:"— 200 DH",
-    price_p:"Le prix final dépend de votre design, de la quantité et de la finition de la carte. Écrivez-nous sur WhatsApp pour un devis adapté à votre activité.",
-    price_cta:"Obtenir mon devis",
-    foot_note:"Cartes de visite NFC sur mesure — Agadir, Maroc",
-    foot_cta:"WhatsApp"
-  }
+"use strict";
+/* ================= I18N ================= */
+const PHONE="212632674548";
+const I18N={
+ en:{
+  skip:"Skip to content",
+  "hero.tag":"Your signal, made visible.",
+  "hero.h":"Tap. And you're unforgettable.",
+  "hero.sub":"Smart NFC business cards from Agadir. One tap shares everything — no app, no typing.",
+  "hero.scroll":"Scroll to power the signal",
+  "cta.order":"Order on WhatsApp","cta.how":"See how it works",
+  "card.face":"Smart NFC card","card.flip":"↻ tap to flip","card.back":"Contactless antenna",
+  "how.eyebrow":"The three beats",
+  "beat.tap.h":"Tap","beat.tap.p":"Your client holds their phone to the card.",
+  "beat.open.h":"Opens instantly","beat.open.p":"Their phone opens your page — no app to install.",
+  "beat.connect.h":"Connected","beat.connect.p":"They save your contact, follow, or message you.",
+  "demo.idle":"Tap the card to see what your client sees","demo.role":"Menu & Contact","demo.saved":"Saved ✓ no app","demo.wa":"WhatsApp","demo.savebtn":"Save contact","demo.again":"↺ Tap again","demo.connected":"CONNECTED",
+  "why.eyebrow":"Why it wins",
+  "why.1":"One card, infinite shares.","why.2":"No app to download.","why.3":"Update your info anytime.","why.4":"Eco — one card, forever.",
+  "styles.eyebrow":"The finishes",
+  "card.matte":"Matte Black","card.matte.d":"Stealth and premium.","card.metal":"Metal","card.metal.d":"Weight that impresses.",
+  "card.frosted":"Frosted","card.frosted.d":"Soft, modern, tactile.","card.wood":"Wood","card.wood.d":"Warm and natural.",
+  "card.custom":"Fully Custom","card.custom.d":"Any color, any design.","card.custom.note":"Printed by print.it",
+  "promo.h":"Buy 2, get the 3rd half price","promo.cta":"Claim the offer",
+  "process.eyebrow":"The signal path",
+  "step.1.h":"Design","step.1.p":"We design your card around your brand.",
+  "step.2.h":"Confirm on WhatsApp","step.2.p":"You approve the proof, no obligation.",
+  "step.3.h":"We produce","step.3.p":"The chip is programmed and the card sealed.",
+  "step.4.h":"Tap & go","step.4.p":"Pickup in Agadir or delivered across Morocco.",
+  "tst.eyebrow":"Voices in the field",
+  "tst.1.p":"\"I stopped printing paper cards. One tap and I'm done.\"","tst.1.n":"Yassine","tst.1.r":"Café owner, Agadir",
+  "tst.2.p":"\"Changed my Instagram link once — never reprinted anything.\"","tst.2.n":"Salma","tst.2.r":"Freelance designer",
+  "tst.3.p":"\"Clients remember it. The whole team uses one now.\"","tst.3.n":"Mehdi","tst.3.r":"Barbershop, Inezgane",
+  "faq.eyebrow":"Frequencies",
+  "faq.1.q":"Do my clients need an app?","faq.1.a":"No. Any modern phone reads the card by tapping it — the page opens in the browser.",
+  "faq.2.q":"Does it work on iPhone and Android?","faq.2.a":"Yes — on virtually all recent iPhones and Android phones with NFC, which is almost all of them.",
+  "faq.3.q":"Can I change my info later?","faq.3.a":"Yes. You can update the number, links or catalog anytime — the card itself never changes.",
+  "faq.4.q":"How long does it take?","faq.4.a":"Usually a few days: send your info, approve the design, and we seal and deliver across Morocco.",
+  "pricing.h":"Full strength.","pricing.sub":"One-time price. No subscription, ever.",
+  "price.ess.n":"Essential","price.ess.1":"Custom design","price.ess.2":"Contact + 1 link","price.ess.3":"Delivered in Morocco",
+  "price.pro.n":"Pro","price.pro.1":"Everything in Essential","price.pro.2":"All your socials + catalog","price.pro.3":"Premium finish",
+  "price.sig.n":"Signature","price.sig.1":"Everything in Pro","price.sig.2":"Metal / frosted finish","price.sig.3":"Priority production",
+  "price.popular":"Most popular",
+  "footer.note":"Smart NFC cards · Agadir, Morocco · WhatsApp 212632674548","footer.top":"Back to top",
+  wa:{hero:"Hi azil.ma 👋 I want to order an NFC card. Can you show me designs and prices?",promo:"Hi! I want the buy-2-get-3rd-half-price NFC card offer.",priceEssential:"Hi! I'd like the Essential NFC card (89 MAD).",pricePro:"Hi! I'd like the Pro NFC card (~140 MAD).",priceSignature:"Hi! I'd like the Signature NFC card (200 MAD)."}
+ },
+ fr:{
+  skip:"Aller au contenu",
+  "hero.tag":"Votre signal, rendu visible.",
+  "hero.h":"Un geste. Et on ne vous oublie plus.",
+  "hero.sub":"Cartes de visite NFC intelligentes, depuis Agadir. Un tap partage tout — sans app, sans saisie.",
+  "hero.scroll":"Faites défiler pour activer le signal",
+  "cta.order":"Commander sur WhatsApp","cta.how":"Voir comment ça marche",
+  "card.face":"Carte NFC intelligente","card.flip":"↻ touchez pour retourner","card.back":"Antenne sans contact",
+  "how.eyebrow":"Les trois temps",
+  "beat.tap.h":"Tapez","beat.tap.p":"Votre client approche son téléphone de la carte.",
+  "beat.open.h":"Ouverture instantanée","beat.open.p":"Son téléphone ouvre votre page — aucune app à installer.",
+  "beat.connect.h":"Connecté","beat.connect.p":"Il enregistre votre contact, vous suit ou vous écrit.",
+  "demo.idle":"Approchez la carte pour voir ce que voit votre client","demo.role":"Menu et contact","demo.saved":"Enregistré ✓ sans app","demo.wa":"WhatsApp","demo.savebtn":"Enregistrer","demo.again":"↺ Recommencer","demo.connected":"CONNECTÉ",
+  "why.eyebrow":"Pourquoi ça gagne",
+  "why.1":"Une carte, des partages infinis.","why.2":"Aucune app à installer.","why.3":"Modifiez vos infos à tout moment.","why.4":"Éco — une carte, pour toujours.",
+  "styles.eyebrow":"Les finitions",
+  "card.matte":"Noir Mat","card.matte.d":"Discrète et haut de gamme.","card.metal":"Métal","card.metal.d":"Un poids qui impressionne.",
+  "card.frosted":"Givré","card.frosted.d":"Doux, moderne, tactile.","card.wood":"Bois","card.wood.d":"Chaleureux et naturel.",
+  "card.custom":"Sur Mesure","card.custom.d":"Toute couleur, tout design.","card.custom.note":"Imprimée par print.it",
+  "promo.h":"2 achetées, la 3ᵉ à moitié prix","promo.cta":"Profiter de l'offre",
+  "process.eyebrow":"Le parcours du signal",
+  "step.1.h":"Design","step.1.p":"Nous concevons votre carte autour de votre marque.",
+  "step.2.h":"Confirmation sur WhatsApp","step.2.p":"Vous validez la maquette, sans engagement.",
+  "step.3.h":"Production","step.3.p":"La puce est programmée et la carte scellée.",
+  "step.4.h":"Tapez & partez","step.4.p":"Retrait à Agadir ou livraison partout au Maroc.",
+  "tst.eyebrow":"Voix dans le champ",
+  "tst.1.p":"« J'ai arrêté d'imprimer des cartes papier. Un tap et c'est fait. »","tst.1.n":"Yassine","tst.1.r":"Gérant de café, Agadir",
+  "tst.2.p":"« J'ai changé mon lien Instagram une fois — jamais réimprimé. »","tst.2.n":"Salma","tst.2.r":"Graphiste indépendante",
+  "tst.3.p":"« Les clients s'en souviennent. Toute l'équipe en a une. »","tst.3.n":"Mehdi","tst.3.r":"Salon de coiffure, Inezgane",
+  "faq.eyebrow":"Fréquences",
+  "faq.1.q":"Mes clients ont-ils besoin d'une app ?","faq.1.a":"Non. N'importe quel téléphone récent lit la carte au contact — la page s'ouvre dans le navigateur.",
+  "faq.2.q":"Ça marche sur iPhone et Android ?","faq.2.a":"Oui — sur la quasi-totalité des iPhone et Android récents équipés du NFC, c'est-à-dire presque tous.",
+  "faq.3.q":"Puis-je modifier mes infos plus tard ?","faq.3.a":"Oui. Vous pouvez mettre à jour le numéro, les liens ou le catalogue à tout moment — la carte ne change jamais.",
+  "faq.4.q":"Combien de temps ça prend ?","faq.4.a":"En général quelques jours : envoyez vos infos, validez le design, et nous scellons puis livrons partout au Maroc.",
+  "pricing.h":"Pleine puissance.","pricing.sub":"Prix unique. Jamais d'abonnement.",
+  "price.ess.n":"Essentiel","price.ess.1":"Design sur mesure","price.ess.2":"Contact + 1 lien","price.ess.3":"Livrée au Maroc",
+  "price.pro.n":"Pro","price.pro.1":"Tout l'Essentiel","price.pro.2":"Tous vos réseaux + catalogue","price.pro.3":"Finition premium",
+  "price.sig.n":"Signature","price.sig.1":"Tout le Pro","price.sig.2":"Finition métal / givré","price.sig.3":"Production prioritaire",
+  "price.popular":"Le plus choisi",
+  "footer.note":"Cartes NFC intelligentes · Agadir, Maroc · WhatsApp 212632674548","footer.top":"Haut de page",
+  wa:{hero:"Bonjour azil.ma 👋 je veux commander une carte NFC. Pouvez-vous me montrer les designs et les prix ?",promo:"Bonjour ! Je veux l'offre carte NFC : 2 achetées, la 3ᵉ à moitié prix.",priceEssential:"Bonjour ! Je souhaite la carte NFC Essentiel (89 MAD).",pricePro:"Bonjour ! Je souhaite la carte NFC Pro (~140 MAD).",priceSignature:"Bonjour ! Je souhaite la carte NFC Signature (200 MAD)."}
+ },
+ ar:{
+  skip:"تخطَّ إلى المحتوى",
+  "hero.tag":"إشارتك، مرئية.",
+  "hero.h":"لمسة واحدة… ولن ينسوك.",
+  "hero.sub":"بطاقات NFC ذكية من أكادير. لمسة واحدة تشارك كل شيء — بدون تطبيق، بدون كتابة.",
+  "hero.scroll":"مرّر لتشغيل الإشارة",
+  "cta.order":"اطلب عبر واتساب","cta.how":"شاهد كيف تعمل",
+  "card.face":"بطاقة NFC ذكية","card.flip":"↻ المس للقلب","card.back":"هوائي لاسلكي",
+  "how.eyebrow":"اللحظات الثلاث",
+  "beat.tap.h":"لمس","beat.tap.p":"يقرّب عميلك هاتفه من البطاقة.",
+  "beat.open.h":"يفتح فورًا","beat.open.p":"يفتح هاتفه صفحتك — بدون أي تطبيق.",
+  "beat.connect.h":"تم الاتصال","beat.connect.p":"يحفظ جهة اتصالك، يتابعك، أو يراسلك.",
+  "demo.idle":"المس البطاقة لترى ما يراه عميلك","demo.role":"القائمة والاتصال","demo.saved":"محفوظ ✓ بدون تطبيق","demo.wa":"واتساب","demo.savebtn":"حفظ جهة الاتصال","demo.again":"↺ المس مجددًا","demo.connected":"تم الاتصال",
+  "why.eyebrow":"لماذا تتفوق",
+  "why.1":"بطاقة واحدة، مشاركات لا تنتهي.","why.2":"بدون تطبيق للتحميل.","why.3":"حدّث معلوماتك في أي وقت.","why.4":"صديقة للبيئة — بطاقة واحدة، للأبد.",
+  "styles.eyebrow":"التشطيبات",
+  "card.matte":"أسود مطفي","card.matte.d":"أنيقة وفاخرة.","card.metal":"معدن","card.metal.d":"وزن يثير الإعجاب.",
+  "card.frosted":"مصنفر","card.frosted.d":"ناعمة، عصرية، ملموسة.","card.wood":"خشب","card.wood.d":"دافئة وطبيعية.",
+  "card.custom":"مخصصة بالكامل","card.custom.d":"أي لون، أي تصميم.","card.custom.note":"مطبوعة من print.it",
+  "promo.h":"اشترِ 2 واحصل على الثالثة بنصف السعر","promo.cta":"استفد من العرض",
+  "process.eyebrow":"مسار الإشارة",
+  "step.1.h":"التصميم","step.1.p":"نصمّم بطاقتك حسب علامتك التجارية.",
+  "step.2.h":"التأكيد عبر واتساب","step.2.p":"توافق على النموذج، بدون التزام.",
+  "step.3.h":"الإنتاج","step.3.p":"تُبرمَج الشريحة وتُغلَّف البطاقة.",
+  "step.4.h":"المس وانطلق","step.4.p":"استلام في أكادير أو توصيل لكل المغرب.",
+  "tst.eyebrow":"أصوات من الميدان",
+  "tst.1.p":"«توقفت عن طباعة البطاقات الورقية. لمسة واحدة ويكفي.»","tst.1.n":"ياسين","tst.1.r":"صاحب مقهى، أكادير",
+  "tst.2.p":"«غيّرت رابط إنستغرام مرة واحدة — دون أي إعادة طباعة.»","tst.2.n":"سلمى","tst.2.r":"مصمّمة مستقلة",
+  "tst.3.p":"«العملاء يتذكرونها. كل الفريق يستخدمها الآن.»","tst.3.n":"مهدي","tst.3.r":"حلاق، إنزكان",
+  "faq.eyebrow":"الترددات",
+  "faq.1.q":"هل يحتاج عملائي إلى تطبيق؟","faq.1.a":"لا. أي هاتف حديث يقرأ البطاقة باللمس — تفتح الصفحة في المتصفح.",
+  "faq.2.q":"هل تعمل على آيفون وأندرويد؟","faq.2.a":"نعم — على جميع هواتف آيفون وأندرويد الحديثة تقريبًا التي تدعم NFC، وهي معظمها.",
+  "faq.3.q":"هل يمكنني تغيير معلوماتي لاحقًا؟","faq.3.a":"نعم. يمكنك تحديث الرقم أو الروابط أو الكتالوج في أي وقت — البطاقة نفسها لا تتغير.",
+  "faq.4.q":"كم يستغرق الأمر؟","faq.4.a":"عادة بضعة أيام: أرسل معلوماتك، وافق على التصميم، ثم نغلّفها ونوصلها لكل المغرب.",
+  "pricing.h":"بكامل القوة.","pricing.sub":"سعر لمرة واحدة. بدون اشتراك أبدًا.",
+  "price.ess.n":"أساسية","price.ess.1":"تصميم مخصص","price.ess.2":"جهة اتصال + رابط","price.ess.3":"توصيل داخل المغرب",
+  "price.pro.n":"احترافية","price.pro.1":"كل ما في الأساسية","price.pro.2":"كل شبكاتك + الكتالوج","price.pro.3":"تشطيب فاخر",
+  "price.sig.n":"مميّزة","price.sig.1":"كل ما في الاحترافية","price.sig.2":"تشطيب معدن / مصنفر","price.sig.3":"إنتاج بأولوية",
+  "price.popular":"الأكثر طلبًا",
+  "footer.note":"بطاقات NFC ذكية · أكادير، المغرب · واتساب 212632674548","footer.top":"إلى الأعلى",
+  wa:{hero:"مرحبا azil.ma 👋 أريد طلب بطاقة NFC. هل يمكنكم عرض التصاميم والأسعار؟",promo:"مرحبا! أريد عرض بطاقة NFC: اشترِ 2 واحصل على الثالثة بنصف السعر.",priceEssential:"مرحبا! أريد البطاقة الأساسية (89 درهم).",pricePro:"مرحبا! أريد البطاقة الاحترافية (~140 درهم).",priceSignature:"مرحبا! أريد البطاقة المميّزة (200 درهم)."}
+ }
 };
 
-function setLang(lang){
-  if(!i18n[lang]) lang = 'en';               // guard bad localStorage / calls
-  document.documentElement.lang = lang;
-  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';   // en + fr = ltr
-  ['en','fr','ar'].forEach(function(L){
-    const b = document.getElementById('btn-'+L);
-    if(!b) return;
-    b.classList.toggle('active', lang===L);
-    b.setAttribute('aria-pressed', lang===L);
+let LANG="en";
+function t(key){ return (I18N[LANG] && I18N[LANG][key]) || I18N.en[key] || ""; }
+function waLink(k){ const m=(I18N[LANG]&&I18N[LANG].wa)||I18N.en.wa; return "https://wa.me/"+PHONE+"?text="+encodeURIComponent(m[k]||m.hero); }
+
+const REDUCE = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const FINE = window.matchMedia("(hover:hover) and (pointer:fine)").matches;
+document.body.dataset.motion = REDUCE ? "reduced" : "full";
+
+function applyI18n(){
+  document.querySelectorAll("[data-i18n]").forEach(el=>{
+    const k=el.getAttribute("data-i18n"); const v=t(k);
+    if(v) el.textContent=v;
   });
-  const dict = i18n[lang];
-  document.querySelectorAll('[data-i18n]').forEach(el=>{
-    const key = el.getAttribute('data-i18n');
-    if(dict[key]) el.textContent = dict[key];
-  });
-  applyWaLinks(lang);                          // re-point every CTA to this language
-  document.title = lang === 'ar' ? 'azil.ma — بطاقات NFC للأعمال'
-                 : lang === 'fr' ? 'azil.ma — Cartes de visite NFC'
-                 : 'azil.ma — NFC Business Cards';
-  try{ localStorage.setItem('azil_lang', lang); }catch(e){}
+  document.querySelectorAll("[data-wa]").forEach(el=> el.href=waLink(el.getAttribute("data-wa")));
+  document.title = LANG==="ar" ? "azil.ma — بطاقات NFC" : LANG==="fr" ? "azil.ma — Cartes NFC" : "azil.ma — NFC Business Cards";
 }
 
-function playTap(){
-  const ring = document.getElementById('ring');
-  ring.classList.remove('animate'); void ring.offsetWidth; ring.classList.add('animate');
-  document.getElementById('phone-idle').classList.add('hide');
-  document.getElementById('phone-screen').classList.add('show');
-  clearTimeout(window._tapTimer);
-  window._tapTimer = setTimeout(()=>{
-    document.getElementById('phone-screen').classList.remove('show');
-    document.getElementById('phone-idle').classList.remove('hide');
-  }, 4200);
+function setLang(lang, choreograph){
+  if(!I18N[lang]) lang="en";
+  LANG=lang;
+  document.documentElement.lang=lang;
+  document.documentElement.dir = lang==="ar" ? "rtl":"ltr";
+  document.body.dataset.lang=lang;
+  document.querySelectorAll("#lang-switch button").forEach(b=> b.classList.toggle("active", b.dataset.setlang===lang));
+  applyI18n();
+  buildMarquee();
+  try{ localStorage.setItem("azil_lang",lang); }catch(e){}
+  if(choreograph && window.gsap && !REDUCE){ splitAndReveal(document.getElementById("hero-h")); }
+  if(window.ScrollTrigger) ScrollTrigger.refresh();
 }
 
-/* ===================== ENHANCEMENTS ===================== */
-(function(){
-  "use strict";
-  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const fine = window.matchMedia("(hover:hover) and (pointer:fine)").matches;
-
-  /* Preloader */
-  const pre = document.getElementById("preloader");
-  function hidePre(){ if(pre){ pre.classList.add("done"); setTimeout(()=>pre.remove(),500); } }
-  window.addEventListener("load", ()=> setTimeout(hidePre, reduce?0:450));
-  setTimeout(hidePre, 3200);
-
-  /* Scroll progress */
-  const progress = document.getElementById("progress");
-  function onScroll(){ const h=document.documentElement; progress.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+"%"; }
-  window.addEventListener("scroll", onScroll, {passive:true}); onScroll();
-
-  /* Theme toggle (persists) */
-  const root = document.documentElement, tBtn = document.getElementById("themeToggle");
-  const sun='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
-  const moon='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg>';
-  function isDark(){ return root.getAttribute("data-theme")==="dark"; }
-  function paint(){ tBtn.innerHTML = isDark()?sun:moon; }
-  try{ if(localStorage.getItem("azil_theme")==="dark") root.setAttribute("data-theme","dark"); }catch(e){}
-  paint();
-  tBtn.addEventListener("click", ()=>{ const d=!isDark(); root.setAttribute("data-theme", d?"dark":"light"); try{localStorage.setItem("azil_theme", d?"dark":"light");}catch(e){} paint(); });
-
-  /* Restore saved language */
-  try{ const L=localStorage.getItem("azil_lang"); if(L==="ar"||L==="fr") setLang(L); }catch(e){}
-
-  /* Custom cursor */
-  if(fine && !reduce){
-    const dot=document.getElementById("curDot"), ring=document.getElementById("curRing");
-    let rx=0,ry=0,mx=0,my=0;
-    addEventListener("mousemove",e=>{ mx=e.clientX; my=e.clientY; dot.style.transform=`translate(${mx}px,${my}px) translate(-50%,-50%)`; });
-    (function loop(){ rx+=(mx-rx)*.2; ry+=(my-ry)*.2; ring.style.transform=`translate(${rx}px,${ry}px) translate(-50%,-50%)`; requestAnimationFrame(loop); })();
-    document.querySelectorAll("a,button,.demo-card,.style-card,.step3,.benefit,.tst,.faq button,.chip-pill,.guarantee").forEach(el=>{
-      el.addEventListener("mouseenter",()=>ring.classList.add("hover"));
-      el.addEventListener("mouseleave",()=>ring.classList.remove("hover"));
+/* letter splitter (grapheme-safe for Arabic) */
+// Arabic is a CURSIVE script — splitting letters into separate spans breaks the joining.
+// So: Latin (en/fr) splits per-letter for the kinetic reveal; Arabic is NEVER split (stays connected)
+// and is instead revealed per-WORD, preserving shaping.
+function isRTLtext(){ return document.documentElement.dir === "rtl"; }
+function splitUnits(el){
+  const text=el.getAttribute("data-fulltext") || el.textContent;
+  el.setAttribute("data-fulltext",text);
+  el.setAttribute("aria-label",text);
+  el.innerHTML="";
+  const sr=document.createElement("span"); sr.className="sr-only"; sr.textContent=text; el.appendChild(sr);
+  if(isRTLtext()){
+    // WORD-level only — each word stays a single connected text node (Arabic joins correctly)
+    const words=text.split(/(\s+)/);
+    words.forEach(w=>{
+      if(/^\s+$/.test(w)){ el.appendChild(document.createTextNode(w)); return; }
+      if(w===""){ return; }
+      const s=document.createElement("span"); s.className="unit"; s.setAttribute("aria-hidden","true"); s.textContent=w; el.appendChild(s);
     });
-    /* Click = tap: emit a broadcast ring at the pointer */
-    addEventListener("click",e=>{ const r=document.createElement("div"); r.className="tap-ripple"; r.style.left=e.clientX+"px"; r.style.top=e.clientY+"px"; document.body.appendChild(r); r.addEventListener("animationend",()=>r.remove()); });
+    return el.querySelectorAll(".unit");
   }
-
-  /* Hero NFC broadcast field — expanding signal rings + drifting chips (no constellation) */
-  (function(){
-    const cv=document.getElementById("particles");
-    if(!cv||reduce){ if(cv) cv.style.display="none"; return; }
-    const ctx=cv.getContext("2d"); const hero=cv.parentElement;
-    let W,H,chips=[],rings=[],origin={x:0,y:0}, t=0, frame=0;
-    function resize(){ W=cv.width=hero.offsetWidth; H=cv.height=hero.offsetHeight;
-      // broadcast origin near the demo (right column, or center on stacked mobile)
-      origin.x = W>860 ? W*0.72 : W*0.5; origin.y = H*0.5;
-      const n=Math.min(10,Math.floor(W*H/60000)); chips=[];
-      for(let i=0;i<n;i++) chips.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.25,vy:(Math.random()-.5)*.25,r:2+Math.random()*3}); }
-    addEventListener("resize",resize); resize();
-    hero.addEventListener("mousemove",e=>{ const r=hero.getBoundingClientRect(); if(frame%6===0) rings.push({x:e.clientX-r.left,y:e.clientY-r.top,rad:6,a:.5}); });
-    function spawn(){ rings.push({x:origin.x,y:origin.y,rad:8,a:.55}); }
-    function loop(){
-      frame++; t+=0.01;
-      ctx.clearRect(0,0,W,H);
-      // periodic broadcast from origin (~every 1.4s at 60fps)
-      if(frame%84===0) spawn();
-      // expanding signal rings
-      for(let i=rings.length-1;i>=0;i--){ const g=rings[i]; g.rad+=0.9; g.a-=0.006;
-        if(g.a<=0){ rings.splice(i,1); continue; }
-        ctx.beginPath(); ctx.arc(g.x,g.y,g.rad,0,6.28); ctx.strokeStyle="rgba(4,102,200,"+g.a+")"; ctx.lineWidth=1.4; ctx.stroke(); }
-      // faint rotating antenna coil (Archimedean spiral) in a corner
-      ctx.save(); ctx.translate(W*0.16,H*0.8); ctx.rotate(t*0.3); ctx.beginPath();
-      for(let th=0; th<6.28*3; th+=0.2){ const rr=2+2.4*th; const x=Math.cos(th)*rr, y=Math.sin(th)*rr; th===0?ctx.moveTo(x,y):ctx.lineTo(x,y); }
-      ctx.strokeStyle="rgba(4,102,200,.06)"; ctx.lineWidth=1.5; ctx.stroke(); ctx.restore();
-      // drifting chip rectangles (texture)
-      chips.forEach(c=>{ c.x+=c.vx; c.y+=c.vy; if(c.x<0||c.x>W)c.vx*=-1; if(c.y<0||c.y>H)c.vy*=-1;
-        ctx.fillStyle="rgba(4,102,200,.28)"; ctx.fillRect(c.x,c.y,c.r*1.6,c.r*1.2); });
-      requestAnimationFrame(loop);
-    } loop();
-  })();
-
-  /* Magnetic buttons */
-  if(fine && !reduce){
-    document.querySelectorAll(".magnetic,.theme-toggle").forEach(b=>{
-      b.addEventListener("mousemove",e=>{ const r=b.getBoundingClientRect();
-        b.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.25}px,${(e.clientY-r.top-r.height/2)*.35}px)`; });
-      b.addEventListener("mouseleave",()=>b.style.transform="");
-    });
-  }
-
-  /* 3D tilt on cards */
-  if(fine && !reduce){
-    document.querySelectorAll(".tilt").forEach(card=>{
-      card.addEventListener("mousemove",e=>{ const r=card.getBoundingClientRect();
-        const px=(e.clientX-r.left)/r.width-.5, py=(e.clientY-r.top)/r.height-.5;
-        card.style.transform=`perspective(700px) rotateY(${px*7}deg) rotateX(${-py*7}deg) translateY(-5px)`; });
-      card.addEventListener("mouseleave",()=>card.style.transform="");
-    });
-  }
-
-  /* Scroll reveal + count-up */
-  const io=new IntersectionObserver((ents)=>{ ents.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); } }); },{threshold:.14});
-  document.querySelectorAll(".reveal").forEach(n=>io.observe(n));
-
-  const cio=new IntersectionObserver((ents)=>{ ents.forEach(en=>{ if(!en.isIntersecting) return;
-    const el=en.target, target=+el.dataset.count, suf=el.dataset.suffix||""; let s=null;
-    if(reduce){ el.textContent=target+suf; cio.unobserve(el); return; }
-    function step(t){ if(!s)s=t; const p=Math.min((t-s)/900,1); el.textContent=Math.floor(p*target)+(p===1?suf:""); if(p<1)requestAnimationFrame(step); }
-    requestAnimationFrame(step); cio.unobserve(el);
-  }); },{threshold:.6});
-  document.querySelectorAll("[data-count]").forEach(c=>cio.observe(c));
-
-  /* FAQ accordion */
-  document.querySelectorAll(".faq button").forEach(btn=>{
-    btn.addEventListener("click",()=>{
-      const item=btn.closest(".faq"), a=item.querySelector(".a"), open=item.classList.toggle("open");
-      btn.setAttribute("aria-expanded", open?"true":"false");
-      a.style.maxHeight = open ? a.scrollHeight+"px" : "0";
-    });
-  });
-
-  /* Auto-hint the tap card so first-time visitors know it's interactive */
-  if(!reduce){
-    const ring=document.getElementById("ring"), card=document.getElementById("tap-card");
-    let hinted=false;
-    if(ring && card){
-      card.addEventListener("click",()=>{ hinted=true; }, {once:true});
-      const hint=setInterval(()=>{
-        if(hinted){ clearInterval(hint); return; }
-        ring.classList.remove("animate"); void ring.offsetWidth; ring.classList.add("animate");
-      }, 3500);
+  // Latin: per-letter, grouped into non-breaking words
+  let parts;
+  try{ const seg=new Intl.Segmenter(LANG,{granularity:"grapheme"}); parts=[...seg.segment(text)].map(s=>s.segment); }
+  catch(e){ parts=Array.from(text); }
+  let word=null;
+  parts.forEach(ch=>{
+    if(ch===" " || /^\s+$/.test(ch)){
+      word=null;
+      const sp=document.createElement("span"); sp.className="spc"; sp.setAttribute("aria-hidden","true");
+      sp.textContent=" "; el.appendChild(sp);
+      return;
     }
+    if(!word){ word=document.createElement("span"); word.className="word"; word.setAttribute("aria-hidden","true"); el.appendChild(word); }
+    const s=document.createElement("span"); s.className="ltr unit"; s.setAttribute("aria-hidden","true");
+    s.textContent=ch; word.appendChild(s);
+  });
+  return el.querySelectorAll(".unit");
+}
+function splitAndReveal(el){
+  if(!el) return;
+  const units=splitUnits(el);
+  // Reveal only on desktop with motion; mobile/reduced-motion show plain (connected) text.
+  if(!window.gsap || REDUCE || window.innerWidth<=760){ return; }
+  // clean fade-up per unit (no blur haze / ghost); clears all props on finish
+  gsap.fromTo(units,
+    {opacity:0,yPercent:40},
+    {opacity:1,yPercent:0,stagger:0.035,duration:0.5,ease:"power3.out",
+     onComplete:()=>gsap.set(units,{clearProps:"all"})});
+}
+
+/* marquee builder */
+function buildMarquee(){
+  const el=document.getElementById("promo-marquee"); if(!el) return;
+  const word=t("promo.h").toUpperCase()+" · ";
+  el.innerHTML=""; const unit=document.createElement("span"); unit.textContent=word.repeat(4);
+  el.appendChild(unit); el.appendChild(unit.cloneNode(true));
+}
+
+/* ================= FIELD (WebGL points, 2D fallback) ================= */
+const Field=(function(){
+  const canvas=document.getElementById("field");
+  let signal=0.28, cursor={x:-2,y:-2}, ripples=[], mode="off";
+  let ctx2d=null, W=0,H=0, pts=[], raf=0, running=false;
+  const isCoarse=!FINE;
+  function count(){
+    const dpr=Math.min(window.devicePixelRatio||1,1.5);
+    const area=window.innerWidth*window.innerHeight;
+    let n = window.innerWidth<700?1500: area>1600000?3400:2700;
+    return {n,dpr};
   }
+  function init2d(){
+    mode="2d"; ctx2d=canvas.getContext("2d");
+    resize();
+    window.addEventListener("resize",resize);
+    if(!REDUCE){ running=true; loop(); } else { drawStatic(); }
+  }
+  function resize(){
+    const {n,dpr}=count();
+    W=canvas.width=Math.floor(window.innerWidth*dpr);
+    H=canvas.height=Math.floor(window.innerHeight*dpr);
+    canvas.style.width=window.innerWidth+"px"; canvas.style.height=window.innerHeight+"px";
+    pts=[]; for(let i=0;i<n;i++) pts.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.25*dpr,vy:(Math.random()-.5)*.25*dpr,r:(Math.random()*1.4+.5)*dpr,ph:Math.random()*6.28});
+    if(REDUCE) drawStatic();
+  }
+  function drawStatic(){
+    ctx2d.clearRect(0,0,W,H);
+    ctx2d.globalCompositeOperation="lighter"; for(const p of pts){ ctx2d.beginPath(); ctx2d.arc(p.x,p.y,p.r,0,6.28); ctx2d.fillStyle="rgba(80,160,255,0.6)"; ctx2d.fill(); } ctx2d.globalCompositeOperation="source-over";
+  }
+  let last=performance.now(), slow=0;
+  function loop(t){
+    if(!running){ return; }
+    raf=requestAnimationFrame(loop);
+    const dt=t-last; last=t;
+    if(dt>26){ slow++; if(slow>40 && pts.length>600){ pts.length=Math.floor(pts.length*0.7); slow=0; } } else slow=Math.max(0,slow-1);
+    ctx2d.clearRect(0,0,W,H);
+    ctx2d.globalCompositeOperation="lighter";
+    const dpr=Math.min(window.devicePixelRatio||1,1.5);
+    const bright=0.42+signal*0.6;
+    const now=t*0.001;
+    ripples=ripples.filter(r=> now-r.t < 1.6);
+    for(const p of pts){
+      p.x+=p.vx*(0.5+signal); p.y+=p.vy*(0.5+signal);
+      if(p.x<0)p.x=W; if(p.x>W)p.x=0; if(p.y<0)p.y=H; if(p.y>H)p.y=0;
+      // cursor attraction
+      if(cursor.x>0){ const dx=p.x-cursor.x*dpr,dy=p.y-cursor.y*dpr,d=Math.hypot(dx,dy); if(d<160*dpr){ p.x-=dx/d*0.6; p.y-=dy/d*0.6; } }
+      let extra=0;
+      for(const r of ripples){ const rr=(now-r.t)*380*dpr; const dd=Math.abs(Math.hypot(p.x-r.x,p.y-r.y)-rr); if(dd<26*dpr) extra+=(1-dd/(26*dpr))*(1-(now-r.t)/1.6); }
+      const a=Math.min(1,(0.2+Math.abs(Math.sin(now+p.ph))*0.18)*bright*4+extra);
+      ctx2d.beginPath(); ctx2d.arc(p.x,p.y,p.r+extra*2,0,6.28);
+      ctx2d.fillStyle="rgba("+(80+extra*120)+","+(150+extra*80)+",255,"+a+")"; ctx2d.fill();
+    }
+    ctx2d.globalCompositeOperation="source-over";
+  }
+  return {
+    start(){ init2d(); },
+    setSignal(v){ signal=Math.max(0,Math.min(1,v)); },
+    getSignal(){ return signal; },
+    setCursor(x,y){ cursor.x=x; cursor.y=y; },
+    ripple(x,y){ if(REDUCE) return; const dpr=Math.min(window.devicePixelRatio||1,1.5); ripples.push({x:x*dpr,y:y*dpr,t:performance.now()*0.001}); if(ripples.length>6)ripples.shift(); },
+    pause(){ running=false; cancelAnimationFrame(raf); },
+    resume(){ if(!REDUCE && mode==="2d" && !running){ running=true; last=performance.now(); loop(performance.now()); } }
+  };
 })();
 
-setLang(document.documentElement.lang || 'en');
-</script>
+/* ================= APP INIT ================= */
+function init(){
+  // language default
+  let saved=null; try{ saved=localStorage.getItem("azil_lang"); }catch(e){}
+  const nav=(navigator.language||"en").slice(0,2);
+  setLang(saved || (["fr","ar"].includes(nav)?nav:"en"), false);
 
+  // lang buttons
+  document.querySelectorAll("#lang-switch button").forEach(b=>{
+    b.addEventListener("click",()=>{ setLang(b.dataset.setlang,true); b.focus(); });
+  });
+
+  Field.start();
+
+  // HUD meter follows signal
+  const meterEl=document.getElementById("meter");
+  function hud(){ meterEl.textContent=Math.round(Field.getSignal()*100); requestAnimationFrame(hud); }
+  if(!REDUCE) hud(); else meterEl.textContent="28";
+
+  // visibility pause
+  document.addEventListener("visibilitychange",()=>{ document.hidden?Field.pause():Field.resume(); });
+
+  const hasGSAP = window.gsap && window.ScrollTrigger;
+  if(hasGSAP){ gsap.registerPlugin(ScrollTrigger); if(!REDUCE) document.documentElement.classList.add("gsap-on"); }
+
+  /* ---- custom cursor ---- */
+  if(FINE && !REDUCE && hasGSAP){
+    const cur=document.getElementById("cursor"), dot=document.getElementById("cursor-dot");
+    const qx=gsap.quickTo(cur,"x",{duration:.35,ease:"power3"}), qy=gsap.quickTo(cur,"y",{duration:.35,ease:"power3"});
+    const dx=gsap.quickTo(dot,"x",{duration:.12,ease:"power3"}), dy=gsap.quickTo(dot,"y",{duration:.12,ease:"power3"});
+    window.addEventListener("pointermove",e=>{ qx(e.clientX);qy(e.clientY);dx(e.clientX);dy(e.clientY);
+      Field.setCursor(e.clientX,e.clientY);
+      // signal boost from cursor movement handled by field
+    });
+    document.querySelectorAll("a,button,.magnetic,summary").forEach(el=>{
+      el.addEventListener("mouseenter",()=>cur.classList.add("big"));
+      el.addEventListener("mouseleave",()=>cur.classList.remove("big"));
+    });
+    // magnetic
+    document.querySelectorAll(".magnetic").forEach(el=>{
+      el.addEventListener("mousemove",e=>{ const r=el.getBoundingClientRect();
+        gsap.to(el,{x:(e.clientX-r.left-r.width/2)*.25,y:(e.clientY-r.top-r.height/2)*.35,duration:.4,ease:"power3"});});
+      el.addEventListener("mouseleave",()=>gsap.to(el,{x:0,y:0,duration:.6,ease:"elastic.out(1,.5)"}));
+    });
+  }
+
+  /* ---- hero card tilt + 3D flip ---- */
+  const card=document.getElementById("hero-card");
+  const cardInner=document.getElementById("card-inner");
+  let flipped=false;
+  // tilt lives on the INNER element via GSAP (composes cleanly, never fights the GSAP flip)
+  if(FINE && !REDUCE && card && cardInner && window.gsap){
+    const tiltX=gsap.quickTo(cardInner,"rotationX",{duration:.4,ease:"power2"});
+    const tiltY=gsap.quickTo(cardInner,"rotationY",{duration:.4,ease:"power2"});
+    document.getElementById("hero").addEventListener("mousemove",e=>{
+      if(flipped) return; // don't tilt while showing the back
+      const r=card.getBoundingClientRect(); const px=(e.clientX-r.left)/r.width-.5, py=(e.clientY-r.top)/r.height-.5;
+      tiltY(px*12); tiltX(-py*12);
+    });
+    document.getElementById("hero").addEventListener("mouseleave",()=>{ if(!flipped){ tiltY(0); tiltX(0); } });
+  }
+  // FLIP: click / tap / Enter / Space toggles the card to reveal the NFC antenna.
+  // Driven with an inline transform (via GSAP if available) so it always wins over the CSS tilt.
+  function flipCard(){
+    flipped=!flipped;
+    card.classList.toggle("flipped",flipped);
+    card.setAttribute("aria-pressed",flipped?"true":"false");
+    const deg=flipped?180:0;
+    if(window.gsap && !REDUCE){ gsap.to(cardInner,{rotateY:deg,duration:.9,ease:"power3.inOut"}); }
+    else{ cardInner.style.transform="rotateY("+deg+"deg)"; cardInner.style.transition="none"; }
+    const r=card.getBoundingClientRect(); if(window.Field) Field.ripple(r.left+r.width/2,r.top+r.height/2);
+    if(!REDUCE && navigator.vibrate) navigator.vibrate(14);
+    const lv=document.getElementById("live"); if(lv) lv.textContent = flipped ? t("card.back") : t("card.face");
+  }
+  if(card && cardInner){
+    card.addEventListener("click",flipCard);
+    card.addEventListener("keydown",e=>{ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); flipCard(); } });
+  }
+
+  /* ---- scroll system ---- */
+  let lenis=null;
+  if(hasGSAP && window.Lenis && !REDUCE){
+    lenis=new Lenis({lerp:0.09,smoothWheel:true});
+    lenis.on("scroll",ScrollTrigger.update);
+    gsap.ticker.add(t=>lenis.raf(t*1000)); gsap.ticker.lagSmoothing(0);
+  }
+
+  const bar=document.getElementById("signal-bar");
+  function onScrollProg(){
+    const h=document.documentElement; const p=h.scrollTop/(h.scrollHeight-h.clientHeight||1);
+    bar.style.width=(p*100)+"%";
+    if(!hasGSAP) Field.setSignal(0.15+p*0.8);
+  }
+  window.addEventListener("scroll",onScrollProg,{passive:true}); onScrollProg();
+
+  if(hasGSAP){
+    // global signal from scroll
+    ScrollTrigger.create({trigger:"main",start:"top top",end:"bottom bottom",scrub:true,
+      onUpdate:self=>{ Field.setSignal(0.15+self.progress*0.85); }});
+
+    if(!REDUCE){
+      // intro — content is visible by default; the timeline only enhances.
+      // Everything is fail-safe: a hard timeout force-completes so the hero can never get stuck hidden.
+      let introDone=false;
+      function finishIntro(){
+        if(introDone) return; introDone=true;
+        document.body.classList.remove("intro-lock"); if(lenis)lenis.start();
+        // force every hero element to its visible resting state (belt-and-suspenders)
+        gsap.set([".hero-tag",".hero-visual",".lead",".hero-actions"],{clearProps:"all",opacity:1});
+        gsap.set("#scroll-hint",{opacity:1});
+        gsap.set("#hero-h .ltr",{opacity:1,filter:"none",y:0});
+        if(window.ScrollTrigger) ScrollTrigger.refresh();
+      }
+      document.body.classList.add("intro-lock");
+      if(lenis) lenis.stop();
+      // hard failsafe: never stay locked/hidden longer than 3.2s no matter what
+      const failsafe=setTimeout(finishIntro,3200);
+      // race fonts.ready against a 1.2s cap so a slow/hung font promise can't block the intro
+      Promise.race([document.fonts?document.fonts.ready:Promise.resolve(), new Promise(r=>setTimeout(r,1200))]).then(()=>{
+        if(introDone) return;
+        const tl=gsap.timeline({defaults:{ease:"power3.out"},onComplete:()=>{ clearTimeout(failsafe); finishIntro(); }});
+        tl.set("#scroll-hint",{opacity:0});
+        splitAndReveal(document.getElementById("hero-h"));
+        tl.from(".hero-tag",{opacity:0,y:14,duration:.5,clearProps:"opacity,transform"},0.15);
+        tl.from(".hero-visual",{opacity:0,scale:.92,duration:.9,ease:"power2.out",clearProps:"opacity,transform"},0.25);
+        tl.add(()=>{ const cf=document.querySelector("#hero-card .card-front"); if(cf) cf.classList.add("sheen"); },0.6);
+        tl.from(".lead",{opacity:0,y:16,duration:.5,clearProps:"opacity,transform"},0.6);
+        tl.from(".hero-actions",{opacity:0,y:16,duration:.5,clearProps:"opacity,transform"},0.75);
+        tl.to("#scroll-hint",{opacity:1,duration:.5},1.2);
+        const o={v:0}; tl.to(o,{v:15,duration:1.2,snap:{v:1},onUpdate:()=>{const m=document.getElementById("meter");if(m)m.textContent=Math.round(o.v);}},0.3);
+      });
+    } else {
+      document.getElementById("hero-h").setAttribute("aria-label",t("hero.h"));
+      gsap.set("#scroll-hint",{opacity:1});
+    }
+
+    // reveals
+    gsap.utils.toArray(".reveal").forEach(el=>{
+      // immediateRender:false = element stays visible until its trigger fires (never stuck hidden);
+      // onLeaveBack/refresh can't strand it, and anything already in view animates in immediately.
+      gsap.fromTo(el,{opacity:0,y:30},{opacity:1,y:0,duration:.8,ease:"power3.out",immediateRender:false,
+        scrollTrigger:{trigger:el,start:"top 88%",toggleActions:"play none none none",once:true},
+        onStart:()=>{ const r=el.getBoundingClientRect(); Field.ripple(r.left+r.width/2,r.top+r.height/2); }});
+    });
+    // Fail-safe: after layout settles, force-reveal any .reveal still stuck hidden (e.g. above the fold on mobile)
+    function revealSafety(){ document.querySelectorAll(".reveal").forEach(el=>{
+      const r=el.getBoundingClientRect();
+      if(r.top < window.innerHeight*0.95 && parseFloat(getComputedStyle(el).opacity) < 0.05){
+        gsap.set(el,{opacity:1,y:0,clearProps:"transform"});
+      }});
+    }
+    window.addEventListener("load",()=>setTimeout(revealSafety,300));
+    setTimeout(revealSafety,2500);
+
+    // HOW pinned + beats — pin/layer only on desktop; on mobile beats become a normal readable stack
+    if(!REDUCE && window.innerWidth>760){
+      document.body.classList.add("js-on");
+      const beats=document.querySelectorAll("#how .beat");
+      ScrollTrigger.create({trigger:"#how",start:"top top",end:"+=160%",pin:".how-stage",
+        pinSpacing:true,scrub:1,invalidateOnRefresh:true,anticipatePin:1,
+        onUpdate:self=>{
+          const idx=Math.min(2,Math.floor(self.progress*3));
+          beats.forEach((b,i)=>b.classList.toggle("on",i===idx));
+          if(idx>=2){ showConnected(); }
+        },
+        onRefreshInit:()=>beats.forEach((b,i)=>b.classList.toggle("on",i===0))});
+      beats[0]&&beats[0].classList.add("on");
+    } else {
+      document.querySelectorAll("#how .beat").forEach(b=>b.classList.add("on"));
+    }
+
+    // WHY — pinned "field lines": each benefit takes over the screen as you scroll
+    const whyItems=document.querySelectorAll("#why .why-item");
+    const whyFill=document.querySelector("#why .why-progress i");
+    if(!REDUCE && window.innerWidth>760 && whyItems.length){
+      let whyCur=-1;
+      ScrollTrigger.create({trigger:"#why",start:"top top",end:"+=300%",pin:".why-stage",
+        pinSpacing:true,scrub:1,invalidateOnRefresh:true,anticipatePin:1,
+        onUpdate:self=>{
+          const idx=Math.min(whyItems.length-1,Math.floor(self.progress*whyItems.length));
+          if(whyFill) whyFill.style.transform="scaleX("+((idx+1)/whyItems.length)+")";
+          if(idx!==whyCur){
+            whyCur=idx;
+            whyItems.forEach((it,i)=>it.classList.toggle("on",i===idx));
+            const on=whyItems[idx]; if(on){ const r=on.getBoundingClientRect(); Field.ripple(r.left+r.width/2,r.top+r.height/2); Field.setSignal(0.4+idx*0.12); }
+          }
+        }});
+      whyItems[0].classList.add("on");
+      if(whyFill) whyFill.style.transform="scaleX("+(1/whyItems.length)+")";
+    } else {
+      whyItems.forEach(it=>it.classList.add("on"));
+    }
+
+    // STYLES horizontal rail
+    const rail=document.getElementById("rail");
+    const stylesSec=document.getElementById("styles");
+    if(rail && stylesSec && !REDUCE && window.innerWidth>760){
+      const dist=()=> Math.max(0, rail.scrollWidth - stylesSec.clientWidth);
+      stylesSec.classList.add("rail-live");
+      stylesSec.scrollLeft=0;
+      const rtl=document.documentElement.dir==="rtl";
+      ScrollTrigger.create({trigger:"#styles",start:"top top",end:()=>"+="+(dist()+window.innerHeight*0.15),pin:true,scrub:1,invalidateOnRefresh:true,
+        onUpdate:self=>{ const dir=rtl?1:-1; gsap.set(rail,{x:dir*self.progress*dist()}); }});
+      gsap.utils.toArray("#rail .style-card").forEach((c)=>{
+        gsap.to(c,{rotateY:rtl?-8:8,ease:"none",scrollTrigger:{trigger:"#styles",start:"top top",end:()=>"+="+(dist()+window.innerHeight*0.15),scrub:1,invalidateOnRefresh:true}});
+      });
+      window.addEventListener("load",()=>ScrollTrigger.refresh());
+      if(document.fonts&&document.fonts.ready){document.fonts.ready.then(()=>ScrollTrigger.refresh());}
+    }
+
+    // PROMO marquee loop
+    if(!REDUCE){
+      const mt=document.getElementById("promo-marquee");
+      gsap.to(mt,{xPercent:-50,repeat:-1,duration:22,ease:"none",modifiers:{xPercent:gsap.utils.wrap(-50,0)}});
+    }
+
+    // PROCESS steps + drawn signal line
+    gsap.utils.toArray(".path-step").forEach((s,i)=>{
+      ScrollTrigger.create({trigger:s,start:"top 78%",onEnter:()=>s.classList.add("on"),onLeaveBack:()=>s.classList.remove("on")});
+    });
+    const pathLine=document.getElementById("path-line"), pathSteps=document.querySelector(".path-steps");
+    if(pathLine && pathSteps && !REDUCE){
+      ScrollTrigger.create({trigger:pathSteps,start:"top 70%",end:"bottom 70%",scrub:true,
+        onUpdate:self=>{ pathLine.style.height=(self.progress*100)+"%"; }});
+    }
+
+    // PRICING → signal max
+    ScrollTrigger.create({trigger:"#pricing",start:"top 60%",onEnter:()=>Field.setSignal(1)});
+
+    // animated count-up on numbers
+    gsap.utils.toArray("[data-count]").forEach(el=>{
+      const end=+el.dataset.count, o={v:0};
+      if(REDUCE){ el.textContent=end; return; }
+      ScrollTrigger.create({trigger:el,start:"top 90%",once:true,onEnter:()=>
+        gsap.to(o,{v:end,duration:1.1,ease:"power2.out",snap:{v:1},onUpdate:()=>el.textContent=Math.round(o.v)})});
+    });
+
+    /* ===== EXTRA SCROLL EFFECTS — every section gets motion ===== */
+    if(!REDUCE){
+      // section eyebrows: slide + fade in from the leading edge
+      gsap.utils.toArray(".eyebrow").forEach(el=>{
+        gsap.from(el,{opacity:0,x:document.documentElement.dir==="rtl"?24:-24,duration:.7,ease:"power3.out",
+          scrollTrigger:{trigger:el,start:"top 88%",once:true}});
+      });
+      // big section titles: rise + settle
+      gsap.utils.toArray(".h-1").forEach(el=>{
+        gsap.from(el,{opacity:0,y:40,duration:.9,ease:"power3.out",scrollTrigger:{trigger:el,start:"top 85%",once:true}});
+      });
+      // testimonials: staggered scale-up as the row enters
+      const tsts=gsap.utils.toArray("#tst .tst");
+      if(tsts.length) gsap.from(tsts,{opacity:0,y:50,scale:.94,duration:.7,stagger:.12,ease:"back.out(1.4)",
+        scrollTrigger:{trigger:"#tst",start:"top 75%",once:true}});
+      // pricing tiers: staggered rise, hot tier pops last with a bounce
+      const tiers=gsap.utils.toArray("#pricing .tier");
+      if(tiers.length) gsap.from(tiers,{opacity:0,y:60,duration:.8,stagger:.14,ease:"power3.out",
+        scrollTrigger:{trigger:".price-grid",start:"top 80%",once:true},
+        onComplete:()=>{ const hot=document.querySelector("#pricing .tier.hot"); if(hot) gsap.fromTo(hot,{scale:1},{scale:1.03,duration:.25,yoyo:true,repeat:1,ease:"power2.inOut"}); }});
+      // FAQ rows: slide in one by one
+      const faqs=gsap.utils.toArray("#faq .faq");
+      if(faqs.length) gsap.from(faqs,{opacity:0,x:document.documentElement.dir==="rtl"?30:-30,duration:.6,stagger:.09,ease:"power3.out",
+        scrollTrigger:{trigger:".faq-list",start:"top 82%",once:true}});
+      // promo cards fan/rise in
+      const pcards=gsap.utils.toArray("#promo .promo-card");
+      if(pcards.length) gsap.from(pcards,{opacity:0,y:40,rotateZ:i=>[-6,0,6][pcards.indexOf?0:0]||0,duration:.7,stagger:.1,ease:"back.out(1.5)",
+        scrollTrigger:{trigger:".promo-cards",start:"top 82%",once:true}});
+      // hero card gentle parallax as you scroll past the hero
+      const hcard=document.getElementById("hero-card");
+      if(hcard) gsap.to(hcard,{yPercent:-18,ease:"none",scrollTrigger:{trigger:"#hero",start:"top top",end:"bottom top",scrub:true}});
+      // process dots pulse-glow as the line reaches them (already toggled .on) + line draw
+      gsap.utils.toArray(".path-step .dot").forEach(dot=>{
+        gsap.from(dot,{scale:0,duration:.5,ease:"back.out(2)",scrollTrigger:{trigger:dot,start:"top 85%",once:true}});
+      });
+    }
+  } else {
+    document.querySelectorAll("[data-count]").forEach(el=>el.textContent=el.dataset.count);
+    // no GSAP fallback: everything visible
+    document.querySelectorAll(".reveal,.beat,.path-step").forEach(el=>el.classList.add("on"));
+    document.getElementById("scroll-hint").style.opacity=1;
+  }
+
+  /* ---- TAP showpiece ---- */
+  const phone=document.getElementById("tap-card"), pscreen=document.getElementById("phone-screen"),
+        pidle=document.getElementById("phone-idle"), radar=document.getElementById("radar"),
+        again=document.getElementById("tap-again"), connected=document.getElementById("connected"),
+        live=document.getElementById("live"), tapc=document.getElementById("tapcount");
+  let taps=0, interacted=false, idleTimer=null;
+  function showConnected(){ /* triggered at connect beat; light-touch */ }
+  function playTap(demo){
+    const r=phone.getBoundingClientRect(); Field.ripple(r.left+r.width/2, r.top+r.height/2);
+    if(window.gsap && !REDUCE){
+      gsap.set(radar,{opacity:.8,scale:1}); gsap.to(radar,{opacity:0,scale:1.4,duration:1,ease:"power2.out"});
+      pidle.classList.add("hide"); pscreen.classList.add("show");
+      gsap.fromTo(pscreen,{y:18,scale:.96,opacity:0},{y:0,scale:1,opacity:1,duration:.6,ease:"back.out(1.6)"});
+      gsap.fromTo(connected,{opacity:0,scale:.6},{opacity:1,scale:1,duration:.5,ease:"back.out(2)",onComplete:()=>gsap.to(connected,{opacity:0,duration:.6,delay:.8})});
+      Field.setSignal(1); gsap.delayedCall(1,()=>{ if(window.ScrollTrigger) ScrollTrigger.update(); });
+    } else {
+      pidle.classList.add("hide"); pscreen.classList.add("show");
+    }
+    taps++; tapc.textContent=taps;
+    again.classList.add("show");
+    live.textContent=t("demo.connected")+" — "+t("demo.saved");
+    if(!demo && !REDUCE && navigator.vibrate) navigator.vibrate(18);
+    scheduleIdle();
+  }
+  function resetTap(){ pscreen.classList.remove("show"); pidle.classList.remove("hide"); again.classList.remove("show"); }
+  phone.addEventListener("click",()=>{ interacted=true; if(pscreen.classList.contains("show")) resetTap(); else playTap(false); });
+  phone.addEventListener("keydown",e=>{ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); interacted=true; playTap(false);} });
+  again.addEventListener("click",e=>{ e.stopPropagation(); resetTap(); setTimeout(()=>playTap(false),150); });
+  function scheduleIdle(){ if(REDUCE) return; clearTimeout(idleTimer); idleTimer=setTimeout(()=>{ if(interacted && !pscreen.classList.contains("show")) playTap(true); },5000); }
+
+  /* ---- shared WhatsApp pulse ---- */
+  document.querySelectorAll("[data-wa]").forEach(el=>{
+    el.addEventListener("click",e=>{ Field.ripple(e.clientX||window.innerWidth/2, e.clientY||window.innerHeight/2); });
+  });
+
+  /* ---- FAQ ripple ---- */
+  document.querySelectorAll(".faq").forEach(d=> d.addEventListener("toggle",()=>{ if(d.open){ const r=d.getBoundingClientRect(); Field.ripple(r.left+r.width/2,r.top+30);} }));
+}
+
+if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",init); else init();
+</script>
 </body>
 </html>
