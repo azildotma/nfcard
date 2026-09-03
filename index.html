@@ -1364,9 +1364,11 @@ function init(){
       const pcards=gsap.utils.toArray("#promo .promo-card");
       if(pcards.length) gsap.from(pcards,{opacity:0,y:40,rotateZ:i=>[-6,0,6][pcards.indexOf?0:0]||0,duration:.7,stagger:.1,ease:"back.out(1.5)",
         scrollTrigger:{trigger:".promo-cards",start:"top 82%",once:true}});
-      // hero card gentle parallax as you scroll past the hero
+      // hero card gentle parallax as you scroll past the hero — DESKTOP ONLY
+      // (on mobile the card is stacked directly above a tight headline; a parallax
+      //  translate drifts it over the text, so we skip it under 760px)
       const hcard=document.getElementById("hero-card");
-      if(hcard) gsap.to(hcard,{yPercent:-18,ease:"none",scrollTrigger:{trigger:"#hero",start:"top top",end:"bottom top",scrub:true}});
+      if(hcard&&window.innerWidth>760) gsap.to(hcard,{yPercent:-18,ease:"none",scrollTrigger:{trigger:"#hero",start:"top top",end:"bottom top",scrub:true}});
       // process dots pulse-glow as the line reaches them (already toggled .on) + line draw
       gsap.utils.toArray(".path-step .dot").forEach(dot=>{
         gsap.from(dot,{scale:0,duration:.5,ease:"back.out(2)",scrollTrigger:{trigger:dot,start:"top 85%",once:true}});
